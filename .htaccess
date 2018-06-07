@@ -1,0 +1,4 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?spherethat\.ca
+RewriteRule ^(.*)$ https://www.spherethat.ca/$1 [R,L]

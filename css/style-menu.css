@@ -1,0 +1,335 @@
+
+
+/*Strip the ul of padding and list styling*/
+ul {
+	
+	/*margin:0; */
+	
+	/* position: absolute; */
+}
+#menu
+{
+	list-style-type:none;
+	padding:0;
+	 margin-left: auto;
+margin-right: auto;
+  font-family: Arial,Helvetica,sans-serif;
+  margin-top:25px;
+  float: right;
+width: auto;
+border-radius: 5px;background: none repeat scroll 0% 0% #049FE0;
+	}
+/*Create a horizontal list with spacing*/
+#menu li {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;border-right: 1px solid #0387BF;
+	
+}
+
+/*Style for menu links*/
+#menu li a {
+	display:block;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-family: "open sans",arial;
+text-transform: uppercase;
+font-weight: bold;
+	color: #fff;
+	/*background: none repeat scroll 0% 0% #049FE0;
+	 background: #2f3036; */
+	text-decoration: none;
+	/*margin:5px 5px 0px 5px; */
+	padding-left:10px;
+	padding-right:10px;
+}
+
+/*Hover state for top level links*/
+#menu li:hover a 
+{
+	color:#049FE0;
+	background-color:#fff;
+	/* background: #19c589; border-bottom:solid 2px #ad2424;*/
+}
+
+/*Style for dropdown links*/
+#menu li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+#menu li:hover ul a:hover {
+	background: #19c589;
+	color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+#menu li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+#menu li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+#menu li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+#menu li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+		/* background: #19c589; */
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+		/* background: #19c589; */
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+		/* background: #19c589; */
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	/* background: #19c589;*/
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+		/* background: #19c589; */
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+		/* background: #19c589; */
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+		/* background: #19c589; */
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+		/* background: #19c589; */
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	/* background: #19c589; */
+	text-align: center;
+	padding: 10px 0;
+	display: none;	
+    letter-spacing: 1px;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50px;
+height: 40px;
+right:5px;
+    position: absolute;
+    top:60px;
+}
+ 
+  .show-menu:after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    /*left: 21px; */
+    top: 0px;
+  }
+  .show-menu:before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #fff;
+  /*  left: 21px;
+    top: 82px; */
+  }
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 900px){
+	/*Make dropdown links appear inline*/
+	#menu {
+    list-style-type: none;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-top: 0px;
+    float:none;
+	}
+	#menu {
+		position: static;
+		display: none;
+		background-color:#ffffff;
+	}
+	/*Create vertical spacing*/
+	#menu li {
+		margin-bottom: 1px;
+		background-color:#ffffff;
+		color:#000;
+	}
+	/*Make all menu links full width*/
+	#menu li,#menu li a {
+		width: 100%;
+		background-color:#ffffff;
+		color:#000;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+	#menu li:hover a 
+{
+	color:#ad2424;
+	/* background: #19c589; */border-bottom:solid 0px #000;
+}
+}
+
+

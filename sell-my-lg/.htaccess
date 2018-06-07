@@ -1,0 +1,113 @@
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 month"
+ExpiresByType image/jpeg "access 1 month"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 month"
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/html "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 month"
+ExpiresDefault "access 1 month"
+</IfModule>
+## EXPIRES CACHING ##
+
+Redirect 301 /ipad /sell-my-ipad
+Redirect 301 /iphone /sell-my-iphone
+Redirect 301 /blackberry /sell-my-blackberry
+Redirect 301 /htc /sell-my-htc
+Redirect 301 /ipod-touch /sell-my-ipod-touch
+Redirect 301 /lg /sell-my-lg
+Redirect 301 /nokia /sell-my-nokia
+Redirect 301 /samsung /sell-my-samsung
+Redirect 301 /blackberry/blackberry-Q10.php /sell-my-blackberry/blackberry-Q10.php
+Redirect 301 /blackberry/blackberry-Q5.php /sell-my-blackberry/blackberry-Q5.php
+Redirect 301 /blackberry/blackberry-Z10.php /sell-my-blackberry/blackberry-Z10.php
+Redirect 301 /blackberry/blackberry-bold-9700.php /sell-my-blackberry/blackberry-bold-9700.php
+Redirect 301 /blackberry/blackberry-bold-9790.php /sell-my-blackberry/blackberry-bold-9790.php
+Redirect 301 /blackberry/blackberry-bold-9900.php /sell-my-blackberry/blackberry-bold-9900.php
+Redirect 301 /blackberry/blackberry-classic.php /sell-my-blackberry/blackberry-classic.php
+Redirect 301 /blackberry/blackberry-curve-9300.php /sell-my-blackberry/blackberry-curve-9300.php
+Redirect 301 /blackberry/blackberry-curve-9360.php /sell-my-blackberry/blackberry-curve-9360.php
+Redirect 301 /blackberry/blackberry-leap.php /sell-my-blackberry/blackberry-leap.php
+Redirect 301 /blackberry/blackberry-torch-9800.php /sell-my-blackberry/blackberry-torch-9800.php
+Redirect 301 /blackberry/blackberry-torch-9810.php /sell-my-blackberry/blackberry-torch-9810.php
+Redirect 301 /ipad/ipad-2-16GB.php /sell-my-ipad/ipad-2-16GB.php
+Redirect 301 /ipad/ipad-2-32GB.php /sell-my-ipad/ipad-2-32GB.php
+Redirect 301 /ipad/ipad-2-64GB.php /sell-my-ipad/ipad-2-64GB.php
+Redirect 301 /ipad/ipad-3-16GB.php /sell-my-ipad/ipad-3-16GB.php
+Redirect 301 /ipad/ipad-3-32GB.php /sell-my-ipad/ipad-3-32GB.php
+Redirect 301 /ipad/ipad-3-64GB.php /sell-my-ipad/ipad-3-64GB.php
+Redirect 301 /ipad/ipad-1st-generation-16GB.php /sell-my-ipad/ipad-1st-generation-16GB.php
+Redirect 301 /ipad/ipad-1st-generation-32GB.php /sell-my-ipad/ipad-1st-generation-32GB.php
+Redirect 301 /ipad/ipad-1st-generation-64GB.php /sell-my-ipad/ipad-1st-generation-64GB.php
+Redirect 301 /htc/htc-desire-601.php /sell-my-htc/htc-desire-601.php
+Redirect 301 /htc/htc-evo-3D.php /sell-my-htc/htc-evo-3D.php
+Redirect 301 /htc/htc-one.php /sell-my-htc/htc-one.php
+Redirect 301 /ipad/ipad-4-16GB.php /sell-my-ipad/ipad-4-16GB.php
+Redirect 301 /ipad/ipad-4-32GB.php /sell-my-ipad/ipad-4-32GB.php
+Redirect 301 /ipad/ipad-4-64GB.php /sell-my-ipad/ipad-4-64GB.php
+Redirect 301 /ipad/ipad-4-128GB.php /sell-my-ipad/ipad-4-128GB.php
+Redirect 301 /ipad/ipad-mini-16GB.php /sell-my-ipad/ipad-mini-16GB.php
+Redirect 301 /ipad/ipad-mini-32GB.php /sell-my-ipad/ipad-mini-32GB.php
+Redirect 301 /ipad/ipad-mini-64GB.php /sell-my-ipad/ipad-mini-64GB.php
+Redirect 301 /iphone/iphone-4-8GB.php /sell-my-iphone/iphone-4-8GB.php
+Redirect 301 /iphone/iphone-4-16GB.php /sell-my-iphone/iphone-4-16GB.php
+Redirect 301 /iphone/iphone-4-32GB.php /sell-my-iphone/iphone-4-32GB.php
+Redirect 301 /iphone/iphone-4S-8GB.php /sell-my-iphone/iphone-4S-8GB.php
+Redirect 301 /iphone/iphone-4S-16GB.php /sell-my-iphone/iphone-4S-16GB.php
+Redirect 301 /iphone/iphone-4S-32GB.php /sell-my-iphone/iphone-4S-32GB.php
+Redirect 301 /iphone/iphone-4S-64GB.php /sell-my-iphone/iphone-4S-64GB.php
+Redirect 301 /iphone/iphone-5-16GB.php /sell-my-iphone/iphone-5-16GB.php
+Redirect 301 /iphone/iphone-5-32GB.php /sell-my-iphone/iphone-5-32GB.php
+Redirect 301 /iphone/iphone-5-64GB.php /sell-my-iphone/iphone-5-64GB.php
+Redirect 301 /iphone/iphone-5C-16GB.php /sell-my-iphone/iphone-5C-16GB.php
+Redirect 301 /iphone/iphone-5C-32GB.php /sell-my-iphone/iphone-5C-32GB.php
+Redirect 301 /iphone/iphone-5S-16GB.php /sell-my-iphone/iphone-5S-16GB.php
+Redirect 301 /iphone/iphone-5S-32GB.php /sell-my-iphone/iphone-5S-32GB.php
+Redirect 301 /iphone/iphone-5S-64GB.php /sell-my-iphone/iphone-5S-64GB.php
+Redirect 301 /iphone/iphone-6-16GB.php /sell-my-iphone/iphone-6-16GB.php
+Redirect 301 /iphone/iphone-6-64GB.php /sell-my-iphone/iphone-6-64GB.php
+Redirect 301 /iphone/iphone-6-128GB.php /sell-my-iphone/iphone-6-128GB.php
+Redirect 301 /iphone/iphone-6-plus-16GB.php /sell-my-iphone/iphone-6-plus-16GB.php
+Redirect 301 /iphone/iphone-6-plus-64GB.php /sell-my-iphone/iphone-6-plus-64GB.php
+Redirect 301 /iphone/iphone-6-plus-128GB.php /sell-my-iphone/iphone-6-plus-128GB.php
+Redirect 301 /ipod-touch/ipod-touch-4th-generation-8GB.php /sell-my-ipod-touch/ipod-touch-4th-generation-8GB.php
+Redirect 301 /ipod-touch/ipod-touch-4th-generation-16GB.php /sell-my-ipod-touch/ipod-touch-4th-generation-16GB.php
+Redirect 301 /ipod-touch/ipod-touch-4th-generation-32GB.php /sell-my-ipod-touch/ipod-touch-4th-generation-32GB.php
+Redirect 301 /ipod-touch/ipod-touch-4th-generation-64GB.php /sell-my-ipod-touch/ipod-touch-4th-generation-64GB.php
+Redirect 301 /ipod-touch/ipod-touch-5th-generation-16GB.php /sell-my-ipod-touch/ipod-touch-5th-generation-16GB.php
+Redirect 301 /ipod-touch/ipod-touch-5th-generation-32GB.php /sell-my-ipod-touch/ipod-touch-5th-generation-32GB.php
+Redirect 301 /ipod-touch/ipod-touch-5th-generation-64GB.php /sell-my-ipod-touch/ipod-touch-5th-generation-64GB.php
+Redirect 301 /lg/lg-g2.php /sell-my-lg/lg-g2.php
+Redirect 301 /lg/lg-g3.php /sell-my-lg/lg-g3.php
+Redirect 301 /lg/lg-nexus-4.php /sell-my-lg/lg-nexus-4.php
+Redirect 301 /lg/lg-nexus-5.php /sell-my-lg/lg-nexus-5.php
+Redirect 301 /lg/lg-optimus-L7.php /sell-my-lg/lg-optimus-L7.php
+Redirect 301 /nokia/nokia-lumia-625.php /sell-my-nokia/nokia-lumia-625.php
+Redirect 301 /nokia/nokia-lumia-900.php /sell-my-nokia/nokia-lumia-900.php
+Redirect 301 /nokia/nokia-lumia-920.php /sell-my-nokia/nokia-lumia-920.php
+Redirect 301 /nokia/nokia-lumia-1020.php /sell-my-nokia/nokia-lumia-1020.php
+Redirect 301 /samsung/samsung-ativ-s.php /sell-my-samsung/samsung-ativ-s.php
+Redirect 301 /samsung/samsung-galaxy-S2.php /sell-my-samsung/samsung-galaxy-S2.php
+Redirect 301 /samsung/samsung-galaxy-S3-16GB.php /sell-my-samsung/samsung-galaxy-S3-16GB.php
+Redirect 301 /samsung/samsung-galaxy-S3-32GB.php /sell-my-samsung/samsung-galaxy-S3-32GB.php
+Redirect 301 /samsung/samsung-galaxy-S4-16GB.php /sell-my-samsung/samsung-galaxy-S4-16GB.php
+Redirect 301 /samsung/samsung-galaxy-S4-32GB.php /sell-my-samsung/samsung-galaxy-S4-32GB.php
+Redirect 301 /samsung/samsung-galaxy-S4-mini.php /sell-my-samsung/samsung-galaxy-S4-mini.php
+Redirect 301 /samsung/samsung-galaxy-S5-16GB.php /sell-my-samsung/samsung-galaxy-S5-16GB.php
+Redirect 301 /samsung/samsung-galaxy-S6-32GB.php /sell-my-samsung/samsung-galaxy-S6-32GB.php
+Redirect 301 /samsung/samsung-galaxy-S6-64GB.php /sell-my-samsung/samsung-galaxy-S6-64GB.php
+Redirect 301 /samsung/samsung-galaxy-S6-128GB.php /sell-my-samsung/samsung-galaxy-S6-128GB.php
+Redirect 301 /samsung/samsung-galaxy-S6-edge-32GB.php /sell-my-samsung/samsung-galaxy-S6-edge-32GB.php
+Redirect 301 /samsung/samsung-galaxy-S6-edge-64GB.php /sell-my-samsung/samsung-galaxy-S6-edge-64GB.php
+Redirect 301 /samsung/samsung-galaxy-S6-edge-128GB.php /sell-my-samsung/samsung-galaxy-S6-edge-128GB.php
+Redirect 301 /samsung/samsung-galaxy-note.php /sell-my-samsung/samsung-galaxy-note.php
+Redirect 301 /samsung/samsung-galaxy-note-2.php /sell-my-samsung/samsung-galaxy-note-2.php
+Redirect 301 /samsung/samsung-galaxy-note-3.php /sell-my-samsung/samsung-galaxy-note-3.php
+Redirect 301 /samsung/samsung-galaxy-note-4.php /sell-my-samsung/samsung-galaxy-note-4.php
+Redirect 301 /samsung/samsung-galaxy-nexus.php /sell-my-samsung/samsung-galaxy-nexus.php
+Redirect 301 /samsung/samsung-galaxy-ace-2x.php /sell-my-samsung/samsung-galaxy-ace-2x.php
