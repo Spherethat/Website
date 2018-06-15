@@ -109,7 +109,7 @@ $(document).ready(function() {
     } else if (paymentValue == "Interac") {
       $("input#interac-email").attr("readonly", false);
       $("input#interac-email-same-as-email").attr("disabled", false);
-      $("p.cheque, p.paypalp, input.paypalp").hide();
+      $("p.chequep, p.paypalp, input.paypalp").hide();
       $("p.interacp, input.interacp").show();
     }
   })
