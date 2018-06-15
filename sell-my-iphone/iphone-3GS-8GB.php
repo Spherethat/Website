@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<title>Sell Your iPhone 3GS 8GB | Sphere - Sell Your Phone Online Canada</title>
-  <meta name="description" content="Sell your iPhone 3GS 8GB to Sphere and get top dollar for it. Get a quote for yours today. Free shipping and fast payments!" /> 
+  <meta name="description" content="Sell your iPhone 3GS 8GB to Sphere and get top dollar for it. Get a quote for yours today. Free shipping and fast payments!" />
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css?v=4">
@@ -10,14 +10,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="../js/scripts.js?v=2"></script>
-	<script type="text/javascript" src="../js/formscripts.js?v=2"></script>
+	<script type="text/javascript" src="../js/formscripts.js?v=3"></script>
 	<script type="text/javascript">
 
 	var phone 			= "IP3GS8";
 	var phonedesc 		= "iPhone 3GS 8GB";
 
 	</script>
-	
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -52,11 +52,11 @@ s0.parentNode.insertBefore(s1,s0);
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-	
+
 <div id="header">
 
 	<div id="headerInner">
-	
+
 		<a href="https://www.spherethat.ca/" title="Sphere Electronics" id="logo"></a>
 
 
@@ -76,7 +76,7 @@ s0.parentNode.insertBefore(s1,s0);
 	</div>
 
 </div>
-	
+
 <div id="wrapper">
 
 	<div id="container">
@@ -98,7 +98,7 @@ s0.parentNode.insertBefore(s1,s0);
 				<div class="product-evaluation">
 
 					<input type="text" name="model" value="IP3GS8" style="display: none">
-					
+
 					<h2>1. Carrier</h2>
 
 					<div>
@@ -155,7 +155,7 @@ s0.parentNode.insertBefore(s1,s0);
 						<h3 onClick="ga('send', 'event', 'Condition', 'Select', 'Good');" id="good-condition">Good</h3>
 
 						<div>
-						
+
 							<p>Your device has some light scratches on the body. There are no large scratches or scuffs. No cracks or dents anywhere on the body. All of the functions work perfectly.</p>
 
 						</div>
@@ -163,7 +163,7 @@ s0.parentNode.insertBefore(s1,s0);
 						<h3 onClick="ga('send', 'event', 'Condition', 'Select', 'Rough');" id="rough-condition">Rough</h3>
 
 						<div>
-						
+
 							<p>Your device has a lot of scratches and/or scuffs on the body. There are dents on the body. All of the functions work perfectly. NOTE: the screen is not cracked.</p>
 
 						</div>
@@ -172,13 +172,13 @@ s0.parentNode.insertBefore(s1,s0);
 
 
 						<div>
-						
+
 							<p>Your device is not functioning properly due to issues such as (but not limited to): cracked glass, touch screen issues, missing or malfunctioning buttons, LCD damage (eg. dots, flickering, or discolouration), LCD burn-in, screen bubbles, blurry or not focusing camera, does not turn on, or water damage. Your device must still be intact. </p>
 
 						</div>
 
 					</div>
-                    
+
                       <h2>ICLOUD USERS:</h2>
                 <div>
                   <p style="margin-bottom: 0; clear: both">Please make sure that you have removed the iCloud account on your device before sending it in.</p>
@@ -189,7 +189,7 @@ s0.parentNode.insertBefore(s1,s0);
 				<div id="quote">
 
 					<p>We'll pay you:</p>
-					
+
 					<h2 id="updatedQuote">$0</h2>
 					<input type="hidden" name="newfinalq" id="newfinalq" value="" >
 
@@ -205,7 +205,7 @@ s0.parentNode.insertBefore(s1,s0);
 			</form>
 
 		</div>
-		
+
 	</div>
 
 </div>
@@ -213,7 +213,7 @@ s0.parentNode.insertBefore(s1,s0);
 <div id="footer">
 
 	<div id="footerInner">
-	
+
 		<div id ="footerLinks">
 
 			<ul id="links">

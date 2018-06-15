@@ -168,7 +168,7 @@ else{
 			var paymentValue = $(this).val();
 			if (paymentValue == "Cheque") {
 				$("p.chequep").show();
-				$("p.paypalp, p.interacp, input.paypalp input.interacp").hide();
+				$("p.paypalp, p.interacp, input.paypalp, input.interacp").hide();
 			} else if (paymentValue == "PayPal") {
 				$("input#paypal-email").attr("readonly", false);
 				$("input#paypal-email-same-as-email").attr("disabled", false);
