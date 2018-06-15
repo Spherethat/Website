@@ -1,7 +1,7 @@
 <?php
 
 $gadget = "IPDM4128G";
-$gadgetdesc = "iPad Mini 4 999GB";
+$gadgetdesc = "iPad Mini 4 128GB";
 
-include ('../templatetest.php') ;
+include ('../template_electronics.php') ;
 ?>
