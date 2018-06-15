@@ -99,20 +99,18 @@ $(document).ready(function() {
   $("input:radio[name=payment-option]").click(function() {
     var paymentValue = $(this).val();
     if (paymentValue == "Cheque") {
-      $("input#interac-email").attr("readonly", true);
-      $("input#interac-email-same-as-email").attr("disabled", true);
-      $("input#paypal-email").attr("readonly", true);
-      $("input#paypal-email-same-as-email").attr("disabled", true);
+      $("p.chequep").show();
+      $("p.paypalp, p.interacp, input.paypalp input.paypalp").hide();
     } else if (paymentValue == "PayPal") {
       $("input#paypal-email").attr("readonly", false);
       $("input#paypal-email-same-as-email").attr("disabled", false);
-      $("input#interac-email").attr("readonly", true);
-      $("input#interac-email-same-as-email").attr("disabled", true);
+      $("p.chequep, p.interacp, input.interacp").hide();
+      $("p.paypalp, input.paypalp").show();
     } else if (paymentValue == "Interac") {
       $("input#interac-email").attr("readonly", false);
       $("input#interac-email-same-as-email").attr("disabled", false);
-      $("input#paypal-email").attr("readonly", true);
-      $("input#paypal-email-same-as-email").attr("disabled", true);
+      $("p.cheque, p.paypalp, input.paypalp").hide();
+      $("p.interacp, input.interacp").show();
     }
   })
 
@@ -134,18 +132,18 @@ $(document).ready(function() {
 
   $("#paypal-email").on('input', function() {
     $("#paypal-email-same-as-email").prop("checked", false);
-    var paypalEmailValue = $("#paypal-email").val();
-    var contactEmailValue = $("#main-form input#email").val();
-    if (paypalEmailValue == contactEmailValue) {
+    var EmailValue = $("#paypal-email").val();
+    var mainEmailValue = $("#main-form input#email").val();
+    if (EmailValue == mainEmailValue) {
       $("#paypal-email-same-as-email").prop("checked", true);
     }
   })
 
   $("#interac-email").on('input', function() {
     $("#interac-email-same-as-email").prop("checked", false);
-    var paypalEmailValue = $("#interac-email").val();
-    var contactEmailValue = $("#main-form input#email").val();
-    if (paypalEmailValue == contactEmailValue) {
+    var EmailValue = $("#interac-email").val();
+    var mainEmailValue = $("#main-form input#email").val();
+    if (EmailValue == mainEmailValue) {
       $("#interac-email-same-as-email").prop("checked", true);
     }
   })

@@ -135,7 +135,7 @@ echo '
 
 		<img src="/img/cheque.png">
 
-		<p>A cheque addressed to your full name as entered above will be mailed to you.</p>
+		<p hidden="" class="chequep">A cheque addressed to your full name as entered above will be mailed to you.</p>
 
 	</div>
 
@@ -147,11 +147,11 @@ echo '
 
 		<img src="/img/PayPal.png">
 
-		<p>Enter your PayPal email address:</p>
+		<p hidden="" class="paypalp">Enter your PayPal email address:</p>
 
-		<input id="paypal-email" type="text" name="paypal-email">
+		<input style="display: none;" class="paypalp" id="paypal-email" type="text" name="paypal-email">
 
-		<p style="margin-left: 0px"> <input id="paypal-email-same-as-email" type="checkbox" name="paypal-email-same-as-email" value="SAME">Same as email entered above</p>
+		<p hidden="" class="paypalp" style="margin-left: 0px"> <input id="paypal-email-same-as-email" type="checkbox" name="paypal-email-same-as-email" value="SAME">Same as email entered above</p>
 
 	</div>
 
@@ -163,11 +163,11 @@ echo '
 
 		<!--<img src="/img/interac2.png">-->
 
-		<p>Enter your Interac e-Transfer email address:</p>
+		<p hidden="" class="interacp">Enter your Interac e-Transfer email address:</p>
 
-		<input id="interac-email" type="text" name="interac-email">
+		<input style="display: none;" class="interacp" id="interac-email" type="text" name="interac-email">
 
-		<p style="float: left; width: auto; clear:none; margin-left: 0px"> <input id="interac-email-same-as-email" type="checkbox" name="interac-email-same-as-email" value="SAME">Same as email entered above</p>
+		<p hidden="" class="interacp" style="float: left; width: auto; clear:none; margin-left: 0px"> <input id="interac-email-same-as-email" type="checkbox" name="interac-email-same-as-email" value="SAME">Same as email entered above</p>
 
 	</div>
 
