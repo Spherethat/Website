@@ -1,352 +1,359 @@
-var IP4S8L_broken = 1;
-var IP4S8L_rough = 4;
-var IP4S8L_good = 6;
-var IP4S8L_mint = 8;
+actlock = {
+	"apple" : "<h2>ICLOUD USERS:</h2><div><p style=\"margin-bottom: 0; clear: both\">Please make sure that you have removed the iCloud account on your device before sending it in.</p><p>To learn how to do this, check out our <a href=\"https://www.spherethat.ca/icloud-support\">iCloud support page</a>.<br/></p></div>",
+	"blackberry" : "<h2>BB PROTECT USERS:</h2><div><p style=\"margin-bottom: 0; clear: both\">Please make sure that you turn off the BB Protect service on your device before sending it in.</p><p>You can check for this by going into Settings &gt; BB Protect. </p></div>",
+  "samsung" : "<h2>Reactivation Lock</h2><p style=\"margin-bottom: 0; clear: both\">Your Android device may have Reactivation Lock turned on. Please make sure that this is turned off before sending your device in.</p><br><p>You can check for this by going to Settings &gt; Security &gt Find My Mobile &gt; Reactivation Lock.</p></div>"
+};
 
-var IP4S8U_broken = 1;
-var IP4S8U_rough = 4;
-var IP4S8U_good = 6;
-var IP4S8U_mint = 8;
 
-var IP4S16L_broken = 2;
-var IP4S16L_rough = 5;
-var IP4S16L_good = 8;
-var IP4S16L_mint = 10;
+var IP4S8L_broken = 0;
+var IP4S8L_rough = 0;
+var IP4S8L_good = 0;
+var IP4S8L_mint = 0;
 
-var IP4S16U_broken = 2;
-var IP4S16U_rough = 5;
-var IP4S16U_good = 8;
-var IP4S16U_mint = 10;
+var IP4S8U_broken = 0;
+var IP4S8U_rough = 0;
+var IP4S8U_good = 0;
+var IP4S8U_mint = 0;
 
-var IP4S32L_broken = 3;
-var IP4S32L_rough = 6;
-var IP4S32L_good = 11;
-var IP4S32L_mint = 14;
+var IP4S16L_broken = 0;
+var IP4S16L_rough = 0;
+var IP4S16L_good = 0;
+var IP4S16L_mint = 0;
 
-var IP4S32U_broken = 3;
-var IP4S32U_rough = 6;
-var IP4S32U_good = 11;
-var IP4S32U_mint = 14;
+var IP4S16U_broken = 0;
+var IP4S16U_rough = 0;
+var IP4S16U_good = 0;
+var IP4S16U_mint = 0;
 
-var IP4S64L_broken = 3;
-var IP4S64L_rough = 9;
-var IP4S64L_good = 16;
-var IP4S64L_mint = 20;
+var IP4S32L_broken = 0;
+var IP4S32L_rough = 0;
+var IP4S32L_good = 0;
+var IP4S32L_mint = 0;
 
-var IP4S64U_broken = 3;
-var IP4S64U_rough = 9;
-var IP4S64U_good = 16;
-var IP4S64U_mint = 20;
+var IP4S32U_broken = 0;
+var IP4S32U_rough = 0;
+var IP4S32U_good = 0;
+var IP4S32U_mint = 0;
+
+var IP4S64L_broken = 0;
+var IP4S64L_rough = 0;
+var IP4S64L_good = 0;
+var IP4S64L_mint = 0;
+
+var IP4S64U_broken = 0;
+var IP4S64U_rough = 0;
+var IP4S64U_good = 0;
+var IP4S64U_mint = 0;
 
 var IP516L_broken = 3;
-var IP516L_rough = 15;
-var IP516L_good = 28;
-var IP516L_mint = 31;
+var IP516L_rough = 14;
+var IP516L_good = 25;
+var IP516L_mint = 28;
 
 var IP516U_broken = 3;
-var IP516U_rough = 15;
-var IP516U_good = 28;
-var IP516U_mint = 31;
+var IP516U_rough = 14;
+var IP516U_good = 25;
+var IP516U_mint = 28;
 
 var IP532L_broken = 5;
-var IP532L_rough = 17;
-var IP532L_good = 31;
-var IP532L_mint = 35;
+var IP532L_rough = 16;
+var IP532L_good = 28;
+var IP532L_mint = 32;
 
 var IP532U_broken = 5;
-var IP532U_rough = 17;
-var IP532U_good = 31;
-var IP532U_mint = 35;
+var IP532U_rough = 16;
+var IP532U_good = 28;
+var IP532U_mint = 32;
 
 var IP564L_broken = 6;
-var IP564L_rough = 20;
-var IP564L_good = 37;
-var IP564L_mint = 41;
+var IP564L_rough = 19;
+var IP564L_good = 34;
+var IP564L_mint = 38;
 
 var IP564U_broken = 6;
-var IP564U_rough = 20;
-var IP564U_good = 37;
-var IP564U_mint = 41;
+var IP564U_rough = 19;
+var IP564U_good = 34;
+var IP564U_mint = 38;
 
 var IP5C16L_broken = 5;
-var IP5C16L_rough = 12;
-var IP5C16L_good = 24;
-var IP5C16L_mint = 27;
+var IP5C16L_rough = 11;
+var IP5C16L_good = 21;
+var IP5C16L_mint = 24;
 
 var IP5C16U_broken = 5;
-var IP5C16U_rough = 12;
-var IP5C16U_good = 24;
-var IP5C16U_mint = 27;
+var IP5C16U_rough = 11;
+var IP5C16U_good = 21;
+var IP5C16U_mint = 24;
 
 var IP5C32L_broken = 5;
-var IP5C32L_rough = 17;
-var IP5C32L_good = 30;
-var IP5C32L_mint = 33;
+var IP5C32L_rough = 16;
+var IP5C32L_good = 27;
+var IP5C32L_mint = 30;
 
 var IP5C32U_broken = 5;
-var IP5C32U_rough = 17;
-var IP5C32U_good = 30;
-var IP5C32U_mint = 33;
+var IP5C32U_rough = 16;
+var IP5C32U_good = 27;
+var IP5C32U_mint = 30;
 
-var IP5S16L_broken = 7;
-var IP5S16L_rough = 34;
-var IP5S16L_good = 53;
-var IP5S16L_mint = 57;
+var IP5S16L_broken = 5;
+var IP5S16L_rough = 30;
+var IP5S16L_good = 45;
+var IP5S16L_mint = 48;
 
 var IP5S16U_broken = 5;
-var IP5S16U_rough = 34;
-var IP5S16U_good = 53;
-var IP5S16U_mint = 57;
+var IP5S16U_rough = 30;
+var IP5S16U_good = 45;
+var IP5S16U_mint = 48;
 
 var IP5S32L_broken = 7;
-var IP5S32L_rough = 34;
-var IP5S32L_good = 59;
-var IP5S32L_mint = 63;
+var IP5S32L_rough = 30;
+var IP5S32L_good = 51;
+var IP5S32L_mint = 54;
 
 var IP5S32U_broken = 7;
-var IP5S32U_rough = 34;
-var IP5S32U_good = 59;
-var IP5S32U_mint = 63;
+var IP5S32U_rough = 30;
+var IP5S32U_good = 51;
+var IP5S32U_mint = 54;
 
 var IP5S64L_broken = 9;
-var IP5S64L_rough = 43;
-var IP5S64L_good = 65;
-var IP5S64L_mint = 69;
+var IP5S64L_rough = 39;
+var IP5S64L_good = 57;
+var IP5S64L_mint = 60;
 
 var IP5S64U_broken = 9;
-var IP5S64U_rough = 43;
-var IP5S64U_good = 65;
-var IP5S64U_mint = 69;
+var IP5S64U_rough = 39;
+var IP5S64U_good = 57;
+var IP5S64U_mint = 60;
 
-var IP616L_broken = 24;
-var IP616L_rough = 86;
-var IP616L_good = 105;
-var IP616L_mint = 120;
+var IP616L_broken = 22;
+var IP616L_rough = 72;
+var IP616L_good = 95;
+var IP616L_mint = 110;
 
-var IP616U_broken = 24;
-var IP616U_rough = 86;
-var IP616U_good = 105;
-var IP616U_mint = 120;
+var IP616U_broken = 22;
+var IP616U_rough = 72;
+var IP616U_good = 95;
+var IP616U_mint = 110;
 
-var IP664L_broken = 26;
-var IP664L_rough = 92;
-var IP664L_good = 120;
-var IP664L_mint = 130;
+var IP664L_broken = 31;
+var IP664L_rough = 72;
+var IP664L_good = 95;
+var IP664L_mint = 110;
 
-var IP664U_broken = 26;
-var IP664U_rough = 92;
-var IP664U_good = 120;
-var IP664U_mint = 130;
+var IP664U_broken = 31;
+var IP664U_rough = 72;
+var IP664U_good = 95;
+var IP664U_mint = 110;
 
-var IP6128L_broken = 28;
-var IP6128L_rough = 109;
-var IP6128L_good = 135;
-var IP6128L_mint = 145;
+var IP6128L_broken = 26;
+var IP6128L_rough = 95;
+var IP6128L_good = 125;
+var IP6128L_mint = 135;
 
-var IP6128U_broken = 28;
-var IP6128U_rough = 109;
-var IP6128U_good = 135;
-var IP6128U_mint = 145;
+var IP6128U_broken = 26;
+var IP6128U_rough = 95;
+var IP6128U_good = 125;
+var IP6128U_mint = 135;
 
-var IP6P16L_broken = 28;
-var IP6P16L_rough = 112;
-var IP6P16L_good = 125;
-var IP6P16L_mint = 140;
+var IP6P16L_broken = 26;
+var IP6P16L_rough = 98;
+var IP6P16L_good = 115;
+var IP6P16L_mint = 130;
 
-var IP6P16U_broken = 28;
-var IP6P16U_rough = 112;
-var IP6P16U_good = 125;
-var IP6P16U_mint = 140;
+var IP6P16U_broken = 26;
+var IP6P16U_rough = 98;
+var IP6P16U_good = 115;
+var IP6P16U_mint = 130;
 
-var IP6P64L_broken = 31;
-var IP6P64L_rough = 117;
-var IP6P64L_good = 135;
-var IP6P64L_mint = 150;
+var IP6P64L_broken = 29;
+var IP6P64L_rough = 103;
+var IP6P64L_good = 125;
+var IP6P64L_mint = 140;
 
-var IP6P64U_broken = 31;
-var IP6P64U_rough = 117;
-var IP6P64U_good = 135;
-var IP6P64U_mint = 150;
+var IP6P64U_broken = 29;
+var IP6P64U_rough = 103;
+var IP6P64U_good = 125;
+var IP6P64U_mint = 140;
 
-var IP6P128L_broken = 33;
-var IP6P128L_rough = 122;
-var IP6P128L_good = 150;
-var IP6P128L_mint = 160;
+var IP6P128L_broken = 26;
+var IP6P128L_rough = 108;
+var IP6P128L_good = 140;
+var IP6P128L_mint = 150;
 
-var IP6P128U_broken = 33;
-var IP6P128U_rough = 122;
-var IP6P128U_good = 150;
-var IP6P128U_mint = 160;
+var IP6P128U_broken = 26;
+var IP6P128U_rough = 108;
+var IP6P128U_good = 140;
+var IP6P128U_mint = 150;
 
-var IP6S16L_broken = 38;
-var IP6S16L_rough = 121;
-var IP6S16L_good = 160;
-var IP6S16L_mint = 175;
+var IP6S16L_broken = 34;
+var IP6S16L_rough = 111;
+var IP6S16L_good = 145;
+var IP6S16L_mint = 160;
 
-var IP6S16U_broken = 38;
-var IP6S16U_rough = 121;
-var IP6S16U_good = 160;
-var IP6S16U_mint = 175;
+var IP6S16U_broken = 34;
+var IP6S16U_rough = 111;
+var IP6S16U_good = 145;
+var IP6S16U_mint = 160;
 
-var IP6S64L_broken = 38;
-var IP6S64L_rough = 126;
-var IP6S64L_good = 170;
-var IP6S64L_mint = 185;
+var IP6S64L_broken = 34;
+var IP6S64L_rough = 116;
+var IP6S64L_good = 155;
+var IP6S64L_mint = 170;
 
-var IP6S64U_broken = 38;
-var IP6S64U_rough = 126;
-var IP6S64U_good = 170;
-var IP6S64U_mint = 185;
+var IP6S64U_broken = 34;
+var IP6S64U_rough = 116;
+var IP6S64U_good = 155;
+var IP6S64U_mint = 170;
 
-var IP6S128L_broken = 38;
-var IP6S128L_rough = 145;
-var IP6S128L_good = 190;
-var IP6S128L_mint = 200;
+var IP6S128L_broken = 34;
+var IP6S128L_rough = 135;
+var IP6S128L_good = 175;
+var IP6S128L_mint = 185;
 
-var IP6S128U_broken = 38;
-var IP6S128U_rough = 145;
-var IP6S128U_good = 190;
-var IP6S128U_mint = 200;
+var IP6S128U_broken = 34;
+var IP6S128U_rough = 135;
+var IP6S128U_good = 175;
+var IP6S128U_mint = 185;
 
-var IP6SP16L_broken = 43;
-var IP6SP16L_rough = 152;
-var IP6SP16L_good = 190;
-var IP6SP16L_mint = 200;
+var IP6SP16L_broken = 39;
+var IP6SP16L_rough = 142;
+var IP6SP16L_good = 175;
+var IP6SP16L_mint = 185;
 
-var IP6SP16U_broken = 43;
-var IP6SP16U_rough = 159;
-var IP6SP16U_good = 190;
-var IP6SP16U_mint = 200;
+var IP6SP16U_broken = 39;
+var IP6SP16U_rough = 142;
+var IP6SP16U_good = 175;
+var IP6SP16U_mint = 185;
 
-var IP6SP64L_broken = 43;
-var IP6SP64L_rough = 165;
-var IP6SP64L_good = 195;
-var IP6SP64L_mint = 210;
+var IP6SP64L_broken = 39;
+var IP6SP64L_rough = 155;
+var IP6SP64L_good = 175;
+var IP6SP64L_mint = 185;
 
-var IP6SP64U_broken = 43;
-var IP6SP64U_rough = 165;
-var IP6SP64U_good = 195;
-var IP6SP64U_mint = 210;
+var IP6SP64U_broken = 39;
+var IP6SP64U_rough = 155;
+var IP6SP64U_good = 175;
+var IP6SP64U_mint = 185;
 
-var IP6SP128L_broken = 43;
-var IP6SP128L_rough = 171;
-var IP6SP128L_good = 215;
-var IP6SP128L_mint = 225;
+var IP6SP128L_broken = 39;
+var IP6SP128L_rough = 161;
+var IP6SP128L_good = 200;
+var IP6SP128L_mint = 210;
 
-var IP6SP128U_broken = 43;
-var IP6SP128U_rough = 171;
-var IP6SP128U_good = 215;
-var IP6SP128U_mint = 225;
+var IP6SP128U_broken = 39;
+var IP6SP128U_rough = 161;
+var IP6SP128U_good = 200;
+var IP6SP128U_mint = 210;
 
-var IP732L_broken = 47;
-var IP732L_rough = 189;
-var IP732L_good = 295;
-var IP732L_mint = 310;
+var IP732L_broken = 45;
+var IP732L_rough = 179;
+var IP732L_good = 265;
+var IP732L_mint = 305;
 
-var IP732U_broken = 47;
-var IP732U_rough = 189;
-var IP732U_good = 295;
-var IP732U_mint = 310;
+var IP732U_broken = 45;
+var IP732U_rough = 179;
+var IP732U_good = 265;
+var IP732U_mint = 305;
 
-var IP7128L_broken = 47;
-var IP7128L_rough = 209;
-var IP7128L_good = 320;
-var IP7128L_mint = 335;
+var IP7128L_broken = 45;
+var IP7128L_rough = 199;
+var IP7128L_good = 290;
+var IP7128L_mint = 305;
 
-var IP7128U_broken = 47;
-var IP7128U_rough = 209;
-var IP7128U_good = 320;
-var IP7128U_mint = 335;
+var IP7128U_broken = 45;
+var IP7128U_rough = 199;
+var IP7128U_good = 290;
+var IP7128U_mint = 305;
 
-var IP7256L_broken = 47;
-var IP7256L_rough = 218;
-var IP7256L_good = 345;
-var IP7256L_mint = 360;
+var IP7256L_broken = 45;
+var IP7256L_rough = 208;
+var IP7256L_good = 315;
+var IP7256L_mint = 330;
 
-var IP7256U_broken = 47;
-var IP7256U_rough = 218;
-var IP7256U_good = 345;
-var IP7256U_mint = 360;
+var IP7256U_broken = 45;
+var IP7256U_rough = 208;
+var IP7256U_good = 315;
+var IP7256U_mint = 330;
 
-var IP7P32L_broken = 53;
-var IP7P32L_rough = 230;
-var IP7P32L_good = 335;
-var IP7P32L_mint = 350;
+var IP7P32L_broken = 51;
+var IP7P32L_rough = 220;
+var IP7P32L_good = 305;
+var IP7P32L_mint = 320;
 
-var IP7P32U_broken = 53;
-var IP7P32U_rough = 230;
-var IP7P32U_good = 335;
-var IP7P32U_mint = 350;
+var IP7P32U_broken = 51;
+var IP7P32U_rough = 220;
+var IP7P32U_good = 305;
+var IP7P32U_mint = 320;
 
-var IP7P128L_broken = 53;
-var IP7P128L_rough = 237;
-var IP7P128L_good = 365;
-var IP7P128L_mint = 375;
+var IP7P128L_broken = 51;
+var IP7P128L_rough = 227;
+var IP7P128L_good = 335;
+var IP7P128L_mint = 345;
 
-var IP7P128U_broken = 53;
-var IP7P128U_rough = 237;
-var IP7P128U_good = 365;
-var IP7P128U_mint = 375;
+var IP7P128U_broken = 51;
+var IP7P128U_rough = 227;
+var IP7P128U_good = 335;
+var IP7P128U_mint = 345;
 
-var IP7P256L_broken = 53;
-var IP7P256L_rough = 259;
-var IP7P256L_good = 385;
-var IP7P256L_mint = 400;
+var IP7P256L_broken = 51;
+var IP7P256L_rough = 249;
+var IP7P256L_good = 355;
+var IP7P256L_mint = 370;
 
-var IP7P256U_broken = 53;
-var IP7P256U_rough = 259;
-var IP7P256U_good = 385;
-var IP7P256U_mint = 400;
+var IP7P256U_broken = 51;
+var IP7P256U_rough = 249;
+var IP7P256U_good = 355;
+var IP7P256U_mint = 370;
 
-var IPSE16L_broken = 18;
-var IPSE16L_rough = 70;
-var IPSE16L_good = 100;
-var IPSE16L_mint = 110;
+var IPSE16L_broken = 16;
+var IPSE16L_rough = 68;
+var IPSE16L_good = 95;
+var IPSE16L_mint = 105;
 
-var IPSE16U_broken = 18;
-var IPSE16U_rough = 70;
-var IPSE16U_good = 100;
-var IPSE16U_mint = 110;
+var IPSE16U_broken = 16;
+var IPSE16U_rough = 68;
+var IPSE16U_good = 95;
+var IPSE16U_mint = 105;
 
-var IPSE64L_broken = 21;
-var IPSE64L_rough = 77;
-var IPSE64L_good = 110;
-var IPSE64L_mint = 120;
+var IPSE64L_broken = 16;
+var IPSE64L_rough = 72;
+var IPSE64L_good = 108;
+var IPSE64L_mint = 118;
 
-var IPSE64U_broken = 21;
-var IPSE64U_rough = 77;
-var IPSE64U_good = 110;
-var IPSE64U_mint = 120;
+var IPSE64U_broken = 16;
+var IPSE64U_rough = 72;
+var IPSE64U_good = 108;
+var IPSE64U_mint = 118;
 
-var IPSE128L_broken = 21;
-var IPSE128L_rough = 77;
-var IPSE128L_good = 110;
-var IPSE128L_mint = 120;
+var IPSE128L_broken = 19;
+var IPSE128L_rough = 75;
+var IPSE128L_good = 105;
+var IPSE128L_mint = 115;
 
-var IPSE128U_broken = 21;
-var IPSE128U_rough = 77;
-var IPSE128U_good = 110;
-var IPSE128U_mint = 120;
+var IPSE128U_broken = 19;
+var IPSE128U_rough = 75;
+var IPSE128U_good = 105;
+var IPSE128U_mint = 115;
 
-var IP864U_broken = 54;
-var IP864U_rough = 245;
-var IP864U_good = 410;
-var IP864U_mint = 425;
+var IP864U_broken = 51;
+var IP864U_rough = 230;
+var IP864U_good = 380;
+var IP864U_mint = 395;
 
-var IP8256U_broken = 54;
-var IP8256U_rough = 275;
-var IP8256U_good = 440;
-var IP8256U_mint = 455;
+var IP8256U_broken = 51;
+var IP8256U_rough = 260;
+var IP8256U_good = 410;
+var IP8256U_mint = 425;
 
-var IP8P64U_broken = 64;
-var IP8P64U_rough = 269;
-var IP8P64U_good = 450;
-var IP8P64U_mint = 465;
+var IP8P64U_broken = 61;
+var IP8P64U_rough = 254;
+var IP8P64U_good = 420;
+var IP8P64U_mint = 435;
 
-var IP8P256U_broken = 64;
-var IP8P256U_rough = 299;
-var IP8P256U_good = 480;
-var IP8P256U_mint = 495;
+var IP8P256U_broken = 61;
+var IP8P256U_rough = 284;
+var IP8P256U_good = 450;
+var IP8P256U_mint = 465;
 
 var IPX64U_broken = 95;
 var IPX64U_rough = 340;
@@ -362,211 +369,211 @@ var IPX256U_mint = 660;
 // IPOD TOUCH
 
 var IPT48G_broken = 2;
-var IPT48G_rough = 5;
+var IPT48G_rough = 6;
 var IPT48G_good = 8;
 var IPT48G_mint = 10;
 
 var IPT416G_broken = 2;
-var IPT416G_rough = 6;
-var IPT416G_good = 9;
+var IPT416G_rough = 7;
+var IPT416G_good = 10;
 var IPT416G_mint = 12;
 
 var IPT432G_broken = 2;
 var IPT432G_rough = 7;
-var IPT432G_good = 11;
-var IPT432G_mint = 14;
+var IPT432G_good = 10;
+var IPT432G_mint = 12;
 
 var IPT464G_broken = 3;
 var IPT464G_rough = 10;
-var IPT464G_good = 16;
-var IPT464G_mint = 19;
+var IPT464G_good = 15;
+var IPT464G_mint = 17;
 
 var IPT516G_broken = 4;
-var IPT516G_rough = 18;
-var IPT516G_good = 30;
-var IPT516G_mint = 34;
+var IPT516G_rough = 16;
+var IPT516G_good = 24;
+var IPT516G_mint = 28;
 
 var IPT532G_broken = 5;
-var IPT532G_rough = 20;
-var IPT532G_good = 34;
-var IPT532G_mint = 40;
+var IPT532G_rough = 18;
+var IPT532G_good = 28;
+var IPT532G_mint = 34;
 
 var IPT564G_broken = 5;
-var IPT564G_rough = 22;
-var IPT564G_good = 37;
-var IPT564G_mint = 42;
+var IPT564G_rough = 20;
+var IPT564G_good = 31;
+var IPT564G_mint = 36;
 
 // IPAD
 
 var IPD116G_broken = 3;
-var IPD116G_rough = 13;
-var IPD116G_good = 22;
-var IPD116G_mint = 26;
+var IPD116G_rough = 12;
+var IPD116G_good = 19;
+var IPD116G_mint = 23;
 
 var IPD132G_broken = 4;
-var IPD132G_rough = 14;
-var IPD132G_good = 24;
-var IPD132G_mint = 30;
+var IPD132G_rough = 13;
+var IPD132G_good = 21;
+var IPD132G_mint = 27;
 
 var IPD164G_broken = 4;
-var IPD164G_rough = 16;
-var IPD164G_good = 26;
-var IPD164G_mint = 32;
+var IPD164G_rough = 15;
+var IPD164G_good = 23;
+var IPD164G_mint = 29;
 
 var IPD216G_broken = 7;
-var IPD216G_rough = 28;
-var IPD216G_good = 47;
-var IPD216G_mint = 55;
+var IPD216G_rough = 26;
+var IPD216G_good = 44;
+var IPD216G_mint = 52;
 
 var IPD232G_broken = 8;
-var IPD232G_rough = 31;
-var IPD232G_good = 52;
-var IPD232G_mint = 60;
+var IPD232G_rough = 29;
+var IPD232G_good = 49;
+var IPD232G_mint = 57;
 
 var IPD264G_broken = 8;
-var IPD264G_rough = 34;
-var IPD264G_good = 56;
-var IPD264G_mint = 63;
+var IPD264G_rough = 32;
+var IPD264G_good = 53;
+var IPD264G_mint = 60;
 
 var IPD316G_broken = 11;
-var IPD316G_rough = 43;
-var IPD316G_good = 72;
-var IPD316G_mint = 77;
+var IPD316G_rough = 41;
+var IPD316G_good = 69;
+var IPD316G_mint = 74;
 
 var IPD332G_broken = 11;
-var IPD332G_rough = 45;
-var IPD332G_good = 75;
-var IPD332G_mint = 82;
+var IPD332G_rough = 43;
+var IPD332G_good = 72;
+var IPD332G_mint = 79;
 
 var IPD364G_broken = 12;
-var IPD364G_rough = 49;
-var IPD364G_good = 81;
-var IPD364G_mint = 85;
+var IPD364G_rough = 47;
+var IPD364G_good = 78;
+var IPD364G_mint = 82;
 
 var IPD416G_broken = 17;
-var IPD416G_rough = 68;
-var IPD416G_good = 114;
-var IPD416G_mint = 123;
+var IPD416G_rough = 53;
+var IPD416G_good = 94;
+var IPD416G_mint = 103;
 
 var IPD432G_broken = 18;
-var IPD432G_rough = 72;
-var IPD432G_good = 120;
-var IPD432G_mint = 130;
+var IPD432G_rough = 57;
+var IPD432G_good = 100;
+var IPD432G_mint = 110;
 
 var IPD464G_broken = 20;
-var IPD464G_rough = 78;
-var IPD464G_good = 130;
-var IPD464G_mint = 138;
+var IPD464G_rough = 63;
+var IPD464G_good = 110;
+var IPD464G_mint = 118;
 
 var IPD4128G_broken = 16;
-var IPD4128G_rough = 82;
-var IPD4128G_good = 138;
-var IPD4128G_mint = 144;
+var IPD4128G_rough = 67;
+var IPD4128G_good = 118;
+var IPD4128G_mint = 124;
 
-var IPDM16G_broken = 8;
-var IPDM16G_rough = 32;
-var IPDM16G_good = 51;
-var IPDM16G_mint = 58;
+var IPDM16G_broken = 7;
+var IPDM16G_rough = 30;
+var IPDM16G_good = 47;
+var IPDM16G_mint = 54;
 
-var IPDM32G_broken = 9;
-var IPDM32G_rough = 33;
-var IPDM32G_good = 54;
-var IPDM32G_mint = 60;
+var IPDM32G_broken = 8;
+var IPDM32G_rough = 31;
+var IPDM32G_good = 40;
+var IPDM32G_mint = 56;
 
-var IPDM64G_broken = 9;
-var IPDM64G_rough = 36;
-var IPDM64G_good = 58;
-var IPDM64G_mint = 65;
+var IPDM64G_broken = 8;
+var IPDM64G_rough = 34;
+var IPDM64G_good = 54;
+var IPDM64G_mint = 61;
 
 var IPDAIR16G_broken = 17;
-var IPDAIR16G_rough = 68;
-var IPDAIR16G_good = 114;
-var IPDAIR16G_mint = 123;
+var IPDAIR16G_rough = 53;
+var IPDAIR16G_good = 94;
+var IPDAIR16G_mint = 103;
 
 var IPDAIR32G_broken = 18;
-var IPDAIR32G_rough = 72;
-var IPDAIR32G_good = 120;
-var IPDAIR32G_mint = 130;
+var IPDAIR32G_rough = 57;
+var IPDAIR32G_good = 100;
+var IPDAIR32G_mint = 110;
 
 var IPDAIR64G_broken = 20;
-var IPDAIR64G_rough = 78;
-var IPDAIR64G_good = 130;
-var IPDAIR64G_mint = 138;
+var IPDAIR64G_rough = 63;
+var IPDAIR64G_good = 110;
+var IPDAIR64G_mint = 118;
 
 var IPDAIR128G_broken = 21;
-var IPDAIR128G_rough = 81;
-var IPDAIR128G_good = 140;
-var IPDAIR128G_mint = 145;
+var IPDAIR128G_rough = 66;
+var IPDAIR128G_good = 120;
+var IPDAIR128G_mint = 125;
 
 var IPDAIR216G_broken = 20;
-var IPDAIR216G_rough = 88;
-var IPDAIR216G_good = 154;
-var IPDAIR216G_mint = 163;
+var IPDAIR216G_rough = 73;
+var IPDAIR216G_good = 134;
+var IPDAIR216G_mint = 143;
 
 var IPDAIR264G_broken = 21;
-var IPDAIR264G_rough = 98;
-var IPDAIR264G_good = 170;
-var IPDAIR264G_mint = 178;
+var IPDAIR264G_rough = 83;
+var IPDAIR264G_good = 150;
+var IPDAIR264G_mint = 158;
 
 var IPDAIR2128G_broken = 22;
-var IPDAIR2128G_rough = 102;
-var IPDAIR2128G_good = 178;
-var IPDAIR2128G_mint = 185;
+var IPDAIR2128G_rough = 87;
+var IPDAIR2128G_good = 134;
+var IPDAIR2128G_mint = 165;
 
-var IPDM216G_broken= 9;
-var IPDM216G_rough= 37;
-var IPDM216G_good= 61;
-var IPDM216G_mint= 68;
+var IPDM216G_broken= 8;
+var IPDM216G_rough= 35;
+var IPDM216G_good= 57;
+var IPDM216G_mint= 64;
 
-var IPDM232G_broken= 10;
-var IPDM232G_rough= 38;
-var IPDM232G_good= 64;
-var IPDM232G_mint= 70;
+var IPDM232G_broken= 9;
+var IPDM232G_rough= 36;
+var IPDM232G_good= 60;
+var IPDM232G_mint= 66;
 
-var IPDM264G_broken= 10;
-var IPDM264G_rough= 41;
-var IPDM264G_good= 68;
-var IPDM264G_mint= 75;
+var IPDM264G_broken= 9;
+var IPDM264G_rough= 39;
+var IPDM264G_good= 64;
+var IPDM264G_mint= 71;
 
-var IPDM316G_broken= 12;
-var IPDM316G_rough= 52;
-var IPDM316G_good= 95;
-var IPDM316G_mint= 100;
+var IPDM316G_broken= 11;
+var IPDM316G_rough= 50;
+var IPDM316G_good= 91;
+var IPDM316G_mint= 96;
 
-var IPDM332G_broken= 13;
-var IPDM332G_rough= 58;
-var IPDM332G_good= 106;
-var IPDM332G_mint= 112;
+var IPDM332G_broken= 12;
+var IPDM332G_rough= 56;
+var IPDM332G_good= 102;
+var IPDM332G_mint= 108;
 
-var IPDM364G_broken= 14;
-var IPDM364G_rough= 64;
-var IPDM364G_good= 117;
-var IPDM364G_mint= 124;
+var IPDM364G_broken= 13;
+var IPDM364G_rough= 62;
+var IPDM364G_good= 113;
+var IPDM364G_mint= 120;
 
-var IPDM3128G_broken= 15;
-var IPDM3128G_rough= 70;
-var IPDM3128G_good= 128;
-var IPDM3128G_mint= 136;
+var IPDM3128G_broken= 14;
+var IPDM3128G_rough= 68;
+var IPDM3128G_good= 124;
+var IPDM3128G_mint= 132;
 
-var IPDM416G_broken= 18;
-var IPDM416G_rough= 85;
-var IPDM416G_good= 150;
-var IPDM416G_mint= 160;
+var IPDM416G_broken= 17;
+var IPDM416G_rough= 83;
+var IPDM416G_good= 146;
+var IPDM416G_mint= 156;
 
-var IPDM432G_broken= 19;
-var IPDM432G_rough= 89;
-var IPDM432G_good= 158;
-var IPDM432G_mint= 168;
+var IPDM432G_broken= 18;
+var IPDM432G_rough= 87;
+var IPDM432G_good= 154;
+var IPDM432G_mint= 164;
 
-var IPDM464G_broken= 20;
-var IPDM464G_rough= 93;
-var IPDM464G_good= 168;
-var IPDM464G_mint= 176;
+var IPDM464G_broken= 19;
+var IPDM464G_rough= 91;
+var IPDM464G_good= 164;
+var IPDM464G_mint= 172;
 
-var IPDM4128G_broken= 21;
-var IPDM4128G_rough= 97;
-var IPDM4128G_good= 174;
-var IPDM4128G_mint= 184;
+var IPDM4128G_broken= 20;
+var IPDM4128G_rough= 95;
+var IPDM4128G_good= 170;
+var IPDM4128G_mint= 180;
 
 
 // BLACKBERRY
@@ -606,25 +613,25 @@ var BB9900_rough = 2;
 var BB9900_good = 3;
 var BB9900_mint = 5;
 
-var BBCLASS_broken = 6;
-var BBCLASS_rough = 19;
-var BBCLASS_good = 30;
-var BBCLASS_mint = 34;
+var BBCLASS_broken = 5;
+var BBCLASS_rough = 16;
+var BBCLASS_good = 25;
+var BBCLASS_mint = 28;
 
 var BBLEAP_broken = 2;
-var BBLEAP_rough = 8;
-var BBLEAP_good = 14;
-var BBLEAP_mint = 16;
+var BBLEAP_rough = 7;
+var BBLEAP_good = 12;
+var BBLEAP_mint = 14;
 
 var BBPASS_broken = 6;
-var BBPASS_rough = 28;
-var BBPASS_good = 42;
-var BBPASS_mint = 47;
+var BBPASS_rough = 25;
+var BBPASS_good = 37;
+var BBPASS_mint = 42;
 
 var BBPRIV_broken = 15;
-var BBPRIV_rough = 67;
-var BBPRIV_good = 100;
-var BBPRIV_mint = 115;
+var BBPRIV_rough = 64;
+var BBPRIV_good = 95;
+var BBPRIV_mint = 105;
 
 var BBQ5_broken = 1;
 var BBQ5_rough = 3;
@@ -632,14 +639,14 @@ var BBQ5_good = 4;
 var BBQ5_mint = 6;
 
 var BBQ10L_broken = 1;
-var BBQ10L_rough = 4;
-var BBQ10L_good = 6;
-var BBQ10L_mint = 8;
+var BBQ10L_rough = 3;
+var BBQ10L_good = 4;
+var BBQ10L_mint = 6;
 
 var BBQ10U_broken = 1;
-var BBQ10U_rough = 4;
-var BBQ10U_good = 6;
-var BBQ10U_mint = 8;
+var BBQ10U_rough = 3;
+var BBQ10U_good = 4;
+var BBQ10U_mint = 6;
 
 var BBZ10L_broken = 1;
 var BBZ10L_rough = 4;
@@ -661,35 +668,35 @@ var BBZ30L_rough = 8;
 var BBZ30L_good = 11;
 var BBZ30L_mint = 14;
 
-var BBDTEK50U_broken = 27;
-var BBDTEK50U_rough = 58;
-var BBDTEK50U_good = 115;
-var BBDTEK50U_mint = 125;
+var BBDTEK50U_broken = 24;
+var BBDTEK50U_rough = 54;
+var BBDTEK50U_good = 105;
+var BBDTEK50U_mint = 115;
 
-var BBDTEK50L_broken = 27;
-var BBDTEK50L_rough = 58;
-var BBDTEK50L_good = 115;
-var BBDTEK50L_mint = 125;
+var BBDTEK50L_broken = 24;
+var BBDTEK50L_rough = 54;
+var BBDTEK50L_good = 105;
+var BBDTEK50L_mint = 115;
 
-var BBDTEK60U_broken = 45;
-var BBDTEK60U_rough = 131;
-var BBDTEK60U_good = 185;
-var BBDTEK60U_mint = 195;
+var BBDTEK60U_broken = 38;
+var BBDTEK60U_rough = 123;
+var BBDTEK60U_good = 165;
+var BBDTEK60U_mint = 175;
 
-var BBDTEK60L_broken = 45;
-var BBDTEK60L_rough = 131;
-var BBDTEK60L_good = 185;
-var BBDTEK60L_mint = 195;
+var BBDTEK60L_broken = 38;
+var BBDTEK60L_rough = 123;
+var BBDTEK60L_good = 165;
+var BBDTEK60L_mint = 175;
 
-var BBKEYONEU_broken = 45;
-var BBKEYONEU_rough = 121;
-var BBKEYONEU_good = 195;
-var BBKEYONEU_mint = 205;
+var BBKEYONEU_broken = 40;
+var BBKEYONEU_rough = 113;
+var BBKEYONEU_good = 175;
+var BBKEYONEU_mint = 185;
 
-var BBKEYONEL_broken = 45;
-var BBKEYONEL_rough = 121;
-var BBKEYONEL_good = 195;
-var BBKEYONEL_mint = 205;
+var BBKEYONEL_broken = 40;
+var BBKEYONEL_rough = 113;
+var BBKEYONEL_good = 175;
+var BBKEYONEL_mint = 185;
 
 // HTC
 
@@ -704,19 +711,19 @@ var HTEVO3D_good = 0;
 var HTEVO3D_mint = 0;
 
 var HTONE_broken = 4;
-var HTONE_rough = 14;
-var HTONE_good = 27;
-var HTONE_mint = 30;
+var HTONE_rough = 11;
+var HTONE_good = 22;
+var HTONE_mint = 25;
 
 var HTONEM8_broken = 5;
-var HTONEM8_rough = 18;
-var HTONEM8_good = 36;
-var HTONEM8_mint = 43;
+var HTONEM8_rough = 15;
+var HTONEM8_good = 31;
+var HTONEM8_mint = 38;
 
 var HTONEM9_broken = 9;
-var HTONEM9_rough = 35;
-var HTONEM9_good = 70;
-var HTONEM9_mint = 76;
+var HTONEM9_rough = 32;
+var HTONEM9_good = 65;
+var HTONEM9_mint = 71;
 
 // LG
 
@@ -726,147 +733,147 @@ var LGG2_good = 22;
 var LGG2_mint = 24;
 
 var LGG3_broken = 6;
-var LGG3_rough = 25;
-var LGG3_good = 43;
-var LGG3_mint = 47;
+var LGG3_rough = 23;
+var LGG3_good = 39;
+var LGG3_mint = 43;
 
-var LGG4_broken = 10;
-var LGG4_rough = 48;
-var LGG4_good = 68;
-var LGG4_mint = 73;
+var LGG4_broken = 8;
+var LGG4_rough = 44;
+var LGG4_good = 62;
+var LGG4_mint = 66;
 
 var LGG5_broken = 19;
-var LGG5_rough = 80;
-var LGG5_good = 125;
-var LGG5_mint = 135;
+var LGG5_rough = 72;
+var LGG5_good = 110;
+var LGG5_mint = 120;
 
 var LGNXS4_broken = 4;
-var LGNXS4_rough = 11;
-var LGNXS4_good = 21;
-var LGNXS4_mint = 25;
+var LGNXS4_rough = 10;
+var LGNXS4_good = 18;
+var LGNXS4_mint = 22;
 
 var LGNXS5_broken = 5;
-var LGNXS5_rough = 24;
-var LGNXS5_good = 33;
-var LGNXS5_mint = 39;
+var LGNXS5_rough = 21;
+var LGNXS5_good = 30;
+var LGNXS5_mint = 35;
 
 var LGOPTL7_broken = 2;
 var LGOPTL7_rough = 4;
-var LGOPTL7_good = 11;
-var LGOPTL7_mint = 14;
+var LGOPTL7_good = 9;
+var LGOPTL7_mint = 12;
 
 // SAMSUNG
 
 //S5
-var SSG90016_broken = 9;
-var SSG90016_rough = 42;
-var SSG90016_good = 56;
-var SSG90016_mint = 64;
+var SSG90016_broken = 8;
+var SSG90016_rough = 38;
+var SSG90016_good = 50;
+var SSG90016_mint = 58;
 
 //S6
 
-var SSG92032_broken = 24;
-var SSG92032_rough = 75;
-var SSG92032_good = 105;
-var SSG92032_mint = 120;
+var SSG92032_broken = 21;
+var SSG92032_rough = 63;
+var SSG92032_good = 90;
+var SSG92032_mint = 105;
 
-var SSG92064_broken = 26;
-var SSG92064_rough = 81;
-var SSG92064_good = 115;
-var SSG92064_mint = 130;
+var SSG92064_broken = 23;
+var SSG92064_rough = 69;
+var SSG92064_good = 100;
+var SSG92064_mint = 115;
 
-var SSG920128_broken = 29;
-var SSG920128_rough = 91;
-var SSG920128_good = 130;
-var SSG920128_mint = 145;
+var SSG920128_broken = 26;
+var SSG920128_rough = 79;
+var SSG920128_good = 115;
+var SSG920128_mint = 130;
 
 //S6 edge
-var SSG92532_broken = 28;
-var SSG92532_rough = 88;
-var SSG92532_good = 125;
-var SSG92532_mint = 135;
+var SSG92532_broken = 25;
+var SSG92532_rough = 76;
+var SSG92532_good = 110;
+var SSG92532_mint = 120;
 
-var SSG92564_broken = 30;
-var SSG92564_rough = 94;
-var SSG92564_good = 135;
-var SSG92564_mint = 150;
+var SSG92564_broken = 27;
+var SSG92564_rough = 82;
+var SSG92564_good = 120;
+var SSG92564_mint = 135;
 
-var SSG925128_broken = 32;
-var SSG925128_rough = 100;
-var SSG925128_good = 145;
-var SSG925128_mint = 160;
+var SSG925128_broken = 29;
+var SSG925128_rough = 88;
+var SSG925128_good = 130;
+var SSG925128_mint = 145;
 
 //S7
 var SSG93032_broken = 26;
-var SSG93032_rough = 107;
-var SSG93032_good = 175;
-var SSG93032_mint = 190;
+var SSG93032_rough = 102;
+var SSG93032_good = 160;
+var SSG93032_mint = 175;
 
 //S7 edge
 var SSG93532_broken = 32;
-var SSG93532_rough = 121;
-var SSG93532_good = 195;
-var SSG93532_mint = 210;
+var SSG93532_rough = 116;
+var SSG93532_good = 180;
+var SSG93532_mint = 195;
 
 //S8
-var SSG950_broken = 54;
-var SSG950_rough = 260;
-var SSG950_good = 340;
-var SSG950_mint = 360;
+var SSG950_broken = 50;
+var SSG950_rough = 245;
+var SSG950_good = 310;
+var SSG950_mint = 330;
 
 //S4 mini
 var SSI257M_broken = 2;
-var SSI257M_rough = 9;
-var SSI257M_good = 16;
-var SSI257M_mint = 20;
+var SSI257M_rough = 8;
+var SSI257M_good = 14;
+var SSI257M_mint = 18;
 
 //note 2
-var SSI317_broken = 7;
-var SSI317_rough = 22;
-var SSI317_good = 32;
-var SSI317_mint = 37;
+var SSI317_broken = 6;
+var SSI317_rough = 20;
+var SSI317_good = 29;
+var SSI317_mint = 33;
 
 //S4
-var SSI33716_broken = 7;
-var SSI33716_rough = 29;
-var SSI33716_good = 35;
-var SSI33716_mint = 39;
+var SSI33716_broken = 6;
+var SSI33716_rough = 26;
+var SSI33716_good = 32;
+var SSI33716_mint = 35;
 
 //note
 var SSI717_broken = 3;
-var SSI717_rough = 11;
-var SSI717_good = 14;
-var SSI717_mint = 18;
+var SSI717_rough = 10;
+var SSI717_good = 13;
+var SSI717_mint = 16;
 
 //S2
 var SSI727_broken = 2;
-var SSI727_rough = 6;
-var SSI727_good = 9;
-var SSI727_mint = 12;
+var SSI727_rough = 5;
+var SSI727_good = 8;
+var SSI727_mint = 11;
 
 //S3
 var SSI74716_broken = 4;
-var SSI74716_rough = 14;
-var SSI74716_good = 19;
-var SSI74716_mint = 22;
+var SSI74716_rough = 13;
+var SSI74716_good = 17;
+var SSI74716_mint = 20;
 
 //S captivate
 var SSI897_broken = 2;
-var SSI897_rough = 6;
-var SSI897_good = 10;
-var SSI897_mint = 12;
+var SSI897_rough = 5;
+var SSI897_good = 9;
+var SSI897_mint = 11;
 
 //nexus
 var SSI9250_broken = 2;
-var SSI9250_rough = 6;
-var SSI9250_good = 10;
-var SSI9250_mint = 12;
+var SSI9250_rough = 5;
+var SSI9250_good = 9;
+var SSI9250_mint = 11;
 
 //Note 3
-var SSN900_broken = 13;
-var SSN900_rough = 56;
-var SSN900_good = 77;
-var SSN900_mint = 80;
+var SSN900_broken = 11;
+var SSN900_rough = 48;
+var SSN900_good = 65;
+var SSN900_mint = 68;
 
 //Note 4
 var SSN910_broken = 21;
@@ -897,22 +904,22 @@ var SST899M_mint = 14;
 var NKLUM625_broken = 1;
 var NKLUM625_rough = 3;
 var NKLUM625_good = 5;
-var NKLUM625_mint = 7;
+var NKLUM625_mint = 6;
 
 var NKLUM900_broken = 2;
 var NKLUM900_rough = 5;
-var NKLUM900_good = 8;
-var NKLUM900_mint = 10;
+var NKLUM900_good = 7;
+var NKLUM900_mint = 9;
 
 var NKLUM920_broken = 3;
-var NKLUM920_rough = 8;
-var NKLUM920_good = 14;
-var NKLUM920_mint = 16;
+var NKLUM920_rough = 7;
+var NKLUM920_good = 13;
+var NKLUM920_mint = 14;
 
 var NKLUM1020_broken = 3;
-var NKLUM1020_rough = 8;
-var NKLUM1020_good = 14;
-var NKLUM1020_mint = 16;
+var NKLUM1020_rough = 7;
+var NKLUM1020_good = 13;
+var NKLUM1020_mint = 14;
 
 function valuation(phone, carrier, condition) {
 

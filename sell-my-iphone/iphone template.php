@@ -23,8 +23,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="../js/scripts.js?v=2"></script>
-	<script type="text/javascript" src="../js/formscripts.js?v=3"></script>
+	<script type="text/javascript" src="../js/scripts.js?v=4?v=4"></script>
+	<script type="text/javascript" src="../js/formscripts.js?v=4?v=4"></script>
 
 	<script type="text/javascript">
 
@@ -271,8 +271,8 @@ s0.parentNode.insertBefore(s1,s0);
 							<section class="3u$ 6u$(medium) 12u$(small)">
 								<h3>Where we hang out:</h3>
 								<ul class="unstyled">
-									<li>314 West Cordova Street</li>
-									<li>Suite 225</li>
+									<li>326 West Cordova Street</li>
+									
 									<li>Vancouver, BC V6B 1E8</li>
 									</li>
 								</ul>

@@ -13,8 +13,8 @@
 			<link rel="stylesheet" href="../design/css/style-xlarge.css" />
 		</noscript>
 
-	<script type="text/javascript" src="../js/scripts.js?v=2"></script>
-	<script type="text/javascript" src="../js/formscripts.js"></script>
+	<script type="text/javascript" src="../js/scripts.js?v=4?v=4"></script>
+	<script type="text/javascript" src="../js/formscripts.js?v=4"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="../design/js/skel.min.js"></script>
@@ -229,8 +229,8 @@
 							<section class="3u$ 6u$(medium) 12u$(small)">
 								<h3>Where we hang out:</h3>
 								<ul class="unstyled">
-									<li>314 West Cordova Street</li>
-									<li>Suite 225</li>
+									<li>326 West Cordova Street</li>
+									
 									<li>Vancouver, BC V6B 1E8</li>
 									</li>
 								</ul>

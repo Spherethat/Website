@@ -1,8 +1,10 @@
+<?php
+
+echo'
 <!DOCTYPE html>
 <html>
-
 <head>
-	<title>Sell Your Device | Sphere - Sell Your Phone Online Canada</title>
+	<title>Sell Your Phone | Sphere - Sell Your Phone Online Canada</title>
 	<meta name="description" content="Sell your Phone to Sphere and get top dollar for it. Get a quote for yours today. Free shipping and fast payments!" />
 	<meta charset="UTF-8">
 	<script src="../design/js/jquery.min.js"></script>
@@ -19,29 +21,31 @@
 
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Ubuntu:400,700" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="../js/scripts.js?v=4?v=4"></script>
-	<script type="text/javascript" src="../js/formscripts-electronics-beta.js"></script>
+	<script type="text/javascript" src="../js/formscripts.js?v=4?v=4"></script>
 
 	<script type="text/javascript">
+	var gadget = "'.$gadget.'";
+	var gadgetdesc = "'.$gadgetdesc.'";
+	var brand = "'.$brand.'";
+	var upperGD = gadgetdesc.toUpperCase();
+	var year = (new Date()).getFullYear();
 
-		var gadget = "IPDM4128G";
-		var gadgetdesc = "iPad Mini 4 999GB";
-		var upperGD = gadgetdesc.toUpperCase();
-		var year = (new Date()).getFullYear();
+	function runnit(){
+	document.getElementById("headertext").innerHTML = "<h9>SELL YOUR " + upperGD + "</h9>";
+	document.getElementById("copyright").innerHTML = "<p>Copyright &copy; 2013 - " + year +" Sphere</p>";
+	document.title = "Sell Your " + gadgetdesc + " | Sphere - Sell Your Phone Online Canada";
+	document.getElementsByTagName("meta")["description"].content = "Sell your " + gadgetdesc + " to Sphere and get top dollar for it. Get a quote for yours today. Free Shipping and Fast payments!"
+	document.getElementById("actlock").innerHTML = actlock[brand];
+	};	</script>
 
-		function runnit(){
-		document.getElementById("headertext").innerHTML = "<h9>SELL YOUR " + upperGD + "</h9>";
-		document.getElementById("copyright").innerHTML = "<p>Copyright &copy; 2013 - " + year +" Sphere</p>";
-		document.title = "Sell Your " + gadgetdesc + " | Sphere - Sell Your Phone Online Canada";
-		document.getElementsByTagName('meta')["description"].content = "Sell your " + gadgetdesc + " to Sphere and get top dollar for it. Get a quote for yours today. Free Shipping and Fast payments!"
-		};
-	</script>
 
 </head>
+
+<body>
 
 <body onload="runnit();">
 
@@ -58,7 +62,6 @@
 				<li><a href="/FAQ/">FAQ</a></li>
 				<li><a href="/business">Sell in Bulk</a></li>
 				<li><a href="/contact/">Contact</a></li>
-				<li><a href="/partnerships/">Partnerships</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -85,10 +88,38 @@
 						<input type="text" id="model" name="model" value="" style="display: none">
 						<input type="text" id="phonedesc" name="phonedesc" value="" style="display:none">
 
-						<h2>1. Condition</h2>
+						<h2>1. Carrier</h2>
 
 						<div>
-							<select id="condition" onChange="ga('send', 'event', 'Condition', 'Select');" name="condition">
+							<select id="carrier" onChange="ga("send", "event", "Carrier", "Select");" name="carrier">
+							<option value="" selected="selected">Select</option>
+							<option value="Rogers">Rogers</option>
+							<option value="Fido">Fido</option>
+							<option value="Bell">Bell</option>
+							<option value="Virgin">Virgin</option>
+							<option value="Telus">Telus</option>
+							<option value="Koodo">Koodo</option>
+							<option value="Unlocked">Unlocked</option>
+						</select>
+						</div>
+
+						<p style="margin-bottom: 0; clear: both">Please select one of the following carriers.</p>
+						<p>If your phone is <b>unlocked</b>, select the "unlocked" option.</p>
+
+						<div class="carrier-img">
+							<a class="rogers" onClick="ga("send", "event", "Carrier", "Select", "Rogers");" style="display: inline-block"><img src="../img/carriers/rogers-small.png"></a>
+							<a class="fido" onClick="ga("send", "event", "Carrier", "Select", "Fido");" style="display: inline-block"><img src="../img/carriers/fido-small.png"></a>
+							<a class="bell" onClick="ga("send", "event", "Carrier", "Select", "Bell");" style="display: inline-block"><img src="../img/carriers/bell-small.png">
+						<a class="virgin" onClick="ga("send", "event", "Carrier", "Select", "Virgin");" style="display: inline-block"><img src="../img/carriers/virginmobile-small.png"></a>
+							<a class="telus" onClick="ga("send", "event", "Carrier", "Select", "Telus");" style="display: inline-block"><img src="../img/carriers/telus-small.png">
+						<a class="koodo" onClick="ga("send", "event", "Carrier", "Select", "Koodo");" style="display: inline-block"><img src="../img/carriers/koodo-small.png"></a>
+							<a class="unlocked" onClick="ga("send", "event", "Carrier", "Select", "Unlocked");" style="display: inline-block"><img src="../img/carriers/unlocked-phone.png"></a>
+						</div>
+
+						<h2>2. Condition</h2>
+
+						<div>
+							<select id="condition" onChange="ga("send", "event", "Condition", "Select")]);" name="condition">
 							<option value="" selected="selected">Select</option>
 							<option value="Mint">Mint</option>
 							<option value="Good">Good</option>
@@ -97,12 +128,12 @@
 						</select>
 						</div>
 
-						<p style="margin-bottom: 0; clear: both">How would you rate your gadget's condition?</p>
+						<p style="margin-bottom: 0; clear: both">How would you rate your phone"s condition?</p>
 						<p>For a description of each option, click the headings below.</p>
 
 						<div id="condition-accordion">
 
-							<h3 onClick="ga('send', 'event', 'Condition', 'Select', 'Mint');" id="mint-condition">Mint</h3>
+							<h3 onClick="ga("send", "event", "Condition", "Select", "Mint");" id="mint-condition">Mint</h3>
 
 							<div>
 
@@ -110,7 +141,7 @@
 
 							</div>
 
-							<h3 onClick="ga('send', 'event', 'Condition', 'Select', 'Good');" id="good-condition">Good</h3>
+							<h3 onClick="ga("send", "event", "Condition", "Select", "Good");" id="good-condition">Good</h3>
 
 							<div>
 
@@ -118,7 +149,7 @@
 
 							</div>
 
-							<h3 onClick="ga('send', 'event', 'Condition', 'Select', 'Rough');" id="rough-condition">Rough</h3>
+							<h3 onClick="ga("send", "event", "Condition", "Select", "Rough");" id="rough-condition">Rough</h3>
 
 							<div>
 
@@ -126,7 +157,7 @@
 
 							</div>
 
-							<h3 onClick="ga('send', 'event', 'Condition', 'Select', 'Broken');" id="broken-condition">Broken</h3>
+							<h3 onClick="ga("send", "event", "Condition", "Select", "Broken");" id="broken-condition">Broken</h3>
 
 
 							<div>
@@ -138,11 +169,13 @@
 
 						</div>
 
+						<div id="actlock"></div>
+
 					</div>
 
 					<div id="quote">
 
-						<p>We'll pay you:</p>
+						<p>We"ll pay you:</p>
 
 						<h2 id="updatedQuote">$0</h2>
 						<input type="hidden" name="newfinalq" id="newfinalq" value="">
@@ -150,13 +183,13 @@
 
 						<p id="phone-description">To get a quote, please tell us the carrier and condition of your phone.</p>
 
-						<a onClick="ga('send', 'event', 'Submission', 'Select', 'Get Paid');" href="#main-form" id="getpaid-button">GET PAID &raquo;</a>
+						<a onClick="ga("send", "event", "Submission", "Select", "Get Paid");" href="#main-form" id="getpaid-button">GET PAID &raquo;</a>
 
 					</div>
 
 					<div id="main-form">
 
-						<h2 style="display: block; clear: both">2. Your Information</h2>
+						<h2 style="display: block; clear: both">3. Your Information</h2>
 
 						<p style="margin-bottom: 10px; font-family: helvetica, open sans, arial; clear: both; color: #666">Fill out the information below to get your free shipping label!</p>
 
@@ -203,21 +236,21 @@
 
 								<p class="form-label"><span class="req">* </span>Province:</p>
 								<select id="province" type="text" name="province">
-									<option value="" selected="selected">...</option>
-									<option value="AB">AB</option>
-									<option value="BC">BC</option>
-									<option value="MB">MB</option>
-									<option value="NB">NB</option>
-									<option value="NL">NL</option>
-									<option value="NS">NS</option>
-									<option value="NT">NT</option>
-									<option value="NU">NU</option>
-									<option value="ON">ON</option>
-									<option value="PE">PE</option>
-									<option value="QC">QC</option>
-									<option value="SK">SK</option>
-									<option value="YT">YT</option>
-								</select>
+								<option value="" selected="selected">...</option>
+								<option value="AB">AB</option>
+								<option value="BC">BC</option>
+								<option value="MB">MB</option>
+								<option value="NB">NB</option>
+								<option value="NL">NL</option>
+								<option value="NS">NS</option>
+								<option value="NT">NT</option>
+								<option value="NU">NU</option>
+								<option value="ON">ON</option>
+								<option value="PE">PE</option>
+								<option value="QC">QC</option>
+								<option value="SK">SK</option>
+								<option value="YT">YT</option>
+							</select>
 
 							</div>
 
@@ -244,15 +277,14 @@
 
 							<div class="frm-1" style="padding:0px 0px 15px 0px;">
 
-								<p class="form-label">
-									</span>Device Comments:</p>
+								<p class="form-label"></span>Device Comments:</p>
 								<textarea name="comments" style="width:500px; height:150px" placeholder="(e.g. Cracked Glass, Screen Flicker etc.)"></textarea>
 
 							</div>
 
 							<br><br>
 
-							<p style="line-height: 120%; margin-bottom: 10px; font-family: helvetica, open sans, arial; clear: both; color: #666">If you require shipping materials, we can send a free shipping kit direct to your doorstep (3-5 business days). Otherwise, we\'ll email you a prepaid shipping label that you can use to mail your phone to us.</p>
+							<p style="line-height: 120%; margin-bottom: 10px; font-family: helvetica, open sans, arial; clear: both; color: #666">If you require shipping materials, we can send a free shipping kit direct to your doorstep (3-5 business days). Otherwise, we\"ll email you a prepaid shipping label that you can use to mail your phone to us.</p>
 
 							<input type="checkbox" name="sendkit" value="1" class="frm-left-mgrg-rg10">
 							<p class="check-label">I need a complimentary shipping kit sent to my address.</p>
@@ -274,7 +306,7 @@
 
 					<div id="payment-form">
 
-						<h2 style="display: block; clear: both">3. Payment Option</h2>
+						<h2 style="display: block; clear: both">4. Payment Option</h2>
 
 						<p style="margin-bottom: 10px; clear: both;">Select a payment option to recieve your money.</p>
 
@@ -288,7 +320,7 @@
 
 							<img src="/img/cheque.png">
 
-							<p>A cheque addressed to your full name as entered above will be mailed to you.</p>
+							<p hidden="" class="chequep">A cheque addressed to your full name as entered above will be mailed to you.</p>
 
 						</div>
 
@@ -300,11 +332,11 @@
 
 							<img src="/img/PayPal.png">
 
-							<p>Enter your PayPal email address:</p>
+							<p hidden="" class="paypalp">Enter your PayPal email address:</p>
 
-							<input id="paypal-email" type="text" name="paypal-email">
+							<input style="display: none;" class="paypalp" id="paypal-email" type="text" name="paypal-email">
 
-							<p style="margin-left: 0px"> <input id="paypal-email-same-as-email" type="checkbox" name="paypal-email-same-as-email" value="SAME">Same as email entered above</p>
+							<p hidden="" class="paypalp" style="margin-left: 0px"> <input id="paypal-email-same-as-email" type="checkbox" name="paypal-email-same-as-email" value="SAME">Same as email entered above</p>
 
 						</div>
 
@@ -316,11 +348,11 @@
 
 							<!--<img src="/img/interac2.png">-->
 
-							<p>Enter your Interac e-Transfer email address:</p>
+							<p hidden="" class="interacp">Enter your Interac e-Transfer email address:</p>
 
-							<input id="interac-email" type="text" name="interac-email">
+							<input style="display: none;" class="interacp" id="interac-email" type="text" name="interac-email">
 
-							<p style="float: left; width: auto; clear:none; margin-left: 0px"> <input id="interac-email-same-as-email" type="checkbox" name="interac-email-same-as-email" value="SAME">Same as email entered above</p>
+							<p hidden="" class="interacp" style="float: left; width: auto; clear:none; margin-left: 0px"> <input id="interac-email-same-as-email" type="checkbox" name="interac-email-same-as-email" value="SAME">Same as email entered above</p>
 
 						</div>
 
@@ -331,8 +363,8 @@
 						</div>
 
 						<div style="overflow: hidden; clear: both; ">
-							<div onClick="ga('send', 'event', 'Submission', 'Select', 'Final Submission');" onClick="(function() {    var ibl = document.createElement('script');    ibl.type = 'text/javascript'; ibl.async = true;    ibl.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'new.invitebox.com/invitation-camp/8423/invitebox-landing.js?hash='+escape(window.location.hash);    var s = document.getElementsByTagName('script')[0];    s.parentNode.insertBefore(ibl, s);})();"
-							  id="payment-proceed">SUBMIT</div>
+							<div onClick="ga(\"send\", \"event\", \"Submission\", \"Select\", \"Final Submission\");" onClick="(function() {    var ibl = document.createElement(\"script\");    ibl.type = \"text/javascript\"; ibl.async = true;    ibl.src = (\"https:\" == document.location.protocol ? \"https://\" : \"http://\") + \"new.invitebox.com/invitation-camp/8423/invitebox-landing.js?hash=\"+escape(window.location.hash);    var s = document.getElementsByTagName(\"script\")[0];    s.parentNode.insertBefore(ibl, s);})();"
+								id="payment-proceed">SUBMIT</div>
 							<input style="display:none" type="submit" id="submit" value="SUBMIT">
 							<input type="reset" id="reset" value="RESET">
 						</div>
@@ -358,26 +390,27 @@
 						<h3>Sphere</h3>
 
 						<ul class="unstyled">
-							<li><a href="https://www.spherethat.ca/">Home</a></li>
-							<li><a href="https://www.spherethat.ca/why-sphere/">Why Sphere?</a></li>
-							<li><a href="https://www.spherethat.ca/about-us/">About Us</a></li>
-							<li><a href="https://www.spherethat.ca/FAQ/">FAQ</a></li>
-							<li><a href="https://www.spherethat.ca/how-it-works">How It Works</a></li>
-							<li><a href="https://www.spherethat.ca/blog">Blog</a></li>
-							<li><a href="https://www.spherethat.ca/contact/">Contact Us</a></li>
+							<li><a href="/">Home</a></li>
+							<li><a href="/why-sphere/">Why Sphere?</a></li>
+							<li><a href="/about-us/">About Us</a></li>
+							<li><a href="/FAQ/">FAQ</a></li>
+							<li><a href="/how-it-works">How It Works</a></li>
+							<li><a href="/contact/">Contact Us</a></li>
+							<li><a href="/sitemap.xml">Sitemap</a></li>
+							<li><a href="/business">Sell in Bulk</a></li>
 						</ul>
 					</section>
 					<section class="3u 6u$(medium) 12u$(small)">
 						<h3>Sell my Phone</h3>
 						<ul class="unstyled">
-							<li><a href="https://www.spherethat.ca/sell-my-iphone">Sell my iPhone</a></li>
-							<li><a href="https://www.spherethat.ca/sell-my-ipod-touch">Sell my iPod</a></li>
-							<li><a href="https://www.spherethat.ca/sell-my-ipad">Sell my iPad</a></li>
-							<li><a href="https://www.spherethat.ca/sell-my-samsung">Sell my Samsung</a></li>
-							<li><a href="https://www.spherethat.ca/sell-my-blackberry">Sell my BlackBerry</a></li>
-							<li><a href="https://www.spherethat.ca/sell-my-nokia">Sell my Nokia</a></li>
-							<li><a href="https://www.spherethat.ca/sell-my-lg">Sell my LG</a></li>
-							<li><a href="https://www.spherethat.ca/sell-my-htc">Sell my HTC</a></li>
+							<li><a href="/sell-my-iphone">Sell my iPhone</a></li>
+							<li><a href="/sell-my-ipod-touch">Sell my iPod</a></li>
+							<li><a href="/sell-my-ipad">Sell my iPad</a></li>
+							<li><a href="/sell-my-samsung">Sell my Samsung</a></li>
+							<li><a href="/sell-my-blackberry">Sell my BlackBerry</a></li>
+							<li><a href="/sell-my-nokia">Sell my Nokia</a></li>
+							<li><a href="/sell-my-lg">Sell my LG</a></li>
+							<li><a href="/sell-my-htc">Sell my HTC</a></li>
 						</ul>
 					</section>
 					<section class="3u 6u(medium) 12u$(small)">
@@ -385,7 +418,7 @@
 						<ul class="unstyled">
 							<li><a href="https://www.facebook.com/spherethat">Facebook</a></li>
 							<li><a href="https://www.twitter.com/spherethat">Twitter</a></li>
-							<li><a href="https://www.spherethat.ca/contact">Email</a></li>
+							<li><a href="/contact">Email</a></li>
 
 						</ul>
 					</section>
@@ -393,7 +426,7 @@
 						<h3>Where we hang out:</h3>
 						<ul class="unstyled">
 							<li>326 West Cordova Street</li>
-							
+
 							<li>Vancouver, BC V6B 1E8</li>
 							</li>
 						</ul>
@@ -423,9 +456,10 @@
 
 		</div>
 	</footer>
+
 	<script>
 		(function(i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r;
+			i["GoogleAnalyticsObject"] = r;
 			i[r] = i[r] || function() {
 				(i[r].q = i[r].q || []).push(arguments)
 			}, i[r].l = 1 * new Date();
@@ -434,11 +468,12 @@
 			a.async = 1;
 			a.src = g;
 			m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-		ga('create', 'UA-48810167-1', 'spherethat.ca');
-		ga('require', 'displayfeatures');
-		ga('send', 'pageview');
+		})(window, document, "script", "//www.google-analytics.com/analytics.js", "ga");
+		ga("create", "UA-48810167-1", "spherethat.ca");
+		ga("require", "displayfeatures");
+		ga("send", "pageview");
 	</script>
+
 	<!--Start of Tawk.to Script-->
 	<script type="text/javascript">
 		var Tawk_API = Tawk_API || {},
@@ -447,18 +482,15 @@
 			var s1 = document.createElement("script"),
 				s0 = document.getElementsByTagName("script")[0];
 			s1.async = true;
-			s1.src = 'https://embed.tawk.to/575c821fda47edb0468702b4/default';
-			s1.charset = 'UTF-8';
-			s1.setAttribute('crossorigin', '*');
+			s1.src = "https://embed.tawk.to/575c821fda47edb0468702b4/default";
+			s1.charset = "UTF-8";
+			s1.setAttribute("crossorigin", "*");
 			s0.parentNode.insertBefore(s1, s0);
 		})();
 	</script>
 	<!--End of Tawk.to Script-->
-	<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/971508199/?value=0&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
+
 
 </body>
-</html>
+'
+?>

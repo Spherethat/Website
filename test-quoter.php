@@ -23,8 +23,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="../js/scripts.js"></script>
-	<script type="text/javascript" src="../js/formscripts.js"></script>
+	<script type="text/javascript" src="../js/scripts.js?v=4"></script>
+	<script type="text/javascript" src="../js/formscripts.js?v=4"></script>
 <script>
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() {
@@ -160,8 +160,8 @@ s0.parentNode.insertBefore(s1,s0);
 							<section class="3u$ 6u$(medium) 12u$(small)">
 								<h3>Where we hang out:</h3>
 								<ul class="unstyled">
-									<li>314 West Cordova Street</li>
-									<li>Suite 225</li>
+									<li>326 West Cordova Street</li>
+									
 									<li>Vancouver, BC V6B 1E8</li>
 									</li>
 								</ul>
