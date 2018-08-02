@@ -24,21 +24,21 @@ echo'
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Ubuntu:400,700" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="../js/scripts.js?v=4?v=4"></script>
-	<script type="text/javascript" src="../js/formscripts.js?v=4?v=4"></script>
+	<script type="text/javascript" src="../js/scripts.js?v=4"></script>
+	<script type="text/javascript" src="../js/formscripts.js?v=4"></script>
 
 	<script type="text/javascript">
-	var gadget = "'.$gadget.'";
-	var gadgetdesc = "'.$gadgetdesc.'";
+	var phone = "'.$gadget.'";
+	var phonedesc = "'.$gadgetdesc.'";
 	var brand = "'.$brand.'";
-	var upperGD = gadgetdesc.toUpperCase();
+	var upperGD = phonedesc.toUpperCase();
 	var year = (new Date()).getFullYear();
 
 	function runnit(){
 	document.getElementById("headertext").innerHTML = "<h9>SELL YOUR " + upperGD + "</h9>";
 	document.getElementById("copyright").innerHTML = "<p>Copyright &copy; 2013 - " + year +" Sphere</p>";
-	document.title = "Sell Your " + gadgetdesc + " | Sphere - Sell Your Phone Online Canada";
-	document.getElementsByTagName("meta")["description"].content = "Sell your " + gadgetdesc + " to Sphere and get top dollar for it. Get a quote for yours today. Free Shipping and Fast payments!"
+	document.title = "Sell Your " + phonedesc + " | Sphere - Sell Your Phone Online Canada";
+	document.getElementsByTagName("meta")["description"].content = "Sell your " + phonedesc + " to Sphere and get top dollar for it. Get a quote for yours today. Free Shipping and Fast payments!"
 	document.getElementById("actlock").innerHTML = actlock[brand];
 	};	</script>
 

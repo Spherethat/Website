@@ -202,7 +202,7 @@ if(!$error && !$paymenterror)
 		."ADDRESS-------------------------------\r\n"
 		."First Name: ".$fname."   //fname \r\n"
 		."Last Name: ".$lname."   //lname \r\n"
-		."Address: ".$address1." ".$address2."   //address \r\n"
+		."Address: ".$address1." ~ ".$address2."   //address \r\n"
 		."City: ".$city. "   //city \r\n"
 		."Province: ".$province. "   //province \r\n"
 		."Postal Code: ".$postalcode. "   //postalcode \r\n"

@@ -1,0 +1,453 @@
+@font-face
+{
+font-family: Code39AzaleaFont;
+src: url('https://s3.amazonaws.com/kn-includes/fonts/Code39Azalea.eot') format('embedded-opentype'), /* IE9 Compat Modes */
+url('https://s3.amazonaws.com/kn-includes/fonts/Code39Azalea.woff') format('woff'), /* Modern Browsers */
+url('https://s3.amazonaws.com/kn-includes/fonts/Code39Azalea.ttf') format('truetype'), /* Safari, Android, iOS */
+url('https://s3.amazonaws.com/kn-includes/fonts/Code39Azalea.svg#Code39Azalea') format('svg'); /* Legacy iOS */
+font-weight: normal;
+font-style: normal;
+}
+/* These field IDs will need to be changed to match your app */
+/* You can also make changes to the font-size here if you need to */
+.field_140 td span { font-size: 80px; font-family: Code39AzaleaFont }
+
+.field_140 td span:before
+{
+    content: "*";
+}
+
+.field_140 td span:after
+{
+    content: "*";
+}
+
+/* Live List fixes */
+
+#kn-scene_267 .kn-filter-menu
+	{
+      font-size:24px;
+      border-radius: 9px;
+      margin-right: 20px;
+}
+
+#kn-scene_267 .kn-filter-menu a
+	{
+      padding-left:40px;
+      padding-right:40px;
+      padding-top:10px;
+      padding-bottom:10px;
+      font-weight:bold;
+}
+
+#kn-scene_267 .kn-filter-menu li:first-child a, #kn-scene_267 .kn-tab-menu li:first-child a, #kn-scene_267 .kn-filter-menu li:last-child a, #kn-scene_267 .kn-tab-menu li:last-child a
+	{
+      border-radius:9px;
+      margin-right:20px;
+}
+
+
+#kn-scene_267 .kn-filter-menu a:hover, #kn-scene_267 .kn-filter-menu li.active a, #kn-scene_267 .kn-tab-menu .active a, #kn-scene_267 .kn-tab-menu a:hover
+
+	{
+      background-color:#ccc;
+}
+
+#kn-scene_267 .kn-filter-menu a, #kn-scene_267 .kn-tab-menu a
+	{
+      border-width: 1px 1px 1px 1px;
+      border-radius: 9px;
+      margin-right: 20px;
+}
+
+#kn-scene_267 .kn-nub-internal
+	{
+      border-top: 9px solid #ccc;
+}
+
+#kn-scene_267 .kn-table table a
+	{
+      font-weight:bold;
+      color:#E25829;
+}
+
+
+#view_556 /* Submit Requests to Sphere Button */
+	{
+
+      border-width: 1px 1px 1px 1px;
+      border-radius: 9px;
+      margin-right: 20px;
+   	  border-radius:9px;
+      margin-right:20px;
+      padding-left:40px;
+      padding-right:40px;
+      padding-top:15px;
+      padding-bottom:15px;
+      font-weight:bold;
+      font-size:22px;
+}
+
+#view_807 /* Switch to the Grade D List Button */
+	{
+
+      border-width: 1px 1px 1px 1px;
+      border-radius: 9px;
+      margin-right: 20px;
+   	  border-radius:9px;
+      margin-right:20px;
+      padding-left:40px;
+      padding-right:40px;
+      padding-top:15px;
+      padding-bottom:15px;
+      font-weight:bold;
+      font-size:22px;
+	  margin-left:35%;
+  	  margin-right:35%;
+	  text-align:center;
+}
+
+#view_546
+{
+    margin: 0 0 2px;
+}
+
+#view_807
+
+{
+}
+
+/* Live Grade D List fixes */
+
+#kn-scene_396 .kn-filter-menu
+	{
+      font-size:24px;
+      border-radius: 9px;
+      margin-right: 20px;
+}
+
+#kn-scene_396 .kn-filter-menu a
+	{
+      padding-left:50px;
+      padding-right:50px;
+      padding-top:20px;
+      padding-bottom:20px;
+      font-weight:bold;
+}
+
+#kn-scene_396 .kn-filter-menu li:first-child a, #kn-scene_396 .kn-tab-menu li:first-child a, #kn-scene_396 .kn-filter-menu li:last-child a, #kn-scene_396 .kn-tab-menu li:last-child a
+	{
+      border-radius:9px;
+      margin-right:20px;
+}
+
+
+#kn-scene_396 .kn-filter-menu a:hover, #kn-scene_396 .kn-filter-menu li.active a, #kn-scene_396 .kn-tab-menu .active a, #kn-scene_396 .kn-tab-menu a:hover
+
+	{
+      background-color:#ccc;
+}
+
+#kn-scene_396 .kn-filter-menu a, #kn-scene_396 .kn-tab-menu a
+	{
+      border-width: 1px 1px 1px 1px;
+      border-radius: 9px;
+      margin-right: 20px;
+}
+
+#kn-scene_396 .kn-nub-internal
+	{
+      border-top: 9px solid #ccc;
+}
+
+#kn-scene_396 .kn-table table a
+	{
+      font-weight:bold;
+      color:#E25829;
+}
+
+#view_811
+{
+    margin: 0 0 2px;
+}
+
+#view_826
+
+{
+  margin-left:40%;
+  margin-right:40%;
+  text-align:center;
+}
+
+.button-new {
+   border: 1px solid #0a3c59;
+   background: #accfe6;
+   background: -webkit-gradient(linear, left top, left bottom, from(#accfe6), to(#accfe6));
+   background: -webkit-linear-gradient(top, #accfe6, #accfe6);
+   background: -moz-linear-gradient(top, #accfe6, #accfe6);
+   background: -ms-linear-gradient(top, #accfe6, #accfe6);
+   background: -o-linear-gradient(top, #accfe6, #accfe6);
+   background-image: -ms-linear-gradient(top, #accfe6 0%, #accfe6 100%);
+   padding: 13px 26px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   text-shadow: #7ea4bd 0 1px 0;
+   color: #06416c;
+   font-size: 16px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button-new:hover {
+   border: 1px solid #0a3c59;
+   text-shadow: #7fbbe0 0 1px 0;
+   background: #7fbbe0;
+   background: -webkit-gradient(linear, left top, left bottom, from(#7fbbe0), to(#7fbbe0));
+   background: -webkit-linear-gradient(top, #7fbbe0, #7fbbe0);
+   background: -moz-linear-gradient(top, #7fbbe0, #7fbbe0);
+   background: -ms-linear-gradient(top, #7fbbe0, #7fbbe0);
+   background: -o-linear-gradient(top, #7fbbe0, #7fbbe0);
+   background-image: -ms-linear-gradient(top, #7fbbe0 0%, #7fbbe0 100%);
+   color: #06416c;
+   }
+.button-new:active {
+   text-shadow: #6bb2db 0 1px 0;
+   border: 1px solid #0a3c59;
+   background: #6bb2db;
+   background: -webkit-gradient(linear, left top, left bottom, from(#6bb2db), to(#7fbbe0));
+   background: -webkit-linear-gradient(top, #6bb2db, #6bb2db);
+   background: -moz-linear-gradient(top, #6bb2db, #6bb2db);
+   background: -ms-linear-gradient(top, #6bb2db, #6bb2db);
+   background: -o-linear-gradient(top, #6bb2db, #6bb2db);
+   background-image: -ms-linear-gradient(top, #6bb2db 0%, #6bb2db 100%);
+   color: #06416c;
+   }
+
+.button-smol {
+   border: 1px solid #0a3c59;
+   background: #accfe6;
+   background: -webkit-gradient(linear, left top, left bottom, from(#accfe6), to(#accfe6));
+   background: -webkit-linear-gradient(top, #accfe6, #accfe6);
+   background: -moz-linear-gradient(top, #accfe6, #accfe6);
+   background: -ms-linear-gradient(top, #accfe6, #accfe6);
+   background: -o-linear-gradient(top, #accfe6, #accfe6);
+   background-image: -ms-linear-gradient(top, #accfe6 0%, #accfe6 100%);
+   padding: 7.5px 15px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   text-shadow: #7ea4bd 0 1px 0;
+   color: #06416c;
+   font-size: 12px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button-smol:hover {
+   border: 1px solid #0a3c59;
+   text-shadow: #7fbbe0 0 1px 0;
+   background: #7fbbe0;
+   background: -webkit-gradient(linear, left top, left bottom, from(#7fbbe0), to(#7fbbe0));
+   background: -webkit-linear-gradient(top, #7fbbe0, #7fbbe0);
+   background: -moz-linear-gradient(top, #7fbbe0, #7fbbe0);
+   background: -ms-linear-gradient(top, #7fbbe0, #7fbbe0);
+   background: -o-linear-gradient(top, #7fbbe0, #7fbbe0);
+   background-image: -ms-linear-gradient(top, #7fbbe0 0%, #7fbbe0 100%);
+   color: #06416c;
+   }
+.button-smol:active {
+   text-shadow: #6bb2db 0 1px 0;
+   border: 1px solid #0a3c59;
+   background: #6bb2db;
+   background: -webkit-gradient(linear, left top, left bottom, from(#6bb2db), to(#7fbbe0));
+   background: -webkit-linear-gradient(top, #6bb2db, #6bb2db);
+   background: -moz-linear-gradient(top, #6bb2db, #6bb2db);
+   background: -ms-linear-gradient(top, #6bb2db, #6bb2db);
+   background: -o-linear-gradient(top, #6bb2db, #6bb2db);
+   background-image: -ms-linear-gradient(top, #6bb2db 0%, #6bb2db 100%);
+   color: #06416c;
+   }
+
+
+.button-big {
+   border: 1px solid #0a3c59;
+   background: #accfe6;
+   background: -webkit-gradient(linear, left top, left bottom, from(#accfe6), to(#accfe6));
+   background: -webkit-linear-gradient(top, #accfe6, #accfe6);
+   background: -moz-linear-gradient(top, #accfe6, #accfe6);
+   background: -ms-linear-gradient(top, #accfe6, #accfe6);
+   background: -o-linear-gradient(top, #accfe6, #accfe6);
+   background-image: -ms-linear-gradient(top, #accfe6 0%, #accfe6 100%);
+   padding: 17px 34px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   text-shadow: #7ea4bd 0 1px 0;
+   color: #06416c;
+   font-size: 22px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button-big:hover {
+   border: 1px solid #0a3c59;
+   text-shadow: #7fbbe0 0 1px 0;
+   background: #7fbbe0;
+   background: -webkit-gradient(linear, left top, left bottom, from(#7fbbe0), to(#7fbbe0));
+   background: -webkit-linear-gradient(top, #7fbbe0, #7fbbe0);
+   background: -moz-linear-gradient(top, #7fbbe0, #7fbbe0);
+   background: -ms-linear-gradient(top, #7fbbe0, #7fbbe0);
+   background: -o-linear-gradient(top, #7fbbe0, #7fbbe0);
+   background-image: -ms-linear-gradient(top, #7fbbe0 0%, #7fbbe0 100%);
+   color: #06416c;
+   }
+.button-big:active {
+   text-shadow: #6bb2db 0 1px 0;
+   border: 1px solid #0a3c59;
+   background: #6bb2db;
+   background: -webkit-gradient(linear, left top, left bottom, from(#6bb2db), to(#7fbbe0));
+   background: -webkit-linear-gradient(top, #6bb2db, #6bb2db);
+   background: -moz-linear-gradient(top, #6bb2db, #6bb2db);
+   background: -ms-linear-gradient(top, #6bb2db, #6bb2db);
+   background: -o-linear-gradient(top, #6bb2db, #6bb2db);
+   background-image: -ms-linear-gradient(top, #6bb2db 0%, #6bb2db 100%);
+   color: #06416c;
+   }
+
+.kn-crumbtrail {
+	/*centering*/
+	display: inline-block;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+	overflow: hidden;
+	border-radius: 5px;
+	/*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+	counter-reset: flag;
+ 	text-align: center
+}
+
+.kn-crumbtrail a {
+	text-decoration: none;
+	outline: none;
+	display: block;
+	float: left;
+	font-size: 12px;
+	line-height: 36px;
+	color: white !important;
+	/*need more margin on the left of links to accomodate the numbers*/
+	padding: 0 10px 0 60px;
+	background: #666;
+	background: linear-gradient(#666, #333);
+	position: relative;
+}
+/*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+.kn-crumbtrail a:first-child {
+	padding-left: 46px;
+	border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
+}
+.kn-crumbtrail a:first-child:before {
+	left: 14px;
+}
+.kn-crumbtrail a:last-child {
+	border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
+	padding-right: 20px;
+}
+
+/*hover/active styles*/
+.kn-crumbtrail a.active, .kn-crumbtrail a:hover{
+	background: #333;
+	background: linear-gradient(#333, #000);
+}
+.kn-crumbtrail a.active:after, .kn-crumbtrail a:hover:after {
+	background: #333;
+	background: linear-gradient(135deg, #333, #000);
+}
+
+/*adding the arrows for the kn-crumbtrails using rotated pseudo elements*/
+.kn-crumbtrail a:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -18px; /*half of square's length*/
+	/*same dimension as the line-height of .kn-crumbtrail a */
+	width: 36px;
+	height: 36px;
+	/*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's:
+	length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+	if diagonal required = 1; length = 1/1.414 = 0.707*/
+	transform: scale(0.707) rotate(45deg);
+	/*we need to prevent the arrows from getting buried under the next link*/
+	z-index: 1;
+	/*background same as links but the gradient will be rotated to compensate with the transform applied*/
+	background: #666;
+	background: linear-gradient(135deg, #666, #333);
+	/*stylish arrow design using box shadow*/
+	box-shadow:
+		2px -2px 0 2px rgba(0, 0, 0, 0.4),
+		3px -3px 0 2px rgba(255, 255, 255, 0.1);
+	/*
+		5px - for rounded arrows and
+		50px - to prevent hover glitches on the border created using shadows*/
+	border-radius: 0 5px 0 50px;
+}
+/*we dont need an arrow after the last link*/
+.kn-crumbtrail a:last-child:after {
+	content: none;
+}
+/*we will use the :before element to show numbers*/
+.kn-crumbtrail a:before {
+	content: counter(flag);
+	counter-increment: flag;
+	/*some styles now*/
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin: 8px 0;
+	position: absolute;
+	top: 0;
+	left: 30px;
+	background: #444;
+	background: linear-gradient(#444, #222);
+	font-weight: bold;
+}
+
+
+
+.kn-back-link a , .kn-link a{
+	text-decoration: none;
+	outline: none;
+	display: inline-block;
+	float: left;
+	font-size: 12px;
+	line-height: 36px;
+	color: white !important;
+	/*need more margin on the left of links to accomodate the numbers*/
+	padding: 0 10px 0 10px;
+	background: #666;
+	background: linear-gradient(#666, #333) !important;
+	position: relative;
+    display: inline-block;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.35) !important;
+    overflow: hidden;
+	border-radius: 10px !important;
+}
+
+/*hover*/
+.kn-back-link a.active, .kn-back-link a:hover, .kn-link a.active, .kn-link a:hover{
+	background: #333 ;
+	background: linear-gradient(#333, #000) !important;
+}
+
+.kn-button-menu{
+ text-align: center !important;
+}
