@@ -25,7 +25,7 @@ echo'
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="../js/scripts.js?v=4"></script>
-	<script type="text/javascript" src="../js/formscripts.js?v=4"></script>
+	<script type="text/javascript" src="../js/formscripts.js?v=5"></script>
 
 	<script type="text/javascript">
 	var phone = "'.$gadget.'";

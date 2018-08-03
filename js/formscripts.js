@@ -136,8 +136,8 @@ var formHeight = 950;
 		var paymentFormHeight = 550;
 }
 else{
- var formHeight = 850; /*old value= 620*/
-		var paymentFormHeight = 700; /*old value = 450*/
+ var formHeight = 1250; /*old value= 620*/
+		var paymentFormHeight = 600; /*old value = 450*/
 }
 
 
