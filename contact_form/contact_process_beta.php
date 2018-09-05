@@ -58,12 +58,6 @@ if(!$condition)
 $error .= 'Please tell us the condition of your phone.<br />';
 }
 
-// Check name
-
-//if(!$name)
-//{
-//$error .= 'Please enter your full name.<br />';
-//}
 
 // Check Address
 
@@ -189,6 +183,9 @@ if(($payment_option == "Interac") && !$interac_email)
 $paymenterror = "Please enter an Interac e-Transfer email.";
 }
 
+if(!empty($promo)){
+$paymenterror = 'The promo code you\'ve entered is either invalid or expired. <br>';
+}
 
 
 if(!$error && !$paymenterror)
@@ -209,7 +206,7 @@ if(!$error && !$paymenterror)
 		."Email: ".$email. "   //email \r\n"
 		."Phone: ".$phone. "   //phone \r\n\r\n"
 		."Send Kit? : ".$sendkit_response."   //sendkit \r\n"
-		."Newsletter: ".$responsetonewsletter."  //newsletter\r\n\r\n"
+		."Newsletter: ".$responsetonewsletter."  //newsletter \r\n\r\n"
 		."Payment Method: ".$payment_option."   //paymentoption \r\n"
 		."Payment Email: ".$payment_email."   //paymentemail \r\n"
 		."Promo Code: ".$promo."   //promocode \r\n\r\n"

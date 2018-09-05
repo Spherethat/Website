@@ -284,7 +284,7 @@ echo'
 
 							<br><br>
 
-							<p style="line-height: 120%; margin-bottom: 10px; font-family: helvetica, open sans, arial; clear: both; color: #666">If you require shipping materials, we can send a free shipping kit direct to your doorstep (3-5 business days). Otherwise, we\"ll email you a prepaid shipping label that you can use to mail your phone to us.</p>
+							<p style="line-height: 120%; margin-bottom: 10px; font-family: helvetica, open sans, arial; clear: both; color: #666">If you require shipping materials, we can send a free shipping kit direct to your doorstep (3-5 business days). Otherwise, we\'ll email you a prepaid shipping label that you can use to mail your phone to us.</p>
 
 							<input type="checkbox" name="sendkit" value="1" class="frm-left-mgrg-rg10">
 							<p class="check-label">I need a complimentary shipping kit sent to my address.</p>
@@ -426,7 +426,6 @@ echo'
 						<h3>Where we hang out:</h3>
 						<ul class="unstyled">
 							<li>326 West Cordova Street</li>
-
 							<li>Vancouver, BC V6B 1E8</li>
 							</li>
 						</ul>

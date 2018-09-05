@@ -109,12 +109,12 @@ b {
 				#hook h1.heading-medium {
 					font-size: 44px;
 				}
-				
+
 				#hook h1.heading-larger {
 	font-size: 60px;
 	font-family: Ubuntu, "Ubuntu Bold", "Ubuntu Light", "Ubuntu Medium";
 				}
-				
+
 			#hook h9 {
 	font-family: Ubuntu, "Ubuntu Bold", "Ubuntu Light", "Ubuntu Medium";
 	font-size: 37px;
@@ -187,7 +187,7 @@ b {
 					color: #049fe0;
 					font-weight: bold;
 					text-align: center;
-					padding: 10px 0;	
+					padding: 10px 0;
 				}
 
 				#step-1 img, #step-2 img, #step-3 img {
@@ -195,11 +195,11 @@ b {
 				}
 
 				#step-1 h2, #step-3 h2 {
-					
+
 				}
 
 				#step-2 h2 {
-					
+
 				}
 
 				#step-1 p, #step-2 p, #step-3 p {
@@ -314,7 +314,7 @@ b {
 					padding: 3px;
 					margin: 0;
 					font-size: 14px;
-					margin-bottom: 10px;		
+					margin-bottom: 10px;
 				}
 
 					#contact-info form input:focus, #contact-info form textarea:focus {
@@ -322,16 +322,14 @@ b {
 						outline: none;
 					}
 
-					#contact-info form input#fname,#contact-info form input#lname {
-						width: 230px;
-					}
-
-					#contact-info form input#email, #contact-info form textarea {
-						width: 496px;
+					#contact-info form input#cname, #contact-info form input#organization, #contact-info form input#email, #contact-info form input#phone{
+					  width: 29em;
 					}
 
 					#contact-info form textarea {
-						height: 70px;
+					  height: 70px;
+					  width: 60em;
+					  margin-bottom: 2.5em ;
 					}
 
 					#contact-info #note {
@@ -345,18 +343,25 @@ b {
 							color: #049fe0;
 						}
 
-					#contact-info input#submit, #contact-info input#reset {
-						border: 0;
-						width: 251px;
-						float: left;
-						padding: 10px 0;
-					}
+						#contact-info input#submit, #contact-info input#reset {
+						  border: 0;
+						  width: 29em;
+						  float: left;
+						  padding: 10px 0;
+						}
 
 					#contact-info input#submit {
-						margin-right: 10px;
-					}
+	  margin-right: 2em;
+	}
 
-
+	.cLeft{
+	  clear: right;
+	  float: left;
+	  width: 29em !important;
+	}
+	.cRight{
+	  float: left;
+	}
 		#innerContainer {
 	overflow: hidden;
 	padding: 0 15px;
@@ -483,12 +488,12 @@ b {
 				height: 200px;
 					background: url(../img/btnGradientDown_longer.png);
 				}
-				
+
 			#UnlistedPhone {
 				padding: 10px;
 				text-align: center;
 			}
-			
+
 				#UnlistedPhone a {
 	font-family: "helvetica neue", "open sans", arial;
 	color: #999;
@@ -540,7 +545,7 @@ b {
 					#innerContainer .twoSplit p a:hover {
 	color: #03648d;
 					}
-					
+
 				.twoSplit ol {
 					list-style-type: decimal;
 				}
@@ -632,7 +637,7 @@ b {
 			border-radius: 5px;
 			box-shadow: 0 1px 1px 1px #c4c4c4;
 			cursor: pointer;
-			background-size: 3px 70px; 
+			background-size: 3px 70px;
 			background-repeat: repeat;
 		}
 
@@ -664,7 +669,7 @@ b {
 
 /* the hovering your offer box on the side: */
 
-	#quote { 
+	#quote {
 		width: 255px;
 		border-left: 5px solid #d4d4d4;
 		background: #f0f0f0;
@@ -974,7 +979,7 @@ a.btn1-longer {
 		#wrapper {
     width: 100%;
     margin: 0px auto;
-}	
+}
 
 #hook h1.heading-larger {
     font-size: 45px;
@@ -986,7 +991,7 @@ a.btn1-longer {
     color: #049FE0;
     margin-bottom: 10px;
     font-family: Ubuntu,"Ubuntu Bold","Ubuntu Light","Ubuntu Medium";
-}			
+}
 #hook h1.heading-smaller {
     font-size: 30px;
 }
@@ -1000,11 +1005,11 @@ a.btn1-longer {
     width: 100%;
     margin: 0px auto;
 }
-ul#links li a 
+ul#links li a
 {
 	font-size:12px;
 }
-#footer p#copyright 
+#footer p#copyright
 {
 	font-size:12px;
 }
@@ -1040,7 +1045,7 @@ a.btn1-longer {
 #hook h1.heading-larger {
     font-size: 25px;
     font-family: Ubuntu,"Ubuntu Bold","Ubuntu Light","Ubuntu Medium";
-}			
+}
 #hook h1 {
     font-size: 35px;
     font-weight: bold;

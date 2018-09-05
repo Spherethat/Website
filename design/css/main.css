@@ -29,6 +29,7 @@
   font-size: 53px;
   font-weight: bold;
   color: #049fe0;
+
   margin-bottom: 10px;
   font-family: Ubuntu, "Ubuntu Bold", "Ubuntu Light", "Ubuntu Medium";
 }
@@ -170,19 +171,28 @@ hr {
 
 #questions h2 {
   font-family: "helvetica neue", "open sans", arial;
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 25px;
-  margin-bottom: 5px;
+  margin-bottom: 1em;
   color: #049fe0;
-  font-weight: bold;
+  font-weight: normal;
 }
 
-#questions p {
+#questions h2 a:hover{
+  text-decoration: none;
+  color: #36b2e6;
+}
+
+#questions p{
   font-style: 16px;
-  margin-bottom: 10px;
+  margin: 0 0 2em 0;
   color: #666;
   line-height: 20px;
   font-family: "Helvetica Neue";
+  font-weight: 350;
+  text-align: justify;
+  text-justify: inter-word;
+  visibility: visible;
 }
 
 #questions p a {
@@ -194,7 +204,6 @@ hr {
   color: #03648d;
 }
 
-#terms-and-conditions {}
 
 #terms-and-conditions p {
   font-family: 'helvetica neue', 'open sans', arial;
@@ -230,16 +239,16 @@ hr {
 }
 
 #contact-info form p.form-label {
-  font-size: 12px;
-  margin-bottom: 3px;
+  font-size: 15px;
+  margin-bottom: 5px;
+  text-align: left;
+  margin-left: 5%;
 }
 
 #contact-info form input, #contact-info form textarea {
   border: 5px solid #f0f0f0;
-  padding: 3px;
-  margin: 0;
+  margin: 0 0 10px 5%;
   font-size: 14px;
-  margin-bottom: 10px;
 }
 
 #contact-info form input:focus, #contact-info form textarea:focus {
@@ -247,16 +256,15 @@ hr {
   outline: none;
 }
 
-#contact-info form input#fname, #contact-info form input#lname, #contact-info form input#organization {
-  width: 330px;
-}
-
-#contact-info form input#email, #contact-info form textarea {
-  width: 800px;
+#contact-info form input#cname, #contact-info form input#organization, #contact-info form input#email, #contact-info form input#phone{
+  width: 90%;
 }
 
 #contact-info form textarea {
-  height: 70px;
+  height: 150px;
+  width: 90%;
+  margin-bottom: 2.5em;
+
 }
 
 #contact-info #note {
@@ -272,13 +280,9 @@ hr {
 
 #contact-info input#submit, #contact-info input#reset {
   border: 0;
-  width: 480px;
-  float: left;
-  padding: 10px 0;
-}
-
-#contact-info input#submit {
-  margin-right: 10px;
+  width: 80%;
+  padding: 10px 0px;
+  margin-left: 10%;
 }
 
 #innerContainer {

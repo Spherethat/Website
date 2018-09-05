@@ -9,8 +9,9 @@ $post = (!empty($_POST)) ? true : false;
 if($post)
 {
 
-$fname = stripslashes($_POST['fname']);
-$lname = stripslashes($_POST['lname']);
+$name = stripslashes($_POST['name']);
+$org = ($_POST['organization']);
+$phone = ($_POST['phone']);
 $email = trim($_POST['email']);
 $message = ($_POST['message']);
 
@@ -18,9 +19,9 @@ $error = '';
 
 // Check name
 
-if(!$fname || !$lname)
+if(!$name)
 {
-$error .= 'Please enter your full name.<br />';
+$error .= 'Please enter your name.<br />';
 }
 
 // Check email
@@ -32,17 +33,19 @@ $error .= 'Please enter an e-mail address.<br />';
 
 // Check message (length)
 
-if(!$message || strlen($message) < 10)
+if(!$message)
 {
-$error .= "Please enter your message. It should have at least 10 characters.<br />";
+$error .= "Please enter your message.<br />";
 }
 
 
 if(!$error)
 {
 $mail = mail(HELP_FORM, "Sphere Contact Form",
-    "Name: ".$fname." ".$lname."\r\n"
+    "Name: ".$name."\r\n"
 	."Email: ".$email."\r\n"
+  ."Phone: ".$phone. "\r\n"
+  ."Organization: ".$org. "\r\n"
 	."Message: \r\n"
 	.$message);
 
