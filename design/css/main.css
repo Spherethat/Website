@@ -126,9 +126,7 @@ hr {
   clear: both;
 }
 
-#step-1 h2, #step-3 h2 {}
 
-#step-2 h2 {}
 
 #step-1 p, #step-2 p, #step-3 p {
   color: #666;
@@ -307,7 +305,6 @@ hr {
   border-radius: 20px;
 }
 
-#innerContainer .halfbutton:hover {}
 
 #innerContainer .left {
   margin-right: 20px;
@@ -358,7 +355,6 @@ a.btn1 {
   width: 190px;
   height: 200px;
   padding: 10px;
-  background: url(../img/btnGradient.png);
   border-radius: 5px;
   box-shadow: 0 1px 1px 1px #c4c4c4;
   margin-bottom: 15px;

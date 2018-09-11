@@ -300,7 +300,7 @@
 	input[type="checkbox"],
 	input[type="radio"] {
 		/*-moz-appearance: none;
-		-webkit-appearance: none; 
+		-webkit-appearance: none;
 		-o-appearance: none;
 		-ms-appearance: none;
 		appearance: none;*/
@@ -841,11 +841,11 @@ input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
 	.button {
-		
+
 		padding: 0.5em 1em 0.5em 1em;
-		
+
 	}
-	
+
 }
 
 		input[type="submit"]:hover,
@@ -997,8 +997,8 @@ input[type="submit"],
 			height: 95px;
 			background: url(../images/headerLogo.png);
 			background-size: 260px 95px;
-			
-			
+
+
 		}
 		#header h1 {
 			color: #ffffff;
@@ -1081,7 +1081,7 @@ input[type="submit"],
 
 /* Banner */
 .bnr-prod
-{	
+{
 	width:12.5%;
 }
 .bnr-prod .box {
@@ -1095,22 +1095,22 @@ input[type="submit"],
 	    background-color: #F5F5F5;
     border-bottom: 1px solid rgba(144, 144, 144, 0.25);
     border-top: 1px solid rgba(144, 144, 144, 0.25);
-   
-	/* Theoretically for IE 8 & 9 (more valid) */	
+
+	/* Theoretically for IE 8 & 9 (more valid) */
 	/* ...but not required as filter works too */
 	/* should come BEFORE filter */
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-	
+
 	/* This works in IE 8 & 9 too */
 	/* ... but also 5, 6, 7 */
 	filter: alpha(opacity=70);
-	
+
 	/* Older than Firefox 0.9 */
 	-moz-opacity:.7;
-	
+
 	/* Safari 1.x (pre WebKit!) */
 	-khtml-opacity: .7;
-    
+
 	/* Modern!
 	/* Firefox 0.9+, Safari 2?, Chrome any?
 	/* Opera 9+, IE 9+ */
@@ -1122,22 +1122,22 @@ input[type="submit"],
 	    background-color: #F5F5F5;
     border-bottom: 1px solid rgba(144, 144, 144, 0.25);
     border-top: 1px solid rgba(144, 144, 144, 0.25);
-    
-	/* Theoretically for IE 8 & 9 (more valid) */	
+
+	/* Theoretically for IE 8 & 9 (more valid) */
 	/* ...but not required as filter works too */
 	/* should come BEFORE filter */
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	
+
 	/* This works in IE 8 & 9 too */
 	/* ... but also 5, 6, 7 */
 	filter: alpha(opacity=100);
-	
+
 	/* Older than Firefox 0.9 */
 	-moz-opacity:1;
-	
+
 	/* Safari 1.x (pre WebKit!) */
 	-khtml-opacity: 1;
-    
+
 	/* Modern!
 	/* Firefox 0.9+, Safari 2?, Chrome any?
 	/* Opera 9+, IE 9+ */
@@ -1153,7 +1153,7 @@ input[type="submit"],
 	position:absolute;
 	top:100px;
 	}
-	
+
 	#banner {
 		background-image: url(../images/dark_tint.png), url(../images/phone_bg.jpg);
 		background-position: center center;
@@ -1180,8 +1180,8 @@ input[type="submit"],
 			margin-bottom: 1.75em;
 			margin-left: 0px;
 		}
-		
-	
+
+
 	#banner-business {
 		background-image: url(../images/medium_tint.png), url(../images/phone_business_bg.jpg);
 		background-position: center center;
@@ -1224,7 +1224,7 @@ input[type="submit"],
 			border-top: 1px solid rgba(144, 144, 144, 0.25);
 		}
 
-			
+
 			.wrapper.style1 .box {
 				background-color: #fff;
 				padding: 2em 1em;
@@ -1381,8 +1381,8 @@ input[type="submit"],
 		.grid-demo .row.flush > div:last-child span {
 			border-radius: 0 4px 4px 0;
 		}
-		
-	
+
+
 		#hook {
 			text-align: center;
 			margin-bottom: 30px;
@@ -1406,13 +1406,13 @@ font-weight: 700;
 				#hook h1.heading-medium {
 					font-size: 44px;
 				}
-				
+
 				#hook h1.heading-larger {
 	font-size: 45px;
 font-family: Ubuntu Medium ,'Ubuntu', "Raleway", Helvetica, sans-serif;
 font-weight: bold;
 				}
-				
+
 			#hook h9 {
 	font-family: Ubuntu, "Ubuntu Bold", "Ubuntu Light", "Ubuntu Medium",'Ubuntu',;
 	font-size: 37px;
@@ -1429,17 +1429,17 @@ font-weight: bold;
 			padding-bottom:20px;
 			padding-left:70px;
 		}
-		
+
 #hooks a.button {
 			align:center;
 			text-align:center
 		}
-		
+
 .pad-left
 {
 	padding-left:60px;
 }
-		
+
 #hooks h1.heading-larger {
 	font-size: 64px;
 	font-family: Ubuntu Medium , 'Ubuntu', "Raleway", Helvetica, sans-serif;
@@ -1455,7 +1455,7 @@ font-weight: bold;
 	font-size: 16px;
 	text-transform:none;
 			}
-			
+
 			#hook p {
 	font-family: 1em;
 	margin-top: 15px;
@@ -1489,7 +1489,7 @@ font-weight: bold;
 {
 	padding-left:30px;
 	width:50%;
-	
+
 }
 .bnr-prod .box {
     border-radius: 4px;
@@ -1503,21 +1503,21 @@ font-weight: bold;
 	    background-color: #F5F5F5;
     border-bottom: 1px solid rgba(144, 144, 144, 0.25);
     border-top: 1px solid rgba(144, 144, 144, 0.25);
-    /* Theoretically for IE 8 & 9 (more valid) */	
+    /* Theoretically for IE 8 & 9 (more valid) */
 	/* ...but not required as filter works too */
 	/* should come BEFORE filter */
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	
+
 	/* This works in IE 8 & 9 too */
 	/* ... but also 5, 6, 7 */
 	filter: alpha(opacity=100);
-	
+
 	/* Older than Firefox 0.9 */
 	-moz-opacity:1;
-	
+
 	/* Safari 1.x (pre WebKit!) */
 	-khtml-opacity: 1;
-    
+
 	/* Modern!
 	/* Firefox 0.9+, Safari 2?, Chrome any?
 	/* Opera 9+, IE 9+ */
@@ -1528,7 +1528,7 @@ font-weight: bold;
 	width:24%;
 	height:auto;
 	}
-	
+
 	.deskt
 	{
 		display:none;
@@ -1625,6 +1625,28 @@ header.majors {
 
 }
 
+.box.selection{
+background-color:#F5F5F5;
+}
+
+.box.selection:hover{
+background-color:#f8fdff;
+}
+
+.storage{
+	min-height:50px;
+}
+
+.gbpick{
+	width:300px;
+	margin:auto;
+}
+
+.gbpick50{
+	width: 150px;
+	margin: auto;
+}
+
 .row3
 {
 	text-align: center;
@@ -1669,7 +1691,7 @@ width:100%;
 	    background-color: #F5F5F5;
     border-bottom: 1px solid rgba(144, 144, 144, 0.25);
     border-top: 1px solid rgba(144, 144, 144, 0.25);
-   
+
 }
 .row3 .inpg-prod .inpg-box img
 {
@@ -1711,7 +1733,7 @@ width:100%;
 	    background-color: #F5F5F5;
     border-bottom: 1px solid rgba(144, 144, 144, 0.25);
     border-top: 1px solid rgba(144, 144, 144, 0.25);
-   
+
 }
 .row4 .inpg-prod .inpg-box img
 {
@@ -1734,8 +1756,8 @@ width:100%;
 
 @media screen and (max-width : 820px)
 	{
-			
-	
+
+
 .row3 .inpg-prod
 {
 	margin-left:1%;
@@ -1763,7 +1785,7 @@ width:100%;
 	    background-color: #F5F5F5;
     border-bottom: 1px solid rgba(144, 144, 144, 0.25);
     border-top: 1px solid rgba(144, 144, 144, 0.25);
-   
+
 }
 .row3 .inpg-prod .inpg-box img
 {
@@ -1796,7 +1818,7 @@ width:100%;
 	    background-color: #F5F5F5;
     border-bottom: 1px solid rgba(144, 144, 144, 0.25);
     border-top: 1px solid rgba(144, 144, 144, 0.25);
-   
+
 }
 .row4 .inpg-prod .inpg-box img
 {
@@ -1804,7 +1826,7 @@ width:100%;
 	width:50%;
 	height:auto;
 	}
-	
+
 }
 
 @media screen and (max-width : 550px)
@@ -1828,7 +1850,7 @@ width:100%;
 }
 .bnr-prod .bnr-box img
 {
-	width:50%; 
+	width:50%;
 	height:auto;
 	}
 }
@@ -1865,7 +1887,7 @@ width:100%;
 	    background-color: #F5F5F5;
     border-bottom: 1px solid rgba(144, 144, 144, 0.25);
     border-top: 1px solid rgba(144, 144, 144, 0.25);
-   
+
 }
 .row3 .inpg-prod .inpg-box img
 {
@@ -1900,21 +1922,21 @@ width:100%;
 	    background-color: #F5F5F5;
     border-bottom: 1px solid rgba(144, 144, 144, 0.25);
     border-top: 1px solid rgba(144, 144, 144, 0.25);
-   
+
 }
 .row4 .inpg-prod .inpg-box img
 {
 	width:60%;
 	height:auto;
 	}
-	
+
 }
 @media screen and (max-width : 620px)
 {
-.row3 .inpg-prod .box 
+.row3 .inpg-prod .box
 {
 	height:220px;}
-	.row4 .inpg-prod .box 
+	.row4 .inpg-prod .box
 {
 	height:220px;}
 
@@ -1932,10 +1954,10 @@ width:100%;
 	width:70%;
 	height:auto;
 	}
-.row3 .inpg-prod .box 
+.row3 .inpg-prod .box
 {
 	height:220px;}
-	.row4 .inpg-prod .box 
+	.row4 .inpg-prod .box
 {
 	height:220px;}
 
@@ -1953,10 +1975,10 @@ width:100%;
 	width:80%;
 	height:auto;
 	}
-.row3 .inpg-prod .box 
+.row3 .inpg-prod .box
 {
 	height:220px;}
-	.row4 .inpg-prod .box 
+	.row4 .inpg-prod .box
 {
 	height:220px;}
 
@@ -1975,10 +1997,10 @@ width:100%;
 	width:90%;
 	height:auto;
 	}
-.row3 .inpg-prod .box 
+.row3 .inpg-prod .box
 {
 	height:220px;}
-	.row4 .inpg-prod .box 
+	.row4 .inpg-prod .box
 {
 	height:220px;}
 
@@ -1996,10 +2018,10 @@ width:100%;
 	width:90%;
 	height:auto;
 	}
-.row3 .inpg-prod .box 
+.row3 .inpg-prod .box
 {
 	height:200px;}
-	.row4 .inpg-prod .box 
+	.row4 .inpg-prod .box
 {
 	height:200px;}
 
@@ -2016,10 +2038,10 @@ width:100%;
 	width:95%;
 	height:auto;
 	}
-.row3 .inpg-prod .box 
+.row3 .inpg-prod .box
 {
 	height:180px;}
-	.row4 .inpg-prod .box 
+	.row4 .inpg-prod .box
 {
 	height:180px;}
 
@@ -2037,10 +2059,10 @@ width:100%;
 	width:100%;
 	height:auto;
 	}
-.row3 .inpg-prod .box 
+.row3 .inpg-prod .box
 {
 	height:160px;}
-	.row4 .inpg-prod .box 
+	.row4 .inpg-prod .box
 {
 	height:160px;}
 
@@ -2050,7 +2072,7 @@ width:100%;
 {
 	.bnr-prod .bnr-box img
 {
-	width:60%; 
+	width:60%;
 	height:auto;
 	}
 }
@@ -2116,7 +2138,7 @@ width:100%;
 	width:55%;
 	height:auto;
 	}
-	
+
 	.bnr-prod .box {
     border-radius: 4px;
     border: 1px solid rgba(144, 144, 144, 0.25);
@@ -2133,7 +2155,7 @@ width:100%;
 	width: 53%;
 	height: auto;
 	}
-	
+
 	.bnr-prod .box {
     border-radius: 4px;
     border: 1px solid rgba(144, 144, 144, 0.25);
