@@ -142,7 +142,7 @@ s0.parentNode.insertBefore(s1,s0);
             <li><a href="/sell-my-ipad">Sell my iPad</a></li>
 			<li><a href="/sell-my-samsung">Sell my Samsung</a></li>
 			<li><a href="/sell-my-blackberry">Sell my BlackBerry</a></li>
-            <li><a href="/sell-my-nokia">Sell my Nokia</a></li>
+            <li><a href="/sell-my-pixel">Sell my Pixel</a></li>
             <li><a href="/sell-my-lg">Sell my LG</a></li>
             <li><a href="/sell-my-htc">Sell my HTC</a></li>
 								</ul>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Andrew's SKU and Pricing Engine</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+
+  <form>
+
+   <div id="storage">Storage<br>
+    <input type="checkbox" class="storage" value="Base" checked>N/A
+    <input type="checkbox" class="storage" value="8">8GB
+    <input type="checkbox" class="storage" value="16">16GB
+    <input type="checkbox" class="storage" value="32">32GB
+    <input type="checkbox" class="storage" value="64">64GB
+    <input type="checkbox" class="storage" value="128">128GB
+    <input type="checkbox" class="storage" value="256">256GB
+    <input type="checkbox" class="storage" value="512">512GB
+  </div>
+
+    <div class="form-label">Base Price:</div>
+    <input type="number" id="basePrice" onkeyup="priceA()">
+
+
+    <div id="demo">
+  <h1>Material Design Responsive Table</h1>
+  <h2>Table of my other Material Design works (list was updated 08.2015)</h2>
+
+  <!-- Responsive table starts here -->
+  <!-- For correct display on small screens you must add 'data-title' to each 'td' in your table -->
+  <div class="table-responsive-vertical shadow-z-1">
+  <!-- Table starts here -->
+  <table id="table" class="table table-hover table-mc-light-blue">
+      <thead>
+        <tr>
+          <th></th>
+          <th id="S0">first</th>
+          <th class="16" id="S1">16GB</th>
+          <th class="32" id="S2">32GB</th>
+          <th class="64" id="S3">64GB</th>
+          <th class="128" id="S4">128GB</th>
+          <th class="256" id="S5">256GB</th>
+          <th class="512" id="S6">512GB</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-title="Condition">Mint</td>
+          <td data-title="8GB" id="pa" class="8"></td>
+          <td data-title="16GB" id="pb" class="16"></td>
+          <td data-title="32GB" id="pc" class="32"></td>
+          <td data-title="64GB" id="pd"  class="64"></td>
+          <td data-title="128GB" id="128A"  class="128"></td>
+          <td data-title="256GB" id="256A" class="256"></td>
+          <td data-title="512GB" id="512A" class="512"></td>
+        </tr>
+
+         <tr>
+          <td data-title="Condition">Good</td>
+          <td data-title="8GB" id="8B" class="8"></td>
+          <td data-title="16GB" id="16B"  class="16"></td>
+          <td data-title="32GB" id="32B" class="32"></td>
+          <td data-title="64GB" id="64B" class="64"></td>
+          <td data-title="128GB" id="128B"  class="128"></td>
+          <td data-title="256GB" id="256B" class="256"></td>
+          <td data-title="512GB" id="512B" class="512"></td>
+        </tr>
+                 <tr>
+          <td data-title="Condition">Rough</td>
+          <td data-title="8GB" id="8C" class="8"></td>
+          <td data-title="16GB" id="16C" class="16"></td>
+          <td data-title="32GB" id="32C" class="32"></td>
+          <td data-title="64GB" id="64C" class="64"></td>
+          <td data-title="128GB" id="128C"  class="128"></td>
+          <td data-title="256GB" id="256C" class="256"></td>
+          <td data-title="512GB" id="512C" class="512"></td>
+        </tr>
+
+         <tr>
+          <td data-title="Condition">Broken</td>
+          <td data-title="8GB" id="8D" class="8"></td>
+          <td data-title="16GB" id="16D" class="16"></td>
+          <td data-title="32GB" id="32D" class="32"></td>
+          <td data-title="64GB" id="64D" class="64"></td>
+          <td data-title="128GB" id="128D"  class="128"></td>
+          <td data-title="256GB" id="256D" class="256"></td>
+          <td data-title="512GB" id="512D" class="512"></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+</body>
+</html>

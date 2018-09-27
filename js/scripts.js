@@ -154,6 +154,16 @@ var IP6S16U_rough = 96;
 var IP6S16U_good = 130;
 var IP6S16U_mint = 145;
 
+var IP6S32L_broken = 34;
+var IP6S32L_rough = 111;
+var IP6S32L_good = 130;
+var IP6S32L_mint = 145;
+
+var IP6S32U_broken = 34;
+var IP6S32U_rough = 111;
+var IP6S32U_good = 130;
+var IP6S32U_mint = 145;
+
 var IP6S64L_broken = 34;
 var IP6S64L_rough = 116;
 var IP6S64L_good = 140;
@@ -347,11 +357,6 @@ var IPT464G_rough = 8;
 var IPT464G_good = 13;
 var IPT464G_mint = 15;
 
-var IPT516G_broken = 3;
-var IPT516G_rough = 11;
-var IPT516G_good = 16;
-var IPT516G_mint = 20;
-
 var IPT532G_broken = 4;
 var IPT532G_rough = 13;
 var IPT532G_good = 20;
@@ -361,6 +366,27 @@ var IPT564G_broken = 4;
 var IPT564G_rough = 15;
 var IPT564G_good = 23;
 var IPT564G_mint = 28;
+
+var IPT616G_broken = 3;
+var IPT616G_rough =11;
+var IPT616G_good = 16;
+var IPT616G_mint = 20;
+
+var IPT632G_broken = 4;
+var IPT632G_rough =13;
+var IPT632G_good = 20;
+var IPT632G_mint = 26;
+
+var IPT664G_broken = 4;
+var IPT664G_rough = 13;
+var IPT664G_good = 23;
+var IPT664G_mint = 26;
+
+var IPT6128G_broken = 5;
+var IPT6128G_rough =18;
+var IPT6128G_good = 26;
+var IPT6128G_mint = 32;
+
 
 // IPAD
 
@@ -700,7 +726,7 @@ var SSG90016_mint = 55;
 var SSG92032_broken = 21;
 var SSG92032_rough = 58;
 var SSG92032_good = 85;
-var SSG92032_mint = 105;
+var SSG92032_mint = 100;
 
 var SSG92064_broken = 23;
 var SSG92064_rough = 64;
@@ -710,7 +736,7 @@ var SSG92064_mint = 110;
 var SSG920128_broken = 21;
 var SSG920128_rough = 58;
 var SSG920128_good = 85;
-var SSG920128_mint = 100;
+var SSG920128_mint = 125;
 
 //S6 edge
 var SSG92532_broken = 23;
@@ -718,9 +744,9 @@ var SSG92532_rough = 75;
 var SSG92532_good = 95;
 var SSG92532_mint = 105;
 
-var SSG92564_broken = 25;
-var SSG92564_rough = 77;
-var SSG92564_good = 105;
+var SSG92564_broken = 26;
+var SSG92564_rough = 74;
+var SSG92564_good = 110;
 var SSG92564_mint = 120;
 
 var SSG925128_broken = 27;
@@ -732,7 +758,7 @@ var SSG925128_mint = 130;
 var SSG93032_broken = 26;
 var SSG93032_rough = 97;
 var SSG93032_good = 150;
-var SSG93032_mint = 65;
+var SSG93032_mint = 165;
 
 //S7 edge
 var SSG93532_broken = 32;
@@ -819,27 +845,47 @@ var SSS7560M_rough = 4;
 var SSS7560M_good = 6;
 var SSS7560M_mint = 8;
 
-// NOKIA
+// Google
 
-var NKLUM625_broken = 1;
-var NKLUM625_rough = 3;
-var NKLUM625_good = 5;
-var NKLUM625_mint = 6;
+var PXL32_broken = 22;
+var PXL32_rough = 94;
+var PXL32_good = 127;
+var PXL32_mint = 135;
 
-var NKLUM900_broken = 1;
-var NKLUM900_rough = 4;
-var NKLUM900_good = 6;
-var NKLUM900_mint = 8;
+var PXL128_broken = 27;
+var PXL128_rough = 105;
+var PXL128_good = 140;
+var PXL128_mint = 155;
 
-var NKLUM920_broken = 2;
-var NKLUM920_rough = 6;
-var NKLUM920_good = 10;
-var NKLUM920_mint = 12;
+var PXLXL32_broken = 24;
+var PXLXL32_rough = 111;
+var PXLXL32_good = 135;
+var PXLXL32_mint = 150;
 
-var NKLUM1020_broken = 2;
-var NKLUM1020_rough = 6;
-var NKLUM1020_good = 10;
-var NKLUM1020_mint = 12;
+var PXLXL128_broken = 27;
+var PXLXL128_rough = 116;
+var PXLXL128_good = 150;
+var PXLXL128_mint = 170;
+
+var PXL264_broken = 1;
+var PXL264_rough = 3;
+var PXL264_good = 5;
+var PXL264_mint = 6;
+
+var PXL2128_broken = 1;
+var PXL2128_rough = 4;
+var PXL2128_good = 6;
+var PXL2128_mint = 8;
+
+var PXL2XL64_broken = 2;
+var PXL2XL64_rough = 6;
+var PXL2XL64_good = 10;
+var PXL2XL64_mint = 12;
+
+var PXL2XL128_broken = 2;
+var PXL2XL128_rough = 6;
+var PXL2XL128_good = 10;
+var PXL2XL128_mint = 12;
 
 function valuation(phone, carrier, condition) {
 
@@ -1317,6 +1363,36 @@ function valuation(phone, carrier, condition) {
 				case "Good": return IP6S16L_good;
 				break;
 				case "Mint": return IP6S16L_mint;
+			}
+
+		}
+
+	}
+
+	if (phone == "IP6S32") {
+
+		if (carrier == "Unlocked") {
+
+			switch (condition) {
+				case "Broken": return IP6S32U_broken;
+				break;
+				case "Rough": return IP6S32U_rough;
+				break;
+				case "Good": return IP6S32U_good;
+				break;
+				case "Mint": return IP6S32U_mint;
+			}
+
+		} else {
+
+			switch (condition) {
+				case "Broken": return IP6S32L_broken;
+				break;
+				case "Rough": return IP6S32L_rough;
+				break;
+				case "Good": return IP6S32L_good;
+				break;
+				case "Mint": return IP6S32L_mint;
 			}
 
 		}
@@ -1981,20 +2057,6 @@ function valuation(phone, carrier, condition) {
 
 	}
 
-	if (phone == "IPT516G") {
-
-		switch (condition) {
-			case "Broken": return IPT516G_broken;
-			break;
-			case "Rough": return IPT516G_rough;
-			break;
-			case "Good": return IPT516G_good;
-			break;
-			case "Mint": return IPT516G_mint;
-		}
-
-	}
-
 	if (phone == "IPT532G") {
 
 		switch (condition) {
@@ -2019,6 +2081,62 @@ function valuation(phone, carrier, condition) {
 			case "Good": return IPT564G_good;
 			break;
 			case "Mint": return IPT564G_mint;
+		}
+
+	}
+
+	if (phone == "IPT616G") {
+
+		switch (condition) {
+			case "Broken": return IPT616G_broken;
+			break;
+			case "Rough": return IPT616G_rough;
+			break;
+			case "Good": return IPT616G_good;
+			break;
+			case "Mint": return IPT616G_mint;
+		}
+
+	}
+
+	if (phone == "IPT632G") {
+
+		switch (condition) {
+			case "Broken": return IPT632G_broken;
+			break;
+			case "Rough": return IPT632G_rough;
+			break;
+			case "Good": return IPT632G_good;
+			break;
+			case "Mint": return IPT632G_mint;
+		}
+
+	}
+
+	if (phone == "IPT664G") {
+
+		switch (condition) {
+			case "Broken": return IPT664G_broken;
+			break;
+			case "Rough": return IPT664G_rough;
+			break;
+			case "Good": return IPT664G_good;
+			break;
+			case "Mint": return IPT664G_mint;
+		}
+
+	}
+
+	if (phone == "IPT6128G") {
+
+		switch (condition) {
+			case "Broken": return IPT6128G_broken;
+			break;
+			case "Rough": return IPT6128G_rough;
+			break;
+			case "Good": return IPT6128G_good;
+			break;
+			case "Mint": return IPT6128G_mint;
 		}
 
 	}
@@ -3449,60 +3567,116 @@ function valuation(phone, carrier, condition) {
 
 	}
 
-	// NOKIA ------------------------------------------------------------------------------------- //
+	// GOOGLE ------------------------------------------------------------------------------------- //
 
-	if (phone == "NKLUM625") {
+	if (phone == "PXL32") {
 
 		switch (condition) {
-			case "Broken": return NKLUM625_broken;
+			case "Broken": return PXL32_broken;
 			break;
-			case "Rough": return NKLUM625_rough;
+			case "Rough": return PXL32_rough;
 			break;
-			case "Good": return NKLUM625_good;
+			case "Good": return PXL32_good;
 			break;
-			case "Mint": return NKLUM625_mint;
+			case "Mint": return PXL32_mint;
 		}
 
 	}
 
-	if (phone == "NKLUM900") {
+	if (phone == "PXL128") {
 
 		switch (condition) {
-			case "Broken": return NKLUM900_broken;
+			case "Broken": return PXL128_broken;
 			break;
-			case "Rough": return NKLUM900_rough;
+			case "Rough": return PXL128_rough;
 			break;
-			case "Good": return NKLUM900_good;
+			case "Good": return PXL128_good;
 			break;
-			case "Mint": return NKLUM900_mint;
+			case "Mint": return PXL128_mint;
 		}
 
 	}
 
-	if (phone == "NKLUM920") {
+	if (phone == "PXLXL32") {
 
 		switch (condition) {
-			case "Broken": return NKLUM920_broken;
+			case "Broken": return PXLXL32_broken;
 			break;
-			case "Rough": return NKLUM920_rough;
+			case "Rough": return PXLXL32_rough;
 			break;
-			case "Good": return NKLUM920_good;
+			case "Good": return PXLXL32_good;
 			break;
-			case "Mint": return NKLUM920_mint;
+			case "Mint": return PXLXL32_mint;
 		}
 
 	}
 
-	if (phone == "NKLUM1020") {
+	if (phone == "PXLXL128") {
 
 		switch (condition) {
-			case "Broken": return NKLUM1020_broken;
+			case "Broken": return PXLXL128_broken;
 			break;
-			case "Rough": return NKLUM1020_rough;
+			case "Rough": return PXLXL128_rough;
 			break;
-			case "Good": return NKLUM1020_good;
+			case "Good": return PXLXL128_good;
 			break;
-			case "Mint": return NKLUM1020_mint;
+			case "Mint": return PXLXL128_mint;
+		}
+
+	}
+
+	if (phone == "PXL264") {
+
+		switch (condition) {
+			case "Broken": return PXL264_broken;
+			break;
+			case "Rough": return PXL264_rough;
+			break;
+			case "Good": return PXL264_good;
+			break;
+			case "Mint": return PXL264_mint;
+		}
+
+	}
+
+	if (phone == "PXL2128") {
+
+		switch (condition) {
+			case "Broken": return PXL2128_broken;
+			break;
+			case "Rough": return PXL2128_rough;
+			break;
+			case "Good": return PXL2128_good;
+			break;
+			case "Mint": return PXL2128_mint;
+		}
+
+	}
+
+	if (phone == "PXL2XL64") {
+
+		switch (condition) {
+			case "Broken": return PXL2XL64_broken;
+			break;
+			case "Rough": return PXL2XL64_rough;
+			break;
+			case "Good": return PXL2XL64_good;
+			break;
+			case "Mint": return PXL2XL64_mint;
+		}
+
+	}
+
+	if (phone == "PXL2XL128") {
+
+		switch (condition) {
+			case "Broken": return PXL2XL128_broken;
+			break;
+			case "Rough": return PXL2XL128_rough;
+			break;
+			case "Good": return PXL2XL128_good;
+			break;
+			case "Mint": return PXL2XL128_mint;
 		}
 
 	}

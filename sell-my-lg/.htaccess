@@ -21,7 +21,7 @@ Redirect 301 /blackberry /sell-my-blackberry
 Redirect 301 /htc /sell-my-htc
 Redirect 301 /ipod-touch /sell-my-ipod-touch
 Redirect 301 /lg /sell-my-lg
-Redirect 301 /nokia /sell-my-nokia
+Redirect 301 /nokia /sell-my-pixel
 Redirect 301 /samsung /sell-my-samsung
 Redirect 301 /blackberry/blackberry-Q10.php /sell-my-blackberry/blackberry-Q10.php
 Redirect 301 /blackberry/blackberry-Q5.php /sell-my-blackberry/blackberry-Q5.php
@@ -87,10 +87,10 @@ Redirect 301 /lg/lg-g3.php /sell-my-lg/lg-g3.php
 Redirect 301 /lg/lg-nexus-4.php /sell-my-lg/lg-nexus-4.php
 Redirect 301 /lg/lg-nexus-5.php /sell-my-lg/lg-nexus-5.php
 Redirect 301 /lg/lg-optimus-L7.php /sell-my-lg/lg-optimus-L7.php
-Redirect 301 /nokia/nokia-lumia-625.php /sell-my-nokia/nokia-lumia-625.php
-Redirect 301 /nokia/nokia-lumia-900.php /sell-my-nokia/nokia-lumia-900.php
-Redirect 301 /nokia/nokia-lumia-920.php /sell-my-nokia/nokia-lumia-920.php
-Redirect 301 /nokia/nokia-lumia-1020.php /sell-my-nokia/nokia-lumia-1020.php
+Redirect 301 /nokia/nokia-lumia-625.php /sell-my-pixel/nokia-lumia-625.php
+Redirect 301 /nokia/nokia-lumia-900.php /sell-my-pixel/nokia-lumia-900.php
+Redirect 301 /nokia/nokia-lumia-920.php /sell-my-pixel/nokia-lumia-920.php
+Redirect 301 /nokia/nokia-lumia-1020.php /sell-my-pixel/nokia-lumia-1020.php
 Redirect 301 /samsung/samsung-ativ-s.php /sell-my-samsung/samsung-ativ-s.php
 Redirect 301 /samsung/samsung-galaxy-S2.php /sell-my-samsung/samsung-galaxy-S2.php
 Redirect 301 /samsung/samsung-galaxy-S3-16GB.php /sell-my-samsung/samsung-galaxy-S3-16GB.php

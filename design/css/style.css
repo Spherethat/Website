@@ -1633,18 +1633,22 @@ background-color:#F5F5F5;
 background-color:#f8fdff;
 }
 
-.storage{
-	min-height:50px;
+.storage {
+	min-height: 3em;
+	padding: 1em !important;
+	overflow-wrap: break-word;
+	white-space: normal;
 }
 
 .gbpick{
-	width:300px;
 	margin:auto;
+	float:none;
 }
 
 .gbpick50{
 	width: 150px;
 	margin: auto;
+	height: 25%;
 }
 
 .row3

@@ -132,12 +132,12 @@ $(document).ready(function(){
 
 var mql = window.matchMedia("screen and (max-width : 820px)")
 if (mql.matches){ // if media query matches
-var formHeight = 950;
+var formHeight = 1350;
 		var paymentFormHeight = 550;
 }
 else{
- var formHeight = 1250; /*old value= 620*/
-		var paymentFormHeight = 600; /*old value = 450*/
+ var formHeight = 950;
+		var paymentFormHeight = 600; 
 }
 
 

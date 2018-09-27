@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Andrew's SKU and Pricing Engine</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <form>
+   <div class="form-label">Base Sku</div>
+   <input type="text" id="bSku" onkeyup="()"></input>
+
+
+   <div class="form-label">Device Name</div>
+   <input type="text" id="bName"></input>
+
+    <div class="form-label">Manufacturer</div>
+    <select id="manu" onChange="selectM(this.value);">
+      <option value=""></option>
+      <option value="Apple"> Apple</option>
+      <option value="Samsung"> Samsung</option>
+      <option value="Blackberry"> Blackberry</option>
+      <option value="LG"> LG</option>
+      <option value="Nokia"> Nokia</option>
+      <option value="Motorola"> Motorola</option>
+      <option value="Huawei"> Huawei</option>
+      <option value="Sonim"> Sonim</option>
+      <option value="Microsoft"> Microsoft</option>
+      <option value="HTC"> HTC</option>
+      <option value="Miscellaneous"> Miscellaneous</option>
+      <option value="Google"> Google</option>
+  </select>
+
+   <div id="storage">Storage<br>
+    <input type="checkbox" class="storage" value="8">8GB</input>
+    <input type="checkbox" class="storage" value="16">16GB</input>
+    <input type="checkbox" class="storage" value="32">32GB</input>
+    <input type="checkbox" class="storage" value="64">64GB</input>
+    <input type="checkbox" class="storage" value="128">128GB</input>
+    <input type="checkbox" class="storage" value="256">256GB</input>
+    <input type="checkbox" class="storage" value="512">512GB</input>
+  </div>
+
+   <div id="color">Color<br>
+    <input type="checkbox" class="color" value="BL" checked>Black</input>
+    <input type="checkbox" class="color" value="WH">White</input>
+    <input type="checkbox" class="color" value="RE">Red</input>
+    <input type="checkbox" class="color" value="BL">Blue</input>
+    <input type="checkbox" class="color" value="GR">Grey</input>
+    <input type="checkbox" class="color" value="SL">Silver</input>
+    <input type="checkbox" class="color" value="GO">Gold</input>
+    <input type="checkbox" class="color" value="PK">Pink</input>
+  </div>
+
+   <div id="carrier">Carrier<br>
+
+     <input type="checkbox" class="carrier" value="UL" checked>Unlocked</input>
+<input type="checkbox" class="carrier" value="XX" checked>Unknown</input>
+
+<br>
+     <input type="checkbox" class="carrier" value="BE" checked>Bell</input>
+     <input type="checkbox" class="carrier" value="RO" checked>Rogers</input>
+     <input type="checkbox" class="carrier" value="TE" checked>Telus</input>
+
+
+     <br>
+     <input type="checkbox" class="carrier" value="FD">Fido</input>
+     <input type="checkbox" class="carrier" value="MT">MTS</input>
+     <input type="checkbox" class="carrier" value="SK">Sasktel</input>
+<br>
+    <input type="checkbox" class="carrier" value="AT">AT&amp;T</input>
+    <input type="checkbox" class="carrier" value="TM">T-Mobile</input>
+    <input type="checkbox" class="carrier" value="VZ">Verizon</input>
+    <input type="checkbox" class="carrier" value="SP">Sprint</input>
+
+    <br>
+
+
+    <label class="icloud"><input type="checkbox" class="carrier" id ="IC" value="IC">iCloud</label>
+    <label class="BBPro"><input type="checkbox" class="carrier" id="PR" value="PR">BB Protect</label>
+    <label class="ActLock"><input type="checkbox" class="carrier" id="AL" value="AL">Activation Lock</label>
+<br>
+
+<input type="checkbox" class="carrier" value="OO">Other (tablets only)</input>
+</div>
+    <div class="form-label">Base Price:</div>
+    <input type="number" id="basePrice" onkeyup="priceA()">
+
+    <div class="form-label">Mint Price:</div>
+    <input type="number" id="pa">
+
+    <div class="form-label">Good Price:</div>
+    <input type="number" id="pb">
+
+    <div class="form-label">Rough Price:</div>
+    <input type="number" id="pc">
+
+    <div class="form-label">Broken Price:</div>
+    <input type="number" id="pd">
+  </form>
+
+<button id='makeSku'>Hey Beautiful. Wanna make a SKU?</button>
+
+</body>
+</html>

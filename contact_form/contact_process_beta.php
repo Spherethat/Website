@@ -183,9 +183,6 @@ if(($payment_option == "Interac") && !$interac_email)
 $paymenterror = "Please enter an Interac e-Transfer email.";
 }
 
-if(!empty($promo)){
-$paymenterror = 'The promo code you\'ve entered is either invalid or expired. <br>';
-}
 
 
 if(!$error && !$paymenterror)

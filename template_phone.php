@@ -24,7 +24,7 @@ echo'
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Ubuntu:400,700" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="../js/scripts.js?v=5"></script>
+	<script type="text/javascript" src="../js/scripts.js?v=7"></script>
 	<script type="text/javascript" src="../js/formscripts.js?v=5"></script>
 
 	<script type="text/javascript">
@@ -91,15 +91,15 @@ echo'
 						<h2>1. Carrier</h2>
 
 						<div>
-							<select id="carrier" onChange="ga("send", "event", "Carrier", "Select");" name="carrier">
+							<select id="carrier" name="carrier">
 							<option value="" selected="selected">Select</option>
-							<option value="Rogers">Rogers</option>
-							<option value="Fido">Fido</option>
-							<option value="Bell">Bell</option>
-							<option value="Virgin">Virgin</option>
-							<option value="Telus">Telus</option>
-							<option value="Koodo">Koodo</option>
-							<option value="Unlocked">Unlocked</option>
+							<option value="Rogers" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Carrier\',\'event_label\': \'Rogers\'});">Rogers</option>
+							<option value="Fido" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Carrier\',\'event_label\': \'Fido\'});">Fido</option>
+							<option value="Bell" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Carrier\',\'event_label\': \'Bell\'});">Bell</option>
+							<option value="Virgin" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Carrier\',\'event_label\': \'Virgin\'});">Virgin</option>
+							<option value="Telus" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Carrier\',\'event_label\': \'Telus\'});">Telus</option>
+							<option value="Koodo" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Carrier\',\'event_label\': \'Koodo\'});">Koodo</option>
+							<option value="Unlocked" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Carrier\',\'event_label\': \'Unlocked\'});">Unlocked</option>
 						</select>
 						</div>
 
@@ -107,33 +107,33 @@ echo'
 						<p>If your phone is <b>unlocked</b>, select the "unlocked" option.</p>
 
 						<div class="carrier-img">
-							<a class="rogers" onClick="ga("send", "event", "Carrier", "Select", "Rogers");" style="display: inline-block"><img src="../img/carriers/rogers-small.png"></a>
-							<a class="fido" onClick="ga("send", "event", "Carrier", "Select", "Fido");" style="display: inline-block"><img src="../img/carriers/fido-small.png"></a>
-							<a class="bell" onClick="ga("send", "event", "Carrier", "Select", "Bell");" style="display: inline-block"><img src="../img/carriers/bell-small.png">
-						<a class="virgin" onClick="ga("send", "event", "Carrier", "Select", "Virgin");" style="display: inline-block"><img src="../img/carriers/virginmobile-small.png"></a>
-							<a class="telus" onClick="ga("send", "event", "Carrier", "Select", "Telus");" style="display: inline-block"><img src="../img/carriers/telus-small.png">
-						<a class="koodo" onClick="ga("send", "event", "Carrier", "Select", "Koodo");" style="display: inline-block"><img src="../img/carriers/koodo-small.png"></a>
-							<a class="unlocked" onClick="ga("send", "event", "Carrier", "Select", "Unlocked");" style="display: inline-block"><img src="../img/carriers/unlocked-phone.png"></a>
+							<a class="rogers" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Carrier\',\'event_label\': \'Rogers\'});" style="display:inline-block;"><img src="../img/carriers/rogers-small.png"></a>
+							<a class="fido" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Carrier\',\'event_label\': \'Fido\'});" style="display:inline-block;"><img src="../img/carriers/fido-small.png"></a>
+							<a class="bell" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Carrier\',\'event_label\': \'Bell\'});" style="display:inline-block;"><img src="../img/carriers/bell-small.png"></a>
+						<a class="virgin" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Carrier\',\'event_label\': \'Virgin\'});" style="display:inline-block;"><img src="../img/carriers/virginmobile-small.png"></a>
+							<a class="telus" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Carrier\',\'event_label\': \'Telus\'});" style="display:inline-block;"><img src="../img/carriers/telus-small.png"></a>
+						<a class="koodo" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Carrier\',\'event_label\': \'Koodo\'});" style="display:inline-block;"><img src="../img/carriers/koodo-small.png"></a>
+							<a class="unlocked" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Carrier\',\'event_label\': \'Unlocked\'});" style="display:inline-block;"><img src="../img/carriers/unlocked-phone.png"></a>
 						</div>
 
 						<h2>2. Condition</h2>
 
 						<div>
-							<select id="condition" onChange="ga("send", "event", "Condition", "Select")]);" name="condition">
+							<select id="condition" name="condition">
 							<option value="" selected="selected">Select</option>
-							<option value="Mint">Mint</option>
-							<option value="Good">Good</option>
-							<option value="Rough">Rough</option>
-							<option value="Broken">Broken</option>
+							<option value="Mint" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Condition\',\'event_label\': \'Mint\'});">Mint</option>
+							<option value="Good" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Condition\',\'event_label\': \'Good\'});">Good</option>
+							<option value="Rough" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Condition\',\'event_label\': \'Rough\'});">Rough</option>
+							<option value="Broken" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Condition\',\'event_label\': \'Broken\'});">Broken</option>
 						</select>
 						</div>
 
-						<p style="margin-bottom: 0; clear: both">How would you rate your phone"s condition?</p>
+						<p style="margin-bottom: 0; clear: both">How would you rate your phone\'s condition?</p>
 						<p>For a description of each option, click the headings below.</p>
 
 						<div id="condition-accordion">
 
-							<h3 onClick="ga("send", "event", "Condition", "Select", "Mint");" id="mint-condition">Mint</h3>
+							<h3 onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Condition\',\'event_label\': \'Mint\'});" id="mint-condition">Mint</h3>
 
 							<div>
 
@@ -141,7 +141,7 @@ echo'
 
 							</div>
 
-							<h3 onClick="ga("send", "event", "Condition", "Select", "Good");" id="good-condition">Good</h3>
+							<h3 onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Condition\',\'event_label\': \'Good\'});" id="good-condition">Good</h3>
 
 							<div>
 
@@ -149,7 +149,7 @@ echo'
 
 							</div>
 
-							<h3 onClick="ga("send", "event", "Condition", "Select", "Rough");" id="rough-condition">Rough</h3>
+							<h3 onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Condition\',\'event_label\': \'Rough\'});" id="rough-condition">Rough</h3>
 
 							<div>
 
@@ -157,7 +157,7 @@ echo'
 
 							</div>
 
-							<h3 onClick="ga("send", "event", "Condition", "Select", "Broken");" id="broken-condition">Broken</h3>
+							<h3 onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Condition\',\'event_label\': \'Broken\'});" id="broken-condition">Broken</h3>
 
 
 							<div>
@@ -183,11 +183,11 @@ echo'
 
 						<p id="phone-description">To get a quote, please tell us the carrier and condition of your phone.</p>
 
-						<a onClick="ga("send", "event", "Submission", "Select", "Get Paid");" href="#main-form" id="getpaid-button">GET PAID &raquo;</a>
+						<a onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Submission\',\'event_label\': \'Get Paid\'});" href="#main-form" id="getpaid-button">GET PAID &raquo;</a>
 
 					</div>
 
-					<div id="main-form">
+				 	<div id="main-form">
 
 						<h2 style="display: block; clear: both">3. Your Information</h2>
 
@@ -286,17 +286,17 @@ echo'
 
 							<p style="line-height: 120%; margin-bottom: 10px; font-family: helvetica, open sans, arial; clear: both; color: #666">If you require shipping materials, we can send a free shipping kit direct to your doorstep (3-5 business days). Otherwise, we\'ll email you a prepaid shipping label that you can use to mail your phone to us.</p>
 
-							<input type="checkbox" name="sendkit" value="1" class="frm-left-mgrg-rg10">
-							<p class="check-label">I need a complimentary shipping kit sent to my address.</p>
+
+							<p class="check-label"><input type="checkbox" name="sendkit" value="1" class="frm-left-mgrg-rg10">I need a complimentary shipping kit sent to my address.</p>
 							<br><br>
-							<input type="checkbox" name="terms" value="1" class="frm-left-mgrg-rg10">
-							<p class="check-label">I have read and agree to the <a href="http://www.spherethat.ca/terms-and-conditions/" target="_blank">Terms &amp; Conditions</a> of this site.</p>
+
+							<p class="check-label"><input type="checkbox" name="terms" value="1" class="frm-left-mgrg-rg10">I have read and agree to the <a href="http://www.spherethat.ca/terms-and-conditions/" target="_blank">Terms &amp; Conditions</a> of this site.</p>
 							<br><br>
-							<input type="checkbox" name="actlock" value="1" class="frm-left-mgrg-rg10">
-							<p class="check-label">I have removed the Activation Lock from my device.</p>
+
+							<p class="check-label"><input type="checkbox" name="actlock" value="1" class="frm-left-mgrg-rg10">I have removed the Activation Lock from my device.</p>
 
 							<div style="overflow: auto; clear: both ">
-								<div id="information-proceed">PROCEED</div>
+								<div id="information-proceed" onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Submission\',\'event_label\': \'Address Complete\'});">PROCEED</div>
 								<input type="reset" id="reset" value="RESET">
 							</div>
 
@@ -363,7 +363,7 @@ echo'
 						</div>
 
 						<div style="overflow: hidden; clear: both; ">
-							<div onClick="ga(\"send\", \"event\", \"Submission\", \"Select\", \"Final Submission\");" onClick="(function() {    var ibl = document.createElement(\"script\");    ibl.type = \"text/javascript\"; ibl.async = true;    ibl.src = (\"https:\" == document.location.protocol ? \"https://\" : \"http://\") + \"new.invitebox.com/invitation-camp/8423/invitebox-landing.js?hash=\"+escape(window.location.hash);    var s = document.getElementsByTagName(\"script\")[0];    s.parentNode.insertBefore(ibl, s);})();"
+							<div onClick="gtag(\'event\',\'Select\',{event_category:\'Submission\',event_label:\'Final Submit\'}),gtag_report_conversion(url),function(){var t=document.createElement(\'script\');t.type=\'text/javascript\',t.async=!0,t.src=(\'https:\'==document.location.protocol?\'https://\':\'http://\')+\'new.invitebox.com/invitation-camp/8423/invitebox-landing.js?hash=\'+escape(window.location.hash);var s=document.getElementsByTagName(\'script\')[0];s.parentNode.insertBefore(t,e)}();"
 								id="payment-proceed">SUBMIT</div>
 							<input style="display:none" type="submit" id="submit" value="SUBMIT">
 							<input type="reset" id="reset" value="RESET">
@@ -408,7 +408,7 @@ echo'
 							<li><a href="/sell-my-ipad">Sell my iPad</a></li>
 							<li><a href="/sell-my-samsung">Sell my Samsung</a></li>
 							<li><a href="/sell-my-blackberry">Sell my BlackBerry</a></li>
-							<li><a href="/sell-my-nokia">Sell my Nokia</a></li>
+							<li><a href="/sell-my-pixel">Sell my Pixel</a></li>
 							<li><a href="/sell-my-lg">Sell my LG</a></li>
 							<li><a href="/sell-my-htc">Sell my HTC</a></li>
 						</ul>
@@ -456,21 +456,14 @@ echo'
 		</div>
 	</footer>
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48810167-1"></script>
 	<script>
-		(function(i, s, o, g, r, a, m) {
-			i["GoogleAnalyticsObject"] = r;
-			i[r] = i[r] || function() {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date();
-			a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0];
-			a.async = 1;
-			a.src = g;
-			m.parentNode.insertBefore(a, m)
-		})(window, document, "script", "//www.google-analytics.com/analytics.js", "ga");
-		ga("create", "UA-48810167-1", "spherethat.ca");
-		ga("require", "displayfeatures");
-		ga("send", "pageview");
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag(\'js\', new Date());
+
+	  gtag(\'config\', \'UA-48810167-1\');
 	</script>
 
 	<!--Start of Tawk.to Script-->
@@ -486,9 +479,22 @@ echo'
 			s1.setAttribute("crossorigin", "*");
 			s0.parentNode.insertBefore(s1, s0);
 		})();
-	</script>
-	<!--End of Tawk.to Script-->
 
+		<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != \'undefined\') {
+      window.location = url;
+    }
+  };
+  gtag(\'event\', \'conversion\', {
+      \'send_to\': \'AW-971508199/WH0vCKzinokBEOeToM8D\',
+      \'transaction_id\': \'\',
+      \'event_callback\': callback
+  });
+  return false;
+}
+</script>
 
 </body>
 '
