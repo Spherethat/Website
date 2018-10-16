@@ -195,25 +195,10 @@ var data={
             "field_163_raw": 28728
         }
       ]
-}
+};
 
-var arr = data.records
+var arr = data.records;
 
-arrayList = [];
-
-      for (var i = 0; i<arr.length; i++){
-        var Obj = {
-          "SKU" : arr[i].field_32_raw[0].identifier,
-          "DESC" : arr[i].field_240,
-          "COST" : arr[i].field_48_raw};
-        arrayList.push(Obj);
-      }
-
-skuList =[];
-      for (var i = 0; i<arr.length; i++){
-        var Obj = arr[i].field_32_raw[0].identifier;
-        skuList.push(Obj);
-      }
 
 
 function uniq(a) {
@@ -223,6 +208,41 @@ function uniq(a) {
     });
 }
 
-var topo = uniq(skuList);
-console.log(arrayList);
-console.log(topo)
+var skuList = arr.map(function (B) {
+  return B.field_32_raw[0].identifier;
+});
+
+
+var uSku = uniq(skuList);
+
+console.log(uSku);
+
+var finalList = [];
+
+      for (var i = 0; i<uSku.length; i++){
+
+        var costarr = arr.filter(function (A){
+             return A.field_32_raw[0].identifier === uSku[i];
+                            });
+
+        var desc = costarr[0].field_240_raw;
+
+        var quant =  costarr.length;
+
+        var costtotal = costarr.reduce(function (accumulator, C){
+                               return accumulator + C.field_48_raw;
+                               },0);
+
+        var avgcost = costtotal/quant;
+
+        var Obj = {
+          "SKU" : uSku[i],
+          "DESC" : desc,
+          "TCOST" : costtotal,
+          "ACOST": avgcost,
+          "QUANT": quant};
+        finalList.push(Obj);
+      }
+
+
+      console.log(finalList);
