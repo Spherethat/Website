@@ -20,7 +20,6 @@
   <link rel="stylesheet" type="text/css" href="../css/reset.css">
   <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Ubuntu:400,700" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script type="text/javascript" src="../js/scripts.js?v=7"></script>
   <script type="text/javascript" src="../js/formscripts.js?v=5"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -46,7 +45,6 @@ body {
 }
 /*form styles*/
 #msform {
-	width: 65%;
 	text-align: center;
 	position: relative;
   float:left;
@@ -260,7 +258,7 @@ $(".previous").click(function(){
 
 $(".submit").click(function(){
 	return false;
-})
+});
 </script>
 
 
@@ -301,16 +299,16 @@ $(".submit").click(function(){
             <!--<p>Answer the questions below to get a quote!</p>-->
             <!-- progressbar -->
             <ul id="progressbar">
-              <li class="active">Account Setup</li>
-              <li>Social Profiles</li>
-              <li>Personal Details</li>
+              <li class="active">Device Condition</li>
+              <li>Contact information</li>
+              <li>Get Paid!</li>
             </ul>
           </div>
 
           <!--<form id="product-quote">-->
 
           <!-- multistep form -->
-          <form id="msform">
+          <form id="msform" class="8u 12u$(small)">
 
             <!-- fieldsets -->
             <fieldset>
@@ -331,7 +329,7 @@ $(".submit").click(function(){
                 <a class="Good" onClick="gtag('event', 'Select', {'event_category': 'Carrier','event_label': 'Fido'});" style="display:inline-block;"><img src="../img/carriers/fido-small.png"></a>
                 <a class="Rough" onClick="gtag('event', 'Select', {'event_category': 'Carrier','event_label': 'Bell'});" style="display:inline-block;"><img src="../img/carriers/bell-small.png"></a>
                 <a class="Broken" onClick="gtag('event', 'Select', {'event_category': 'Carrier','event_label': 'Virgin'});" style="display:inline-block;"><img src="../img/carriers/virginmobile-small.png"></a>
-            </div>
+              </div>
 
 
               <input type="button" name="next" class="next action-button" value="Next" />
@@ -381,9 +379,6 @@ $(".submit").click(function(){
             <a onClick="gtag('event', 'Select', {'event_category': 'Submission','event_label': 'Get Paid'});" href="#main-form" id="getpaid-button">GET PAID &raquo;</a>
 
           </div>
-
-
-
 
           <!--</form>-->
 
@@ -470,48 +465,5 @@ $(".submit").click(function(){
       </div>
     </footer>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48810167-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'UA-48810167-1');
-    </script>
-
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-      var Tawk_API = Tawk_API || {},
-        Tawk_LoadStart = new Date();
-      (function() {
-        var s1 = document.createElement("script"),
-          s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = "https://embed.tawk.to/575c821fda47edb0468702b4/default";
-        s1.charset = "UTF-8";
-        s1.setAttribute("crossorigin", "*");
-        s0.parentNode.insertBefore(s1, s0);
-      })();
-      </script>
-
-      <script>
-        function gtag_report_conversion(url) {
-          var callback = function() {
-            if (typeof(url) != 'undefined') {
-              window.location = url;
-            }
-          };
-          gtag('event', 'conversion', {
-            'send_to': 'AW-971508199/WH0vCKzinokBEOeToM8D',
-            'transaction_id': '',
-            'event_callback': callback
-          });
-          return false;
-        }
-    </script>
 
   </body>

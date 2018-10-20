@@ -25,7 +25,7 @@ echo'
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="../js/scripts.js?v=7"></script>
+	<script type="text/javascript" src="../js/scripts.js?v=9"></script>
 	<script type="text/javascript" src="../js/formscripts-electronics.js?v=2"></script>
 
 	<script type="text/javascript">
@@ -150,7 +150,7 @@ echo'
 						<input type="hidden" name="newfinalq" id="newfinalq" value="">
 
 
-						<p id="phone-description">To get a quote, please tell us the carrier and condition of your phone.</p>
+						<p id="phone-description">To get a quote, please tell us the condition of your device.</p>
 
 						<a onClick="gtag(\'event\', \'Select\', {\'event_category\': \'Submission\',\'event_label\': \'Get Paid\'});" href="#main-form" id="getpaid-button">GET PAID &raquo;</a>
 

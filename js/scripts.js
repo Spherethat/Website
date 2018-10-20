@@ -560,9 +560,67 @@ var IPDM4128G_rough= 90;
 var IPDM4128G_good= 160;
 var IPDM4128G_mint= 170;
 
+var IPDP932_broken = 48;
+var IPDP932_rough = 138;
+var IPDP932_good = 210;
+var IPDP932_mint = 230;
+
+var IPDP9128_broken = 50;
+var IPDP9128_rough = 148;
+var IPDP9128_good = 230;
+var IPDP9128_mint = 250;
+
+var IPDP9256_broken = 52;
+var IPDP9256_rough = 158;
+var IPDP9256_good = 250;
+var IPDP9256_mint = 270;
+
+var IPDP1232_broken = 56;
+var IPDP1232_rough = 169;
+var IPDP1232_good = 260;
+var IPDP1232_mint = 285;
+
+var IPDP12128_broken = 58;
+var IPDP12128_rough = 179;
+var IPDP12128_good = 280;
+var IPDP12128_mint = 305;
+
+var IPDP12256_broken = 60;
+var IPDP12256_rough = 189;
+var IPDP12256_good = 300;
+var IPDP12256_mint = 325;
+
+var IPDP21064_broken = 74;
+var IPDP21064_rough = 206;
+var IPDP21064_good = 355;
+var IPDP21064_mint = 380;
+
+var IPDP210256_broken = 76;
+var IPDP210256_rough = 216;
+var IPDP210256_good = 375;
+var IPDP210256_mint = 400;
+
+var IPDP210512_broken = 78;
+var IPDP210512_rough = 226;
+var IPDP210512_good = 395;
+var IPDP210512_mint = 420;
+
+var IPDP21264_broken = 95;
+var IPDP21264_rough = 314;
+var IPDP21264_good = 490;
+var IPDP21264_mint = 525;
+
+var IPDP212256_broken = 97;
+var IPDP212256_rough = 324;
+var IPDP212256_good = 510;
+var IPDP212256_mint = 545;
+
+var IPDP212512_broken = 99;
+var IPDP212512_rough = 334;
+var IPDP212512_good = 530;
+var IPDP212512_mint = 565;
 
 // BLACKBERRY
-
 
 var BB9900_broken = 1;
 var BB9900_rough = 2;
@@ -867,25 +925,25 @@ var PXLXL128_rough = 116;
 var PXLXL128_good = 150;
 var PXLXL128_mint = 170;
 
-var PXL264_broken = 1;
-var PXL264_rough = 3;
-var PXL264_good = 5;
-var PXL264_mint = 6;
+var PXL264_broken = 32;
+var PXL264_rough = 128;
+var PXL264_good = 190;
+var PXL264_mint = 205;
 
-var PXL2128_broken = 1;
-var PXL2128_rough = 4;
-var PXL2128_good = 6;
-var PXL2128_mint = 8;
+var PXL2128_broken = 32;
+var PXL2128_rough = 134;
+var PXL2128_good = 205;
+var PXL2128_mint = 220;
 
-var PXL2XL64_broken = 2;
-var PXL2XL64_rough = 6;
-var PXL2XL64_good = 10;
-var PXL2XL64_mint = 12;
+var PXL2XL64_broken = 35;
+var PXL2XL64_rough = 140;
+var PXL2XL64_good = 220;
+var PXL2XL64_mint = 230;
 
-var PXL2XL128_broken = 2;
-var PXL2XL128_rough = 6;
-var PXL2XL128_good = 10;
-var PXL2XL128_mint = 12;
+var PXL2XL128_broken = 35;
+var PXL2XL128_rough = 158;
+var PXL2XL128_good = 240;
+var PXL2XL128_mint = 255;
 
 function valuation(phone, carrier, condition) {
 
@@ -2635,6 +2693,174 @@ function valuation(phone, carrier, condition) {
 
 	}
 
+	if (phone == "IPDP932") {
+
+	switch (condition) {
+		case "Broken": return IPDP932_broken;
+		break;
+		case "Rough": return IPDP932_rough;
+		break;
+		case "Good": return IPDP932_good;
+		break;
+		case "Mint": return IPDP932_mint;
+	}
+
+}
+
+if (phone == "IPDP9128") {
+
+switch (condition) {
+	case "Broken": return IPDP9128_broken;
+	break;
+	case "Rough": return IPDP9128_rough;
+	break;
+	case "Good": return IPDP9128_good;
+	break;
+	case "Mint": return IPDP9128_mint;
+}
+
+}
+
+
+if (phone == "IPDP9256") {
+
+switch (condition) {
+	case "Broken": return IPDP9256_broken;
+	break;
+	case "Rough": return IPDP9256_rough;
+	break;
+	case "Good": return IPDP9256_good;
+	break;
+	case "Mint": return IPDP9256_mint;
+}
+
+}
+
+if (phone == "IPDP1232") {
+
+switch (condition) {
+	case "Broken": return IPDP1232_broken;
+	break;
+	case "Rough": return IPDP1232_rough;
+	break;
+	case "Good": return IPDP1232_good;
+	break;
+	case "Mint": return IPDP1232_mint;
+}
+
+}
+
+if (phone == "IPDP12128") {
+
+switch (condition) {
+	case "Broken": return IPDP12128_broken;
+	break;
+	case "Rough": return IPDP12128_rough;
+	break;
+	case "Good": return IPDP12128_good;
+	break;
+	case "Mint": return IPDP12128_mint;
+}
+
+}
+
+if (phone == "IPDP12256") {
+
+switch (condition) {
+	case "Broken": return IPDP12256_broken;
+	break;
+	case "Rough": return IPDP12256_rough;
+	break;
+	case "Good": return IPDP12256_good;
+	break;
+	case "Mint": return IPDP12256_mint;
+}
+
+}
+
+if (phone == "IPDP21064") {
+
+switch (condition) {
+	case "Broken": return IPDP21064_broken;
+	break;
+	case "Rough": return IPDP21064_rough;
+	break;
+	case "Good": return IPDP21064_good;
+	break;
+	case "Mint": return IPDP21064_mint;
+}
+
+}
+
+if (phone == "IPDP210256") {
+
+switch (condition) {
+	case "Broken": return IPDP210256_broken;
+	break;
+	case "Rough": return IPDP210256_rough;
+	break;
+	case "Good": return IPDP210256_good;
+	break;
+	case "Mint": return IPDP210256_mint;
+}
+
+}
+
+if (phone == "IPDP210512") {
+
+switch (condition) {
+	case "Broken": return IPDP210512_broken;
+	break;
+	case "Rough": return IPDP210512_rough;
+	break;
+	case "Good": return IPDP210512_good;
+	break;
+	case "Mint": return IPDP210512_mint;
+}
+
+}
+
+if (phone == "IPDP21264") {
+
+switch (condition) {
+	case "Broken": return IPDP21264_broken;
+	break;
+	case "Rough": return IPDP21264_rough;
+	break;
+	case "Good": return IPDP21264_good;
+	break;
+	case "Mint": return IPDP21264_mint;
+}
+
+}
+
+if (phone == "IPDP212256") {
+
+switch (condition) {
+	case "Broken": return IPDP212256_broken;
+	break;
+	case "Rough": return IPDP212256_rough;
+	break;
+	case "Good": return IPDP212256_good;
+	break;
+	case "Mint": return IPDP212256_mint;
+}
+
+}
+
+if (phone == "IPDP212512") {
+
+switch (condition) {
+	case "Broken": return IPDP212512_broken;
+	break;
+	case "Rough": return IPDP212512_rough;
+	break;
+	case "Good": return IPDP212512_good;
+	break;
+	case "Mint": return IPDP212512_mint;
+}
+
+}
 	// BLACKBERRY ---------------------------------------------------------------------------------------------- //
 
 
