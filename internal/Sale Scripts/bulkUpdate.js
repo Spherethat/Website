@@ -223,6 +223,11 @@ $(document).on('knack-scene-render.scene_546', function(event, scene) {
       nicedate: dateClean,
     };
 
+    let url = $(location)
+      .attr('hash')
+      .split('/');
+    let invoiceID = url[3]; //use as ID to filter out data
+
     function ReqSales(body) {
       $.ajax({
         url:
