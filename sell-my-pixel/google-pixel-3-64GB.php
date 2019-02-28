@@ -1,7 +1,7 @@
 <?php
 
-$gadget = "SSG92032";
-$gadgetdesc = "Samsung Galaxy S6";
+$gadget = "PXL364";
+$gadgetdesc = "Google Pixel 3 64GB";
 $brand = "samsung";
 
 include ('../template_phone.php') ;

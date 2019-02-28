@@ -41,6 +41,7 @@ $(document).on('knack-scene-render.scene_546', function(event, scene) {
   let finalSku = [];
   let models = Knack.models['view_1592'].data.models;
   let data = Knack.models['view_1137'].toJSON();
+
   $('#bulkPricer').click(function(event) {
     $('#priceTable').empty();
     let skuData = [];
@@ -228,10 +229,12 @@ $(document).on('knack-scene-render.scene_546', function(event, scene) {
       .split('/');
     let invoiceID = url[3]; //use as ID to filter out data
 
-    function ReqSales(body) {
+    function ReqSales(bsId) {
       $.ajax({
         url:
-          'https://api.knack.com/v1/objects/object_6/records?page=1&rows_per_page=1000&filters=[{"field":"field_1164", "operator":"is","value":["5bef4ca21154dd1902fc0580"]}]',
+          'https://api.knack.com/v1/objects/object_6/records?page=1&rows_per_page=1000&filters=[{"field":"field_1164", "operator":"is","value":[' +
+          bsId +
+          ']}]',
         headers: headers,
         me: 'GET',
       }).then(function(response) {
@@ -239,9 +242,80 @@ $(document).on('knack-scene-render.scene_546', function(event, scene) {
       });
     }
 
-    alert(sendData);
-    console.log(sendData);
-  });
+    function add(a, b) {
+        return parseFloat(a) + parseFloat(b);
+      }
+
+      var settings = {
+        async: true,
+        crossDomain: true,
+        url:
+          'https://api.knack.com/v1/objects/object_6/records?page=1&rows_per_page=1000&filters=[{%22field%22:%22field_1164%22,%20%22operator%22:%22is%22,%22value%22:[%225bef4ca21154dd1902fc0580%22]}]',
+        method: 'GET',
+        headers: {
+          'X-Knack-Application-Id': '5803cd7ca2fe59e9154c96e3',
+          'X-Knack-REST-API-Key': '84e10cb0-93d4-11e6-ae4f-3bccb458bbf0',
+        },
+      };
+
+      $.ajax(settings).then(function(response) {
+        console.log(response.records.length);
+
+        var rawSales = [];
+
+        for (var i = 0; i < response.records.length; i++) {
+          rawSales.push({
+            model: response.records[i].field_241,
+            condition: response.records[i].field_464,
+            carrier: response.records[i].field_243,
+            preTaxPrice: parseFloat(response.records[i].field_1717_raw).toFixed(2),
+            Price: parseFloat(response.records[i].field_57_raw).toFixed(2),
+            unique:
+              response.records[i].field_241 +
+              '//' +
+              response.records[i].field_464 +
+              '//' +
+              response.records[i].field_243 +
+              '//' +
+              parseFloat(response.records[i].field_1717_raw).toFixed(2),
+            identifier: response.records[i].field_54_raw[0].identifier,
+          });
+        }
+
+        var lineItems = rawSales.map(function(item) {
+          return item.unique;
+        });
+
+        console.log(lineItems)
+
+        var salesSummary = [];
+
+        lineItems.forEach(function(saleItem) {
+          var priceArr = [];
+
+          rawSales.forEach(function(sale) {
+            if (sale.unique == saleItem) {
+              priceArr.push(sale.preTaxPrice);
+            }
+          });
+
+          var desc = saleItem.split('//');
+          var grade = desc[1].split(' ');
+
+          var object = [
+            desc[0], //Model Name
+            grade[1], //Grade
+            desc[2], //Carrier
+            priceArr.length, //Quantity
+            "$"+desc[3], //Price
+            "$"+parseFloat(priceArr.reduce(add, 0)).toFixed(2) //subtotal
+          ];
+
+          salesSummary.push(object);
+        })
+
+        console.log(salesSummary)
+      });
 
   $('#addShipping').click(function(event) {
     event.preventDefault();

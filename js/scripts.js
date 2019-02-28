@@ -11,3884 +11,709 @@ actlock = {
     '<h2>Reactivation Lock</h2><p style="margin-bottom: 0; clear: both">Your Android device may have Reactivation Lock turned on. Please make sure that this is turned off before sending your device in.</p><br><p>You can check for this by going to Settings &gt; Security &gt Find My Mobile &gt; Reactivation Lock.</p></div>',
 };
 
-const IP516L_broken = 3;
-const IP516L_rough = 14;
-const IP516L_good = 21;
-const IP516L_mint = 24;
-const IP516U_broken = 3;
-const IP516U_rough = 14;
-const IP516U_good = 21;
-const IP516U_mint = 24;
-const IP532L_broken = 5;
-const IP532L_rough = 16;
-const IP532L_good = 24;
-const IP532L_mint = 28;
-const IP532U_broken = 5;
-const IP532U_rough = 16;
-const IP532U_good = 24;
-const IP532U_mint = 28;
-const IP564L_broken = 6;
-const IP564L_rough = 19;
-const IP564L_good = 30;
-const IP564L_mint = 34;
-const IP564U_broken = 6;
-const IP564U_rough = 19;
-const IP564U_good = 30;
-const IP564U_mint = 34;
-const IP5C16L_broken = 5;
-const IP5C16L_rough = 12;
-const IP5C16L_good = 24;
-const IP5C16L_mint = 28;
-const IP5C16U_broken = 5;
-const IP5C16U_rough = 12;
-const IP5C16U_good = 24;
-const IP5C16U_mint = 28;
-const IP5C32L_broken = 5;
-const IP5C32L_rough = 17;
-const IP5C32L_good = 30;
-const IP5C32L_mint = 35;
-const IP5C32U_broken = 5;
-const IP5C32U_rough = 17;
-const IP5C32U_good = 30;
-const IP5C32U_mint = 35;
-const IP5S16L_broken = 7;
-const IP5S16L_rough = 23;
-const IP5S16L_good = 32;
-const IP5S16L_mint = 36;
-const IP5S16U_broken = 7;
-const IP5S16U_rough = 23;
-const IP5S16U_good = 32;
-const IP5S16U_mint = 36;
-const IP5S32L_broken = 8;
-const IP5S32L_rough = 23;
-const IP5S32L_good = 37;
-const IP5S32L_mint = 41;
-const IP5S32U_broken = 8;
-const IP5S32U_rough = 23;
-const IP5S32U_good = 37;
-const IP5S32U_mint = 41;
-const IP5S64L_broken = 9;
-const IP5S64L_rough = 32;
-const IP5S64L_good = 42;
-const IP5S64L_mint = 47;
-const IP5S64U_broken = 9;
-const IP5S64U_rough = 32;
-const IP5S64U_good = 42;
-const IP5S64U_mint = 47;
-const IP616L_broken = 17;
-const IP616L_rough = 54;
-const IP616L_good = 72;
-const IP616L_mint = 80;
-const IP616U_broken = 17;
-const IP616U_rough = 54;
-const IP616U_good = 72;
-const IP616U_mint = 80;
-const IP664L_broken = 19;
-const IP664L_rough = 59;
-const IP664L_good = 85;
-const IP664L_mint = 90;
-const IP664U_broken = 19;
-const IP664U_rough = 59;
-const IP664U_good = 85;
-const IP664U_mint = 90;
-const IP6128L_broken = 21;
-const IP6128L_rough = 75;
-const IP6128L_good = 100;
-const IP6128L_mint = 105;
-const IP6128U_broken = 21;
-const IP6128U_rough = 75;
-const IP6128U_good = 100;
-const IP6128U_mint = 105;
-const IP6P16L_broken = 25;
-const IP6P16L_rough = 84;
-const IP6P16L_good = 105;
-const IP6P16L_mint = 115;
-const IP6P16U_broken = 25;
-const IP6P16U_rough = 84;
-const IP6P16U_good = 105;
-const IP6P16U_mint = 115;
-const IP6P64L_broken = 29;
-const IP6P64L_rough = 91;
-const IP6P64L_good = 115;
-const IP6P64L_mint = 125;
-const IP6P64U_broken = 29;
-const IP6P64U_rough = 91;
-const IP6P64U_good = 115;
-const IP6P64U_mint = 125;
-const IP6P128L_broken = 30;
-const IP6P128L_rough = 97;
-const IP6P128L_good = 120;
-const IP6P128L_mint = 130;
-const IP6P128U_broken = 30;
-const IP6P128U_rough = 97;
-const IP6P128U_good = 120;
-const IP6P128U_mint = 130;
-const IP6S16L_broken = 34;
-const IP6S16L_rough = 86;
-const IP6S16L_good = 105;
-const IP6S16L_mint = 115;
-const IP6S16U_broken = 34;
-const IP6S16U_rough = 86;
-const IP6S16U_good = 105;
-const IP6S16U_mint = 115;
-const IP6S32L_broken = 34;
-const IP6S32L_rough = 86;
-const IP6S32L_good = 105;
-const IP6S32L_mint = 115;
-const IP6S32U_broken = 34;
-const IP6S32U_rough = 86;
-const IP6S32U_good = 105;
-const IP6S32U_mint = 115;
-const IP6S64L_broken = 34;
-const IP6S64L_rough = 91;
-const IP6S64L_good = 115;
-const IP6S64L_mint = 125;
-const IP6S64U_broken = 34;
-const IP6S64U_rough = 91;
-const IP6S64U_good = 115;
-const IP6S64U_mint = 125;
-const IP6S128L_broken = 34;
-const IP6S128L_rough = 104;
-const IP6S128L_good = 130;
-const IP6S128L_mint = 140;
-const IP6S128U_broken = 34;
-const IP6S128U_rough = 104;
-const IP6S128U_good = 130;
-const IP6S128U_mint = 140;
-const IP6SP16L_broken = 37;
-const IP6SP16L_rough = 119;
-const IP6SP16L_good = 140;
-const IP6SP16L_mint = 150;
-const IP6SP16U_broken = 37;
-const IP6SP16U_rough = 119;
-const IP6SP16U_good = 140;
-const IP6SP16U_mint = 150;
-const IP6SP64L_broken = 37;
-const IP6SP64L_rough = 131;
-const IP6SP64L_good = 145;
-const IP6SP64L_mint = 160;
-const IP6SP64U_broken = 37;
-const IP6SP64U_rough = 131;
-const IP6SP64U_good = 145;
-const IP6SP64U_mint = 160;
-const IP6SP128L_broken = 37;
-const IP6SP128L_rough = 136;
-const IP6SP128L_good = 160;
-const IP6SP128L_mint = 175;
-const IP6SP128U_broken = 37;
-const IP6SP128U_rough = 136;
-const IP6SP128U_good = 160;
-const IP6SP128U_mint = 175;
-const IP732L_broken = 45;
-const IP732L_rough = 143;
-const IP732L_good = 200;
-const IP732L_mint = 215;
-const IP732U_broken = 45;
-const IP732U_rough = 143;
-const IP732U_good = 200;
-const IP732U_mint = 215;
-const IP7128L_broken = 45;
-const IP7128L_rough = 161;
-const IP7128L_good = 210;
-const IP7128L_mint = 220;
-const IP7128U_broken = 45;
-const IP7128U_rough = 161;
-const IP7128U_good = 210;
-const IP7128U_mint = 220;
-const IP7256L_broken = 45;
-const IP7256L_rough = 169;
-const IP7256L_good = 230;
-const IP7256L_mint = 245;
-const IP7256U_broken = 45;
-const IP7256U_rough = 169;
-const IP7256U_good = 230;
-const IP7256U_mint = 245;
-const IP7P32L_broken = 51;
-const IP7P32L_rough = 174;
-const IP7P32L_good = 250;
-const IP7P32L_mint = 270;
-const IP7P32U_broken = 51;
-const IP7P32U_rough = 174;
-const IP7P32U_good = 250;
-const IP7P32U_mint = 270;
-const IP7P128L_broken = 51;
-const IP7P128L_rough = 183;
-const IP7P128L_good = 270;
-const IP7P128L_mint = 285;
-const IP7P128U_broken = 51;
-const IP7P128U_rough = 183;
-const IP7P128U_good = 270;
-const IP7P128U_mint = 285;
-const IP7P256L_broken = 51;
-const IP7P256L_rough = 215;
-const IP7P256L_good = 290;
-const IP7P256L_mint = 310;
-const IP7P256U_broken = 51;
-const IP7P256U_rough = 215;
-const IP7P256U_good = 290;
-const IP7P256U_mint = 310;
-const IPSE16L_broken = 16;
-const IPSE16L_rough = 50;
-const IPSE16L_good = 68;
-const IPSE16L_mint = 79;
-const IPSE16U_broken = 16;
-const IPSE16U_rough = 50;
-const IPSE16U_good = 68;
-const IPSE16U_mint = 79;
-const IPSE64L_broken = 21;
-const IPSE64L_rough = 69;
-const IPSE64L_good = 77;
-const IPSE64L_mint = 89;
-const IPSE64U_broken = 21;
-const IPSE64U_rough = 69;
-const IPSE64U_good = 77;
-const IPSE64U_mint = 89;
-const IPSE128L_broken = 23;
-const IPSE128L_rough = 69;
-const IPSE128L_good = 83;
-const IPSE128L_mint = 100;
-const IPSE128U_broken = 23;
-const IPSE128U_rough = 69;
-const IPSE128U_good = 83;
-const IPSE128U_mint = 100;
-const IP864U_broken = 51;
-const IP864U_rough = 207;
-const IP864U_good = 340;
-const IP864U_mint = 360;
-const IP8256U_broken = 51;
-const IP8256U_rough = 275;
-const IP8256U_good = 410;
-const IP8256U_mint = 420;
-const IP8P64U_broken = 76;
-const IP8P64U_rough = 229;
-const IP8P64U_good = 375;
-const IP8P64U_mint = 390;
-const IP8P256U_broken = 76;
-const IP8P256U_rough = 269;
-const IP8P256U_good = 420;
-const IP8P256U_mint = 435;
-const IPX64U_broken = 90;
-const IPX64U_rough = 394;
-const IPX64U_good = 570;
-const IPX64U_mint = 590;
-const IPX256U_broken = 95;
-const IPX256U_rough = 404;
-const IPX256U_good = 600;
-const IPX256U_mint = 620;
-
-const IPXR64U_broken = 90;
-const IPXR64U_rough = 394;
-const IPXR64U_good = 570;
-const IPXR64U_mint = 590;
-const IPXR128U_broken = 90;
-const IPXR128U_rough = 394;
-const IPXR128U_good = 570;
-const IPXR128U_mint = 590;
-const IPXR256U_broken = 95;
-const IPXR256U_rough = 404;
-const IPXR256U_good = 600;
-const IPXR256U_mint = 620;
-const IPXS64U_broken = 95;
-const IPXS64U_rough = 404;
-const IPXS64U_good = 600;
-const IPXS64U_mint = 620;
-const IPXS256U_broken = 100;
-const IPXS256U_rough = 415;
-const IPXS256U_good = 620;
-const IPXS256U_mint = 640;
-const IPXS512U_broken = 105;
-const IPXS512U_rough = 422;
-const IPXS512U_good = 630;
-const IPXS512U_mint = 660;
-const IPXSM64U_broken = 105;
-const IPXSM64U_rough = 422;
-const IPXSM64U_good = 630;
-const IPXSM64U_mint = 660;
-const IPXSM256U_broken = 110;
-const IPXSM256U_rough = 435;
-const IPXSM256U_good = 650;
-const IPXSM256U_mint = 680;
-const IPXSM512U_broken = 115;
-const IPXSM512U_rough = 440;
-const IPXSM512U_good = 670;
-const IPXSM512U_mint = 700;
-// IPOD TOUCH
-const IPT48G_broken = 1;
-const IPT48G_rough = 1;
-const IPT48G_good = 2;
-const IPT48G_mint = 3;
-const IPT416G_broken = 1;
-const IPT416G_rough = 1;
-const IPT416G_good = 3;
-const IPT416G_mint = 5;
-const IPT432G_broken = 1;
-const IPT432G_rough = 4;
-const IPT432G_good = 7;
-const IPT432G_mint = 9;
-const IPT464G_broken = 2;
-const IPT464G_rough = 6;
-const IPT464G_good = 11;
-const IPT464G_mint = 13;
-const IPT532G_broken = 3;
-const IPT532G_rough = 5;
-const IPT532G_good = 11;
-const IPT532G_mint = 16;
-const IPT564G_broken = 3;
-const IPT564G_rough = 6;
-const IPT564G_good = 14;
-const IPT564G_mint = 18;
-const IPT616G_broken = 2;
-const IPT616G_rough = 3;
-const IPT616G_good = 7;
-const IPT616G_mint = 11;
-const IPT632G_broken = 3;
-const IPT632G_rough = 5;
-const IPT632G_good = 11;
-const IPT632G_mint = 16;
-const IPT664G_broken = 3;
-const IPT664G_rough = 6;
-const IPT664G_good = 14;
-const IPT664G_mint = 18;
-const IPT6128G_broken = 4;
-const IPT6128G_rough = 9;
-const IPT6128G_good = 16;
-const IPT6128G_mint = 22;
-// IPAD
-const IPD116G_broken = 2;
-const IPD116G_rough = 5;
-const IPD116G_good = 8;
-const IPD116G_mint = 10;
-const IPD132G_broken = 3;
-const IPD132G_rough = 6;
-const IPD132G_good = 10;
-const IPD132G_mint = 12;
-const IPD164G_broken = 3;
-const IPD164G_rough = 8;
-const IPD164G_good = 12;
-const IPD164G_mint = 14;
-const IPD216G_broken = 4;
-const IPD216G_rough = 12;
-const IPD216G_good = 23;
-const IPD216G_mint = 31;
-const IPD232G_broken = 4;
-const IPD232G_rough = 14;
-const IPD232G_good = 27;
-const IPD232G_mint = 35;
-const IPD264G_broken = 4;
-const IPD264G_rough = 14;
-const IPD264G_good = 28;
-const IPD264G_mint = 36;
-const IPD316G_broken = 8;
-const IPD316G_rough = 27;
-const IPD316G_good = 48;
-const IPD316G_mint = 53;
-const IPD332G_broken = 8;
-const IPD332G_rough = 29;
-const IPD332G_good = 51;
-const IPD332G_mint = 58;
-const IPD364G_broken = 9;
-const IPD364G_rough = 33;
-const IPD364G_good = 57;
-const IPD364G_mint = 61;
-const IPD416G_broken = 12;
-const IPD416G_rough = 38;
-const IPD416G_good = 54;
-const IPD416G_mint = 63;
-const IPD432G_broken = 12;
-const IPD432G_rough = 42;
-const IPD432G_good = 60;
-const IPD432G_mint = 70;
-const IPD464G_broken = 12;
-const IPD464G_rough = 48;
-const IPD464G_good = 70;
-const IPD464G_mint = 78;
-const IPD4128G_broken = 12;
-const IPD4128G_rough = 52;
-const IPD4128G_good = 78;
-const IPD4128G_mint = 84;
-const IPDM16G_broken = 7;
-const IPDM16G_rough = 25;
-const IPDM16G_good = 37;
-const IPDM16G_mint = 45;
-const IPDM32G_broken = 8;
-const IPDM32G_rough = 26;
-const IPDM32G_good = 45;
-const IPDM32G_mint = 50;
-const IPDM64G_broken = 8;
-const IPDM64G_rough = 32;
-const IPDM64G_good = 50;
-const IPDM64G_mint = 57;
-const IPDAIR16G_broken = 14;
-const IPDAIR16G_rough = 41;
-const IPDAIR16G_good = 71;
-const IPDAIR16G_mint = 79;
-const IPDAIR32G_broken = 10;
-const IPDAIR32G_rough = 42;
-const IPDAIR32G_good = 77;
-const IPDAIR32G_mint = 86;
-const IPDAIR64G_broken = 12;
-const IPDAIR64G_rough = 48;
-const IPDAIR64G_good = 86;
-const IPDAIR64G_mint = 93;
-const IPDAIR128G_broken = 17;
-const IPDAIR128G_rough = 52;
-const IPDAIR128G_good = 95;
-const IPDAIR128G_mint = 99;
-const IPDAIR216G_broken = 16;
-const IPDAIR216G_rough = 58;
-const IPDAIR216G_good = 112;
-const IPDAIR216G_mint = 120;
-const IPDAIR232G_broken = 16;
-const IPDAIR232G_rough = 58;
-const IPDAIR232G_good = 112;
-const IPDAIR232G_mint = 120;
-const IPDAIR264G_broken = 17;
-const IPDAIR264G_rough = 66;
-const IPDAIR264G_good = 126;
-const IPDAIR264G_mint = 133;
-const IPDAIR2128G_broken = 18;
-const IPDAIR2128G_rough = 69;
-const IPDAIR2128G_good = 129;
-const IPDAIR2128G_mint = 140;
-const IPDM216G_broken = 8;
-const IPDM216G_rough = 34;
-const IPDM216G_good = 51;
-const IPDM216G_mint = 58;
-const IPDM232G_broken = 9;
-const IPDM232G_rough = 35;
-const IPDM232G_good = 54;
-const IPDM232G_mint = 60;
-const IPDM264G_broken = 9;
-const IPDM264G_rough = 38;
-const IPDM264G_good = 58;
-const IPDM264G_mint = 65;
-const IPDM316G_broken = 10;
-const IPDM316G_rough = 41;
-const IPDM316G_good = 73;
-const IPDM316G_mint = 77;
-const IPDM332G_broken = 11;
-const IPDM332G_rough = 46;
-const IPDM332G_good = 83;
-const IPDM332G_mint = 88;
-const IPDM364G_broken = 12;
-const IPDM364G_rough = 51;
-const IPDM364G_good = 93;
-const IPDM364G_mint = 99;
-const IPDM3128G_broken = 13;
-const IPDM3128G_rough = 57;
-const IPDM3128G_good = 103;
-const IPDM3128G_mint = 110;
-const IPDM416G_broken = 15;
-const IPDM416G_rough = 58;
-const IPDM416G_good = 107;
-const IPDM416G_mint = 116;
-const IPDM432G_broken = 16;
-const IPDM432G_rough = 61;
-const IPDM432G_good = 114;
-const IPDM432G_mint = 122;
-const IPDM464G_broken = 17;
-const IPDM464G_rough = 68;
-const IPDM464G_good = 130;
-const IPDM464G_mint = 137;
-const IPDM4128G_broken = 18;
-const IPDM4128G_rough = 72;
-const IPDM4128G_good = 135;
-const IPDM4128G_mint = 144;
-const IPDP932_broken = 59;
-const IPDP932_rough = 126;
-const IPDP932_good = 203;
-const IPDP932_mint = 221;
-const IPDP9128_broken = 63;
-const IPDP9128_rough = 141;
-const IPDP9128_good = 215;
-const IPDP9128_mint = 245;
-const IPDP9256_broken = 67;
-const IPDP9256_rough = 148;
-const IPDP9256_good = 230;
-const IPDP9256_mint = 260;
-const IPDP1232_broken = 67;
-const IPDP1232_rough = 152;
-const IPDP1232_good = 255;
-const IPDP1232_mint = 275;
-const IPDP12128_broken = 70;
-const IPDP12128_rough = 158;
-const IPDP12128_good = 265;
-const IPDP12128_mint = 285;
-const IPDP12256_broken = 72;
-const IPDP12256_rough = 162;
-const IPDP12256_good = 270;
-const IPDP12256_mint = 295;
-const IPDP21064_broken = 74;
-const IPDP21064_rough = 185;
-const IPDP21064_good = 300;
-const IPDP21064_mint = 320;
-const IPDP210256_broken = 77;
-const IPDP210256_rough = 195;
-const IPDP210256_good = 320;
-const IPDP210256_mint = 335;
-const IPDP210512_broken = 80;
-const IPDP210512_rough = 205;
-const IPDP210512_good = 330;
-const IPDP210512_mint = 345;
-const IPDP21264_broken = 79;
-const IPDP21264_rough = 200;
-const IPDP21264_good = 325;
-const IPDP21264_mint = 340;
-const IPDP212256_broken = 83;
-const IPDP212256_rough = 211;
-const IPDP212256_good = 340;
-const IPDP212256_mint = 355;
-const IPDP212512_broken = 86;
-const IPDP212512_rough = 217;
-const IPDP212512_good = 350;
-const IPDP212512_mint = 370;
-// BLACKBERRY
-const BB9900_broken = 1;
-const BB9900_rough = 2;
-const BB9900_good = 3;
-const BB9900_mint = 5;
-const BBCLASS_broken = 2;
-const BBCLASS_rough = 8;
-const BBCLASS_good = 16;
-const BBCLASS_mint = 19;
-const BBLEAP_broken = 1;
-const BBLEAP_rough = 4;
-const BBLEAP_good = 8;
-const BBLEAP_mint = 10;
-const BBPASS_broken = 4;
-const BBPASS_rough = 23;
-const BBPASS_good = 33;
-const BBPASS_mint = 38;
-const BBPRIV_broken = 5;
-const BBPRIV_rough = 26;
-const BBPRIV_good = 45;
-const BBPRIV_mint = 54;
-const BBQ5_broken = 1;
-const BBQ5_rough = 2;
-const BBQ5_good = 3;
-const BBQ5_mint = 5;
-const BBQ10L_broken = 1;
-const BBQ10L_rough = 3;
-const BBQ10L_good = 5;
-const BBQ10L_mint = 7;
-const BBQ10U_broken = 1;
-const BBQ10U_rough = 3;
-const BBQ10U_good = 5;
-const BBQ10U_mint = 7;
-const BBZ10L_broken = 1;
-const BBZ10L_rough = 3;
-const BBZ10L_good = 5;
-const BBZ10L_mint = 7;
-const BBZ10U_broken = 1;
-const BBZ10U_rough = 3;
-const BBZ10U_good = 5;
-const BBZ10U_mint = 7;
-const BBZ30U_broken = 1;
-const BBZ30U_rough = 5;
-const BBZ30U_good = 9;
-const BBZ30U_mint = 12;
-const BBZ30L_broken = 1;
-const BBZ30L_rough = 5;
-const BBZ30L_good = 9;
-const BBZ30L_mint = 12;
-const BBDTEK50U_broken = 13;
-const BBDTEK50U_rough = 31;
-const BBDTEK50U_good = 63;
-const BBDTEK50U_mint = 72;
-const BBDTEK50L_broken = 13;
-const BBDTEK50L_rough = 31;
-const BBDTEK50L_good = 63;
-const BBDTEK50L_mint = 72;
-const BBDTEK60U_broken = 24;
-const BBDTEK60U_rough = 66;
-const BBDTEK60U_good = 104;
-const BBDTEK60U_mint = 113;
-const BBDTEK60L_broken = 24;
-const BBDTEK60L_rough = 66;
-const BBDTEK60L_good = 104;
-const BBDTEK60L_mint = 113;
-const BBKEYONEU_broken = 27;
-const BBKEYONEU_rough = 84;
-const BBKEYONEU_good = 122;
-const BBKEYONEU_mint = 131;
-const BBKEYONEL_broken = 27;
-const BBKEYONEL_rough = 84;
-const BBKEYONEL_good = 122;
-const BBKEYONEL_mint = 131;
-// HTC
-const HTDES601_broken = 1;
-const HTDES601_rough = 6;
-const HTDES601_good = 9;
-const HTDES601_mint = 11;
-const HTONE_broken = 4;
-const HTONE_rough = 3;
-const HTONE_good = 4;
-const HTONE_mint = 4;
-const HTONEM8_broken = 1;
-const HTONEM8_rough = 10;
-const HTONEM8_good = 20;
-const HTONEM8_mint = 26;
-const HTONEM9_broken = 2;
-const HTONEM9_rough = 15;
-const HTONEM9_good = 33;
-const HTONEM9_mint = 38;
-// LG
-const LGG2_broken = 3;
-const LGG2_rough = 5;
-const LGG2_good = 11;
-const LGG2_mint = 13;
-const LGG3_broken = 4;
-const LGG3_rough = 10;
-const LGG3_good = 19;
-const LGG3_mint = 29;
-const LGG4_broken = 7;
-const LGG4_rough = 13;
-const LGG4_good = 27;
-const LGG4_mint = 34;
-const LGG5_broken = 14;
-const LGG5_rough = 44;
-const LGG5_good = 64;
-const LGG5_mint = 72;
-const LGG6_broken = 24;
-const LGG6_rough = 64;
-const LGG6_good = 98;
-const LGG6_mint = 105;
-const LGNXS4_broken = 3;
-const LGNXS4_rough = 5;
-const LGNXS4_good = 11;
-const LGNXS4_mint = 13;
-const LGNXS5_broken = 4;
-const LGNXS5_rough = 9;
-const LGNXS5_good = 14;
-const LGNXS5_mint = 18;
-const LGOPTL7_broken = 2;
-const LGOPTL7_rough = 4;
-const LGOPTL7_good = 9;
-const LGOPTL7_mint = 12;
-// SAMSUNG
-// S5
-const SSG90016_broken = 7;
-const SSG90016_rough = 31;
-const SSG90016_good = 39;
-const SSG90016_mint = 46;
-// S6
-const SSG92032_broken = 14;
-const SSG92032_rough = 43;
-const SSG92032_good = 63;
-const SSG92032_mint = 77;
-const SSG92064_broken = 14;
-const SSG92064_rough = 49;
-const SSG92064_good = 72;
-const SSG92064_mint = 86;
-const SSG920128_broken = 14;
-const SSG920128_rough = 53;
-const SSG920128_good = 77;
-const SSG920128_mint = 86;
-// S6 edge
-const SSG92532_broken = 8;
-const SSG92532_rough = 50;
-const SSG92532_good = 72;
-const SSG92532_mint = 87;
-const SSG92564_broken = 10;
-const SSG92564_rough = 51;
-const SSG92564_good = 77;
-const SSG92564_mint = 90;
-const SSG925128_broken = 12;
-const SSG925128_rough = 52;
-const SSG925128_good = 81;
-const SSG925128_mint = 95;
-// S7
-const SSG93032_broken = 26;
-const SSG93032_rough = 74;
-const SSG93032_good = 113;
-const SSG93032_mint = 126;
-// S7 edge
-const SSG93532_broken = 17;
-const SSG93532_rough = 55;
-const SSG93532_good = 108;
-const SSG93532_mint = 122;
-// S8
-const SSG950_broken = 50;
-const SSG950_rough = 162;
-const SSG950_good = 213;
-const SSG950_mint = 230;
-// S8+
-const SSG955_broken = 41;
-const SSG955_rough = 202;
-const SSG955_good = 255;
-const SSG955_mint = 268;
-// S9
-const SSG960_broken = 72;
-const SSG960_rough = 212;
-const SSG960_good = 347;
-const SSG960_mint = 360;
-// S9+
-const SSG965_broken = 72;
-const SSG965_rough = 257;
-const SSG965_good = 401;
-const SSG965_mint = 414;
-// S4 mini
-const SSI257M_broken = 1;
-const SSI257M_rough = 3;
-const SSI257M_good = 6;
-const SSI257M_mint = 8;
-// note 2
-const SSI317_broken = 2;
-const SSI317_rough = 14;
-const SSI317_good = 21;
-const SSI317_mint = 25;
-// S4
-const SSI33716_broken = 6;
-const SSI33716_rough = 23;
-const SSI33716_good = 28;
-const SSI33716_mint = 30;
-// note
-const SSI717_broken = 0;
-const SSI717_rough = 3;
-const SSI717_good = 4;
-const SSI717_mint = 5;
-// S3
-const SSI74716_broken = 2;
-const SSI74716_rough = 7;
-const SSI74716_good = 12;
-const SSI74716_mint = 15;
-// Note 3
-const SSN900_broken = 5;
-const SSN900_rough = 32;
-const SSN900_good = 48;
-const SSN900_mint = 51;
-// Note 4
-const SSN910_broken = 12;
-const SSN910_rough = 37;
-const SSN910_good = 69;
-const SSN910_mint = 77;
-// Note 5
-const SSN920_broken = 23;
-const SSN920_rough = 69;
-const SSN920_good = 108;
-const SSN920_mint = 124;
-// Note 8
-const SSN950_broken = 66;
-const SSN950_rough = 215;
-const SSN950_good = 340;
-const SSN950_mint = 360;
-// Google
-const PXL32_broken = 20;
-const PXL32_rough = 61;
-const PXL32_good = 87;
-const PXL32_mint = 98;
-const PXL128_broken = 23;
-const PXL128_rough = 51;
-const PXL128_good = 94;
-const PXL128_mint = 106;
-const PXLXL32_broken = 20;
-const PXLXL32_rough = 56;
-const PXLXL32_good = 94;
-const PXLXL32_mint = 106;
-const PXLXL128_broken = 23;
-const PXLXL128_rough = 60;
-const PXLXL128_good = 115;
-const PXLXL128_mint = 128;
-const PXL264_broken = 27;
-const PXL264_rough = 126;
-const PXL264_good = 183;
-const PXL264_mint = 208;
-const PXL2128_broken = 27;
-const PXL2128_rough = 131;
-const PXL2128_good = 191;
-const PXL2128_mint = 213;
-const PXL2XL64_broken = 29;
-const PXL2XL64_rough = 139;
-const PXL2XL64_good = 207;
-const PXL2XL64_mint = 234;
-const PXL2XL128_broken = 32;
-const PXL2XL128_rough = 160;
-const PXL2XL128_good = 221;
-const PXL2XL128_mint = 243;
-const PXL364_broken = 55;
-const PXL364_rough = 270;
-const PXL364_good = 395;
-const PXL364_mint = 415;
-const PXL3128_broken = 60;
-const PXL3128_rough = 285;
-const PXL3128_good = 410;
-const PXL3128_mint = 435;
-const PXL3XL64_broken = 63;
-const PXL3XL64_rough = 293;
-const PXL3XL64_good = 420;
-const PXL3XL64_mint = 440;
-const PXL3XL128_broken = 67;
-const PXL3XL128_rough = 302;
-const PXL3XL128_good = 440;
-const PXL3XL128_mint = 460;
+// So many bad practices in one file
+// prettier-ignore
+priceObj = {
+  'IP516_Broken': '3',
+  'IP516_Rough': '14',
+  'IP516_Good': '21',
+  'IP516_Mint': '24',
+  'IP532_Broken': '5',
+  'IP532_Rough': '16',
+  'IP532_Good': '24',
+  'IP532_Mint': '28',
+  'IP564_Broken': '6',
+  'IP564_Rough': '19',
+  'IP564_Good': '30',
+  'IP564_Mint': '34',
+  'IP5C16_Broken': '5',
+  'IP5C16_Rough': '12',
+  'IP5C16_Good': '24',
+  'IP5C16_Mint': '28',
+  'IP5C32_Broken': '5',
+  'IP5C32_Rough': '17',
+  'IP5C32_Good': '30',
+  'IP5C32_Mint': '35',
+  'IP5S16_Broken': '7',
+  'IP5S16_Rough': '23',
+  'IP5S16_Good': '32',
+  'IP5S16_Mint': '36',
+  'IP5S32_Broken': '8',
+  'IP5S32_Rough': '23',
+  'IP5S32_Good': '37',
+  'IP5S32_Mint': '41',
+  'IP5S64_Broken': '9',
+  'IP5S64_Rough': '32',
+  'IP5S64_Good': '42',
+  'IP5S64_Mint': '47',
+  'IP616_Broken': '17',
+  'IP616_Rough': '54',
+  'IP616_Good': '72',
+  'IP616_Mint': '80',
+  'IP664_Broken': '19',
+  'IP664_Rough': '59',
+  'IP664_Good': '85',
+  'IP664_Mint': '90',
+  'IP6128_Broken': '21',
+  'IP6128_Rough': '75',
+  'IP6128_Good': '100',
+  'IP6128_Mint': '105',
+  'IP6P16_Broken': '25',
+  'IP6P16_Rough': '84',
+  'IP6P16_Good': '105',
+  'IP6P16_Mint': '115',
+  'IP6P64_Broken': '29',
+  'IP6P64_Rough': '91',
+  'IP6P64_Good': '115',
+  'IP6P64_Mint': '125',
+  'IP6P128_Broken': '30',
+  'IP6P128_Rough': '97',
+  'IP6P128_Good': '120',
+  'IP6P128_Mint': '130',
+  'IP6S16_Broken': '34',
+  'IP6S16_Rough': '86',
+  'IP6S16_Good': '105',
+  'IP6S16_Mint': '115',
+  'IP6S32_Broken': '34',
+  'IP6S32_Rough': '86',
+  'IP6S32_Good': '105',
+  'IP6S32_Mint': '115',
+  'IP6S64_Broken': '34',
+  'IP6S64_Rough': '91',
+  'IP6S64_Good': '115',
+  'IP6S64_Mint': '125',
+  'IP6S128_Broken': '34',
+  'IP6S128_Rough': '104',
+  'IP6S128_Good': '130',
+  'IP6S128_Mint': '140',
+  'IP6SP16_Broken': '37',
+  'IP6SP16_Rough': '119',
+  'IP6SP16_Good': '140',
+  'IP6SP16_Mint': '150',
+  'IP6SP64_Broken': '37',
+  'IP6SP64_Rough': '131',
+  'IP6SP64_Good': '145',
+  'IP6SP64_Mint': '160',
+  'IP6SP128_Broken': '37',
+  'IP6SP128_Rough': '136',
+  'IP6SP128_Good': '160',
+  'IP6SP128_Mint': '175',
+  'IP732_Broken': '45',
+  'IP732_Rough': '143',
+  'IP732_Good': '200',
+  'IP732_Mint': '215',
+  'IP7128_Broken': '45',
+  'IP7128_Rough': '161',
+  'IP7128_Good': '210',
+  'IP7128_Mint': '220',
+  'IP7256_Broken': '45',
+  'IP7256_Rough': '169',
+  'IP7256_Good': '230',
+  'IP7256_Mint': '245',
+  'IP7P32_Broken': '51',
+  'IP7P32_Rough': '174',
+  'IP7P32_Good': '250',
+  'IP7P32_Mint': '270',
+  'IP7P128_Broken': '51',
+  'IP7P128_Rough': '183',
+  'IP7P128_Good': '270',
+  'IP7P128_Mint': '285',
+  'IP7P256_Broken': '51',
+  'IP7P256_Rough': '215',
+  'IP7P256_Good': '290',
+  'IP7P256_Mint': '310',
+  'IPSE16_Broken': '16',
+  'IPSE16_Rough': '50',
+  'IPSE16_Good': '68',
+  'IPSE16_Mint': '79',
+  'IPSE64_Broken': '21',
+  'IPSE64_Rough': '69',
+  'IPSE64_Good': '77',
+  'IPSE64_Mint': '89',
+  'IPSE128_Broken': '23',
+  'IPSE128_Rough': '69',
+  'IPSE128_Good': '83',
+  'IPSE128_Mint': '100',
+  'IP864_Broken': '51',
+  'IP864_Rough': '207',
+  'IP864_Good': '340',
+  'IP864_Mint': '360',
+  'IP8256_Broken': '51',
+  'IP8256_Rough': '275',
+  'IP8256_Good': '410',
+  'IP8256_Mint': '420',
+  'IP8P64_Broken': '76',
+  'IP8P64_Rough': '229',
+  'IP8P64_Good': '375',
+  'IP8P64_Mint': '390',
+  'IP8P256_Broken': '76',
+  'IP8P256_Rough': '269',
+  'IP8P256_Good': '420',
+  'IP8P256_Mint': '435',
+  'IPX64_Broken': '90',
+  'IPX64_Rough': '394',
+  'IPX64_Good': '570',
+  'IPX64_Mint': '590',
+  'IPX256_Broken': '95',
+  'IPX256_Rough': '404',
+  'IPX256_Good': '600',
+  'IPX256_Mint': '620',
+  // New Iphones
+  'IPXR64_Broken': '90',
+  'IPXR64_Rough': '394',
+  'IPXR64_Good': '570',
+  'IPXR64_Mint': '590',
+  'IPXR128_Broken': '90',
+  'IPXR128_Rough': '394',
+  'IPXR128_Good': '570',
+  'IPXR128_Mint': '590',
+  'IPXR256_Broken': '95',
+  'IPXR256_Rough': '404',
+  'IPXR256_Good': '600',
+  'IPXR256_Mint': '620',
+  'IPXS64_Broken': '95',
+  'IPXS64_Rough': '404',
+  'IPXS64_Good': '600',
+  'IPXS64_Mint': '620',
+  'IPXS256_Broken': '100',
+  'IPXS256_Rough': '415',
+  'IPXS256_Good': '620',
+  'IPXS256_Mint': '640',
+  'IPXS512_Broken': '105',
+  'IPXS512_Rough': '422',
+  'IPXS512_Good': '630',
+  'IPXS512_Mint': '660',
+  'IPXSM64_Broken': '105',
+  'IPXSM64_Rough': '422',
+  'IPXSM64_Good': '630',
+  'IPXSM64_Mint': '660',
+  'IPXSM256_Broken': '110',
+  'IPXSM256_Rough': '435',
+  'IPXSM256_Good': '650',
+  'IPXSM256_Mint': '680',
+  'IPXSM512_Broken': '115',
+  'IPXSM512_Rough': '440',
+  'IPXSM512_Good': '670',
+  'IPXSM512_Mint': '700',
+  // IPOD TOUCH
+  'IPT48G_Broken': '1',
+  'IPT48G_Rough': '1',
+  'IPT48G_Good': '2',
+  'IPT48G_Mint': '3',
+  'IPT416G_Broken': '1',
+  'IPT416G_Rough': '1',
+  'IPT416G_Good': '3',
+  'IPT416G_Mint': '5',
+  'IPT432G_Broken': '1',
+  'IPT432G_Rough': '4',
+  'IPT432G_Good': '7',
+  'IPT432G_Mint': '9',
+  'IPT464G_Broken': '2',
+  'IPT464G_Rough': '6',
+  'IPT464G_Good': '11',
+  'IPT464G_Mint': '13',
+  'IPT532G_Broken': '3',
+  'IPT532G_Rough': '5',
+  'IPT532G_Good': '11',
+  'IPT532G_Mint': '16',
+  'IPT564G_Broken': '3',
+  'IPT564G_Rough': '6',
+  'IPT564G_Good': '14',
+  'IPT564G_Mint': '18',
+  'IPT616G_Broken': '2',
+  'IPT616G_Rough': '3',
+  'IPT616G_Good': '7',
+  'IPT616G_Mint': '11',
+  'IPT632G_Broken': '3',
+  'IPT632G_Rough': '5',
+  'IPT632G_Good': '11',
+  'IPT632G_Mint': '16',
+  'IPT664G_Broken': '3',
+  'IPT664G_Rough': '6',
+  'IPT664G_Good': '14',
+  'IPT664G_Mint': '18',
+  'IPT6128G_Broken': '4',
+  'IPT6128G_Rough': '9',
+  'IPT6128G_Good': '16',
+  'IPT6128G_Mint': '22',
+  // IPAD
+  'IPD116G_Broken': '2',
+  'IPD116G_Rough': '5',
+  'IPD116G_Good': '8',
+  'IPD116G_Mint': '10',
+  'IPD132G_Broken': '3',
+  'IPD132G_Rough': '6',
+  'IPD132G_Good': '10',
+  'IPD132G_Mint': '12',
+  'IPD164G_Broken': '3',
+  'IPD164G_Rough': '8',
+  'IPD164G_Good': '12',
+  'IPD164G_Mint': '14',
+  'IPD216G_Broken': '4',
+  'IPD216G_Rough': '12',
+  'IPD216G_Good': '23',
+  'IPD216G_Mint': '31',
+  'IPD232G_Broken': '4',
+  'IPD232G_Rough': '14',
+  'IPD232G_Good': '27',
+  'IPD232G_Mint': '35',
+  'IPD264G_Broken': '4',
+  'IPD264G_Rough': '14',
+  'IPD264G_Good': '28',
+  'IPD264G_Mint': '36',
+  'IPD316G_Broken': '8',
+  'IPD316G_Rough': '27',
+  'IPD316G_Good': '48',
+  'IPD316G_Mint': '53',
+  'IPD332G_Broken': '8',
+  'IPD332G_Rough': '29',
+  'IPD332G_Good': '51',
+  'IPD332G_Mint': '58',
+  'IPD364G_Broken': '9',
+  'IPD364G_Rough': '33',
+  'IPD364G_Good': '57',
+  'IPD364G_Mint': '61',
+  'IPD416G_Broken': '12',
+  'IPD416G_Rough': '38',
+  'IPD416G_Good': '54',
+  'IPD416G_Mint': '63',
+  'IPD432G_Broken': '12',
+  'IPD432G_Rough': '42',
+  'IPD432G_Good': '60',
+  'IPD432G_Mint': '70',
+  'IPD464G_Broken': '12',
+  'IPD464G_Rough': '48',
+  'IPD464G_Good': '70',
+  'IPD464G_Mint': '78',
+  'IPD4128G_Broken': '12',
+  'IPD4128G_Rough': '52',
+  'IPD4128G_Good': '78',
+  'IPD4128G_Mint': '84',
+  'IPDM16G_Broken': '7',
+  'IPDM16G_Rough': '25',
+  'IPDM16G_Good': '37',
+  'IPDM16G_Mint': '45',
+  'IPDM32G_Broken': '8',
+  'IPDM32G_Rough': '26',
+  'IPDM32G_Good': '45',
+  'IPDM32G_Mint': '50',
+  'IPDM64G_Broken': '8',
+  'IPDM64G_Rough': '32',
+  'IPDM64G_Good': '50',
+  'IPDM64G_Mint': '57',
+  'IPDAIR16G_Broken': '14',
+  'IPDAIR16G_Rough': '41',
+  'IPDAIR16G_Good': '71',
+  'IPDAIR16G_Mint': '79',
+  'IPDAIR32G_Broken': '10',
+  'IPDAIR32G_Rough': '42',
+  'IPDAIR32G_Good': '77',
+  'IPDAIR32G_Mint': '86',
+  'IPDAIR64G_Broken': '12',
+  'IPDAIR64G_Rough': '48',
+  'IPDAIR64G_Good': '86',
+  'IPDAIR64G_Mint': '93',
+  'IPDAIR128G_Broken': '17',
+  'IPDAIR128G_Rough': '52',
+  'IPDAIR128G_Good': '95',
+  'IPDAIR128G_Mint': '99',
+  'IPDAIR216G_Broken': '16',
+  'IPDAIR216G_Rough': '58',
+  'IPDAIR216G_Good': '112',
+  'IPDAIR216G_Mint': '120',
+  'IPDAIR232G_Broken': '16',
+  'IPDAIR232G_Rough': '58',
+  'IPDAIR232G_Good': '112',
+  'IPDAIR232G_Mint': '120',
+  'IPDAIR264G_Broken': '17',
+  'IPDAIR264G_Rough': '66',
+  'IPDAIR264G_Good': '126',
+  'IPDAIR264G_Mint': '133',
+  'IPDAIR2128G_Broken': '18',
+  'IPDAIR2128G_Rough': '69',
+  'IPDAIR2128G_Good': '129',
+  'IPDAIR2128G_Mint': '140',
+  'IPDM216G_Broken': '8',
+  'IPDM216G_Rough': '34',
+  'IPDM216G_Good': '51',
+  'IPDM216G_Mint': '58',
+  'IPDM232G_Broken': '9',
+  'IPDM232G_Rough': '35',
+  'IPDM232G_Good': '54',
+  'IPDM232G_Mint': '60',
+  'IPDM264G_Broken': '9',
+  'IPDM264G_Rough': '38',
+  'IPDM264G_Good': '58',
+  'IPDM264G_Mint': '65',
+  'IPDM316G_Broken': '10',
+  'IPDM316G_Rough': '41',
+  'IPDM316G_Good': '73',
+  'IPDM316G_Mint': '77',
+  'IPDM332G_Broken': '11',
+  'IPDM332G_Rough': '46',
+  'IPDM332G_Good': '83',
+  'IPDM332G_Mint': '88',
+  'IPDM364G_Broken': '12',
+  'IPDM364G_Rough': '51',
+  'IPDM364G_Good': '93',
+  'IPDM364G_Mint': '99',
+  'IPDM3128G_Broken': '13',
+  'IPDM3128G_Rough': '57',
+  'IPDM3128G_Good': '103',
+  'IPDM3128G_Mint': '110',
+  'IPDM416G_Broken': '15',
+  'IPDM416G_Rough': '58',
+  'IPDM416G_Good': '107',
+  'IPDM416G_Mint': '116',
+  'IPDM432G_Broken': '16',
+  'IPDM432G_Rough': '61',
+  'IPDM432G_Good': '114',
+  'IPDM432G_Mint': '122',
+  'IPDM464G_Broken': '17',
+  'IPDM464G_Rough': '68',
+  'IPDM464G_Good': '130',
+  'IPDM464G_Mint': '137',
+  'IPDM4128G_Broken': '18',
+  'IPDM4128G_Rough': '72',
+  'IPDM4128G_Good': '135',
+  'IPDM4128G_Mint': '144',
+  'IPDP932_Broken': '59',
+  'IPDP932_Rough': '126',
+  'IPDP932_Good': '203',
+  'IPDP932_Mint': '221',
+  'IPDP9128_Broken': '63',
+  'IPDP9128_Rough': '141',
+  'IPDP9128_Good': '215',
+  'IPDP9128_Mint': '245',
+  'IPDP9256_Broken': '67',
+  'IPDP9256_Rough': '148',
+  'IPDP9256_Good': '230',
+  'IPDP9256_Mint': '260',
+  'IPDP1232_Broken': '67',
+  'IPDP1232_Rough': '152',
+  'IPDP1232_Good': '255',
+  'IPDP1232_Mint': '275',
+  'IPDP12128_Broken': '70',
+  'IPDP12128_Rough': '158',
+  'IPDP12128_Good': '265',
+  'IPDP12128_Mint': '285',
+  'IPDP12256_Broken': '72',
+  'IPDP12256_Rough': '162',
+  'IPDP12256_Good': '270',
+  'IPDP12256_Mint': '295',
+  'IPDP21064_Broken': '74',
+  'IPDP21064_Rough': '185',
+  'IPDP21064_Good': '300',
+  'IPDP21064_Mint': '320',
+  'IPDP210256_Broken': '77',
+  'IPDP210256_Rough': '195',
+  'IPDP210256_Good': '320',
+  'IPDP210256_Mint': '335',
+  'IPDP210512_Broken': '80',
+  'IPDP210512_Rough': '205',
+  'IPDP210512_Good': '330',
+  'IPDP210512_Mint': '345',
+  'IPDP21264_Broken': '79',
+  'IPDP21264_Rough': '200',
+  'IPDP21264_Good': '325',
+  'IPDP21264_Mint': '340',
+  'IPDP212256_Broken': '83',
+  'IPDP212256_Rough': '211',
+  'IPDP212256_Good': '340',
+  'IPDP212256_Mint': '355',
+  'IPDP212512_Broken': '86',
+  'IPDP212512_Rough': '217',
+  'IPDP212512_Good': '350',
+  'IPDP212512_Mint': '370',
+  // BLACKBERRY
+  'BB9900_Broken': '1',
+  'BB9900_Rough': '2',
+  'BB9900_Good': '3',
+  'BB9900_Mint': '5',
+  'BBCLASS_Broken': '2',
+  'BBCLASS_Rough': '8',
+  'BBCLASS_Good': '16',
+  'BBCLASS_Mint': '19',
+  'BBLEAP_Broken': '1',
+  'BBLEAP_Rough': '4',
+  'BBLEAP_Good': '8',
+  'BBLEAP_Mint': '10',
+  'BBPASS_Broken': '4',
+  'BBPASS_Rough': '23',
+  'BBPASS_Good': '33',
+  'BBPASS_Mint': '38',
+  'BBPRIV_Broken': '5',
+  'BBPRIV_Rough': '26',
+  'BBPRIV_Good': '45',
+  'BBPRIV_Mint': '54',
+  'BBQ5_Broken': '1',
+  'BBQ5_Rough': '2',
+  'BBQ5_Good': '3',
+  'BBQ5_Mint': '5',
+  'BBQ10_Broken': '1',
+  'BBQ10_Rough': '3',
+  'BBQ10_Good': '5',
+  'BBQ10_Mint': '7',
+  'BBZ10_Broken': '1',
+  'BBZ10_Rough': '3',
+  'BBZ10_Good': '5',
+  'BBZ10_Mint': '7',
+  'BBZ30_Broken': '1',
+  'BBZ30_Rough': '5',
+  'BBZ30_Good': '9',
+  'BBZ30_Mint': '12',
+  'BBDTEK50_Broken': '13',
+  'BBDTEK50_Rough': '31',
+  'BBDTEK50_Good': '63',
+  'BBDTEK50_Mint': '72',
+  'BBDTEK60_Broken': '24',
+  'BBDTEK60_Rough': '66',
+  'BBDTEK60_Good': '104',
+  'BBDTEK60_Mint': '113',
+  'BBKEYONE_Broken': '27',
+  'BBKEYONE_Rough': '84',
+  'BBKEYONE_Good': '122',
+  'BBKEYONE_Mint': '131',
+  'BBMOTION_Broken': '24',
+  'BBMOTION_Rough': '96',
+  'BBMOTION_Good': '160',
+  'BBMOTION_Mint': '170',
+  'BBKEYTWO_Broken': '43',
+  'BBKEYTWO_Rough': '178',
+  'BBKEYTWO_Good': '245',
+  'BBKEYTWO_Mint': '270',
+  // HTC
+  'HTDES601_Broken': '1',
+  'HTDES601_Rough': '6',
+  'HTDES601_Good': '9',
+  'HTDES601_Mint': '11',
+  'HTONE_Broken': '4',
+  'HTONE_Rough': '3',
+  'HTONE_Good': '4',
+  'HTONE_Mint': '4',
+  'HTONEM8_Broken': '1',
+  'HTONEM8_Rough': '10',
+  'HTONEM8_Good': '20',
+  'HTONEM8_Mint': '26',
+  'HTONEM9_Broken': '2',
+  'HTONEM9_Rough': '15',
+  'HTONEM9_Good': '33',
+  'HTONEM9_Mint': '38',
+  // Huawei !Need prices for M9 and M10
+  'HWH8_Broken' : '11',
+  'HWH8_Rough' : '42',
+  'HWH8_Good' : '70',
+  'HWH8_Mint' : '80',
+  'HWN6P_Broken' : '4',
+  'HWN6P_Rough' : '18',
+  'HWN6P_Good' : '38',
+  'HWN6P_Mint' : '41',
+  'HWM9_Broken' : '10',
+  'HWM9_Rough' : '15',
+  'HWM9_Good' : '40',
+  'HWM9_Mint' : '50',
+  'HWM10P_Broken' : '10',
+  'HWM10P_Rough' : '15',
+  'HWM10P_Good' : '40',
+  'HWM10P_Mint' : '50',
+  // LG
+  'LGG2_Broken': '3',
+  'LGG2_Rough': '5',
+  'LGG2_Good': '11',
+  'LGG2_Mint': '13',
+  'LGG3_Broken': '4',
+  'LGG3_Rough': '10',
+  'LGG3_Good': '19',
+  'LGG3_Mint': '29',
+  'LGG4_Broken': '7',
+  'LGG4_Rough': '13',
+  'LGG4_Good': '27',
+  'LGG4_Mint': '34',
+  'LGG5_Broken': '14',
+  'LGG5_Rough': '44',
+  'LGG5_Good': '64',
+  'LGG5_Mint': '72',
+  'LGG6_Broken': '24',
+  'LGG6_Rough': '64',
+  'LGG6_Good': '98',
+  'LGG6_Mint': '105',
+  'LGNXS4_Broken': '3',
+  'LGNXS4_Rough': '5',
+  'LGNXS4_Good': '11',
+  'LGNXS4_Mint': '13',
+  'LGNXS5_Broken': '4',
+  'LGNXS5_Rough': '9',
+  'LGNXS5_Good': '14',
+  'LGNXS5_Mint': '18',
+  'LGOPTL7_Broken': '2',
+  'LGOPTL7_Rough': '4',
+  'LGOPTL7_Good': '9',
+  'LGOPTL7_Mint': '12',
+  // SAMSUNG
+  // S5
+  'SSG90016_Broken': '7',
+  'SSG90016_Rough': '31',
+  'SSG90016_Good': '39',
+  'SSG90016_Mint': '46',
+  // S6
+  'SSG92032_Broken': '14',
+  'SSG92032_Rough': '43',
+  'SSG92032_Good': '63',
+  'SSG92032_Mint': '77',
+  'SSG92064_Broken': '14',
+  'SSG92064_Rough': '49',
+  'SSG92064_Good': '72',
+  'SSG92064_Mint': '86',
+  'SSG920128_Broken': '14',
+  'SSG920128_Rough': '53',
+  'SSG920128_Good': '77',
+  'SSG920128_Mint': '86',
+  // S6 edge
+  'SSG92532_Broken': '8',
+  'SSG92532_Rough': '50',
+  'SSG92532_Good': '72',
+  'SSG92532_Mint': '87',
+  'SSG92564_Broken': '10',
+  'SSG92564_Rough': '51',
+  'SSG92564_Good': '77',
+  'SSG92564_Mint': '90',
+  'SSG925128_Broken': '12',
+  'SSG925128_Rough': '52',
+  'SSG925128_Good': '81',
+  'SSG925128_Mint': '95',
+  // S7
+  'SSG93032_Broken': '26',
+  'SSG93032_Rough': '74',
+  'SSG93032_Good': '113',
+  'SSG93032_Mint': '126',
+  // S7 edge
+  'SSG93532_Broken': '17',
+  'SSG93532_Rough': '55',
+  'SSG93532_Good': '108',
+  'SSG93532_Mint': '122',
+  // S8
+  'SSG950_Broken': '50',
+  'SSG950_Rough': '162',
+  'SSG950_Good': '213',
+  'SSG950_Mint': '230',
+  // S8+
+  'SSG955_Broken': '41',
+  'SSG955_Rough': '202',
+  'SSG955_Good': '255',
+  'SSG955_Mint': '268',
+  // S9
+  'SSG960_Broken': '72',
+  'SSG960_Rough': '212',
+  'SSG960_Good': '347',
+  'SSG960_Mint': '360',
+  // S9+
+  'SSG965_Broken': '72',
+  'SSG965_Rough': '257',
+  'SSG965_Good': '401',
+  'SSG965_Mint': '414',
+  // S4 mini
+  'SSI257M_Broken': '1',
+  'SSI257M_Rough': '3',
+  'SSI257M_Good': '6',
+  'SSI257M_Mint': '8',
+  // note 2
+  'SSI317_Broken': '2',
+  'SSI317_Rough': '14',
+  'SSI317_Good': '21',
+  'SSI317_Mint': '25',
+  // S4
+  'SSI33716_Broken': '6',
+  'SSI33716_Rough': '23',
+  'SSI33716_Good': '28',
+  'SSI33716_Mint': '30',
+  // note
+  'SSI717_Broken': '0',
+  'SSI717_Rough': '3',
+  'SSI717_Good': '4',
+  'SSI717_Mint': '5',
+  // S3
+  'SSI74716_Broken': '2',
+  'SSI74716_Rough': '7',
+  'SSI74716_Good': '12',
+  'SSI74716_Mint': '15',
+  // Note 3
+  'SSN900_Broken': '5',
+  'SSN900_Rough': '32',
+  'SSN900_Good': '48',
+  'SSN900_Mint': '51',
+  // Note 4
+  'SSN910_Broken': '12',
+  'SSN910_Rough': '37',
+  'SSN910_Good': '69',
+  'SSN910_Mint': '77',
+  // Note 5
+  'SSN920_Broken': '23',
+  'SSN920_Rough': '69',
+  'SSN920_Good': '108',
+  'SSN920_Mint': '124',
+  // Note 8
+  'SSN950_Broken': '66',
+  'SSN950_Rough': '215',
+  'SSN950_Good': '340',
+  'SSN950_Mint': '360',
+  // Note 9
+  'SSN960_Broken': '73',
+  'SSN960_Rough': '340',
+  'SSN960_Good': '480',
+  'SSN960_Mint': '500',
+  // Google
+  'PXL32_Broken': '20',
+  'PXL32_Rough': '61',
+  'PXL32_Good': '87',
+  'PXL32_Mint': '98',
+  'PXL128_Broken': '23',
+  'PXL128_Rough': '51',
+  'PXL128_Good': '94',
+  'PXL128_Mint': '106',
+  'PXLXL32_Broken': '20',
+  'PXLXL32_Rough': '56',
+  'PXLXL32_Good': '94',
+  'PXLXL32_Mint': '106',
+  'PXLXL128_Broken': '23',
+  'PXLXL128_Rough': '60',
+  'PXLXL128_Good': '115',
+  'PXLXL128_Mint': '128',
+  'PXL264_Broken': '27',
+  'PXL264_Rough': '126',
+  'PXL264_Good': '183',
+  'PXL264_Mint': '208',
+  'PXL2128_Broken': '27',
+  'PXL2128_Rough': '131',
+  'PXL2128_Good': '191',
+  'PXL2128_Mint': '213',
+  'PXL2XL64_Broken': '29',
+  'PXL2XL64_Rough': '139',
+  'PXL2XL64_Good': '207',
+  'PXL2XL64_Mint': '234',
+  'PXL2XL128_Broken': '32',
+  'PXL2XL128_Rough': '160',
+  'PXL2XL128_Good': '221',
+  'PXL2XL128_Mint': '243',
+  'PXL364_Broken': '55',
+  'PXL364_Rough': '270',
+  'PXL364_Good': '395',
+  'PXL364_Mint': '415',
+  'PXL3128_Broken': '60',
+  'PXL3128_Rough': '285',
+  'PXL3128_Good': '410',
+  'PXL3128_Mint': '435',
+  'PXL3XL64_Broken': '63',
+  'PXL3XL64_Rough': '293',
+  'PXL3XL64_Good': '420',
+  'PXL3XL64_Mint': '440',
+  'PXL3XL128_Broken': '67',
+  'PXL3XL128_Rough': '302',
+  'PXL3XL128_Good': '440',
+  'PXL3XL128_Mint': '460',
+};
 
 function valuation(phone, carrier, condition) {
-  if (phone === 'IP516') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP516U_broken;
-          break;
-        case 'Rough':
-          return IP516U_rough;
-          break;
-        case 'Good':
-          return IP516U_good;
-          break;
-        case 'Mint':
-          return IP516U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP516L_broken;
-          break;
-        case 'Rough':
-          return IP516L_rough;
-          break;
-        case 'Good':
-          return IP516L_good;
-          break;
-        case 'Mint':
-          return IP516L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP532') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP532U_broken;
-          break;
-        case 'Rough':
-          return IP532U_rough;
-          break;
-        case 'Good':
-          return IP532U_good;
-          break;
-        case 'Mint':
-          return IP532U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP532L_broken;
-          break;
-        case 'Rough':
-          return IP532L_rough;
-          break;
-        case 'Good':
-          return IP532L_good;
-          break;
-        case 'Mint':
-          return IP532L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP564') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP564U_broken;
-          break;
-        case 'Rough':
-          return IP564U_rough;
-          break;
-        case 'Good':
-          return IP564U_good;
-          break;
-        case 'Mint':
-          return IP564U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP564L_broken;
-          break;
-        case 'Rough':
-          return IP564L_rough;
-          break;
-        case 'Good':
-          return IP564L_good;
-          break;
-        case 'Mint':
-          return IP564L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP5C8') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP5C16U_broken;
-          break;
-        case 'Rough':
-          return IP5C16U_rough;
-          break;
-        case 'Good':
-          return IP5C16U_good;
-          break;
-        case 'Mint':
-          return IP5C16U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP5C16L_broken;
-          break;
-        case 'Rough':
-          return IP5C16L_rough;
-          break;
-        case 'Good':
-          return IP5C16L_good;
-          break;
-        case 'Mint':
-          return IP5C16L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP5C16') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP5C16U_broken;
-          break;
-        case 'Rough':
-          return IP5C16U_rough;
-          break;
-        case 'Good':
-          return IP5C16U_good;
-          break;
-        case 'Mint':
-          return IP5C16U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP5C16L_broken;
-          break;
-        case 'Rough':
-          return IP5C16L_rough;
-          break;
-        case 'Good':
-          return IP5C16L_good;
-          break;
-        case 'Mint':
-          return IP5C16L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP5C32') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP5C32U_broken;
-          break;
-        case 'Rough':
-          return IP5C32U_rough;
-          break;
-        case 'Good':
-          return IP5C32U_good;
-          break;
-        case 'Mint':
-          return IP5C32U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP5C32L_broken;
-          break;
-        case 'Rough':
-          return IP5C32L_rough;
-          break;
-        case 'Good':
-          return IP5C32L_good;
-          break;
-        case 'Mint':
-          return IP5C32L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP5S16') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP5S16U_broken;
-          break;
-        case 'Rough':
-          return IP5S16U_rough;
-          break;
-        case 'Good':
-          return IP5S16U_good;
-          break;
-        case 'Mint':
-          return IP5S16U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP5S16L_broken;
-          break;
-        case 'Rough':
-          return IP5S16L_rough;
-          break;
-        case 'Good':
-          return IP5S16L_good;
-          break;
-        case 'Mint':
-          return IP5S16L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP5S32') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP5S32U_broken;
-          break;
-        case 'Rough':
-          return IP5S32U_rough;
-          break;
-        case 'Good':
-          return IP5S32U_good;
-          break;
-        case 'Mint':
-          return IP5S32U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP5S32L_broken;
-          break;
-        case 'Rough':
-          return IP5S32L_rough;
-          break;
-        case 'Good':
-          return IP5S32L_good;
-          break;
-        case 'Mint':
-          return IP5S32L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP5S64') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP5S64U_broken;
-          break;
-        case 'Rough':
-          return IP5S64U_rough;
-          break;
-        case 'Good':
-          return IP5S64U_good;
-          break;
-        case 'Mint':
-          return IP5S64U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP5S64L_broken;
-          break;
-        case 'Rough':
-          return IP5S64L_rough;
-          break;
-        case 'Good':
-          return IP5S64L_good;
-          break;
-        case 'Mint':
-          return IP5S64L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP616') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP616U_broken;
-          break;
-        case 'Rough':
-          return IP616U_rough;
-          break;
-        case 'Good':
-          return IP616U_good;
-          break;
-        case 'Mint':
-          return IP616U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP616L_broken;
-          break;
-        case 'Rough':
-          return IP616L_rough;
-          break;
-        case 'Good':
-          return IP616L_good;
-          break;
-        case 'Mint':
-          return IP616L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP664') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP664U_broken;
-          break;
-        case 'Rough':
-          return IP664U_rough;
-          break;
-        case 'Good':
-          return IP664U_good;
-          break;
-        case 'Mint':
-          return IP664U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP664L_broken;
-          break;
-        case 'Rough':
-          return IP664L_rough;
-          break;
-        case 'Good':
-          return IP664L_good;
-          break;
-        case 'Mint':
-          return IP664L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP6128') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP6128U_broken;
-          break;
-        case 'Rough':
-          return IP6128U_rough;
-          break;
-        case 'Good':
-          return IP6128U_good;
-          break;
-        case 'Mint':
-          return IP6128U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP6128L_broken;
-          break;
-        case 'Rough':
-          return IP6128L_rough;
-          break;
-        case 'Good':
-          return IP6128L_good;
-          break;
-        case 'Mint':
-          return IP6128L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP6P16') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP6P16U_broken;
-          break;
-        case 'Rough':
-          return IP6P16U_rough;
-          break;
-        case 'Good':
-          return IP6P16U_good;
-          break;
-        case 'Mint':
-          return IP6P16U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP6P16L_broken;
-          break;
-        case 'Rough':
-          return IP6P16L_rough;
-          break;
-        case 'Good':
-          return IP6P16L_good;
-          break;
-        case 'Mint':
-          return IP6P16L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP6P64') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP6P64U_broken;
-          break;
-        case 'Rough':
-          return IP6P64U_rough;
-          break;
-        case 'Good':
-          return IP6P64U_good;
-          break;
-        case 'Mint':
-          return IP6P64U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP6P64L_broken;
-          break;
-        case 'Rough':
-          return IP6P64L_rough;
-          break;
-        case 'Good':
-          return IP6P64L_good;
-          break;
-        case 'Mint':
-          return IP6P64L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP6P128') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP6P128U_broken;
-          break;
-        case 'Rough':
-          return IP6P128U_rough;
-          break;
-        case 'Good':
-          return IP6P128U_good;
-          break;
-        case 'Mint':
-          return IP6P128U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP6P128L_broken;
-          break;
-        case 'Rough':
-          return IP6P128L_rough;
-          break;
-        case 'Good':
-          return IP6P128L_good;
-          break;
-        case 'Mint':
-          return IP6P128L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP6S16') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP6S16U_broken;
-          break;
-        case 'Rough':
-          return IP6S16U_rough;
-          break;
-        case 'Good':
-          return IP6S16U_good;
-          break;
-        case 'Mint':
-          return IP6S16U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP6S16L_broken;
-          break;
-        case 'Rough':
-          return IP6S16L_rough;
-          break;
-        case 'Good':
-          return IP6S16L_good;
-          break;
-        case 'Mint':
-          return IP6S16L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP6S32') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP6S32U_broken;
-          break;
-        case 'Rough':
-          return IP6S32U_rough;
-          break;
-        case 'Good':
-          return IP6S32U_good;
-          break;
-        case 'Mint':
-          return IP6S32U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP6S32L_broken;
-          break;
-        case 'Rough':
-          return IP6S32L_rough;
-          break;
-        case 'Good':
-          return IP6S32L_good;
-          break;
-        case 'Mint':
-          return IP6S32L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP6S64') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP6S64U_broken;
-          break;
-        case 'Rough':
-          return IP6S64U_rough;
-          break;
-        case 'Good':
-          return IP6S64U_good;
-          break;
-        case 'Mint':
-          return IP6S64U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP6S64L_broken;
-          break;
-        case 'Rough':
-          return IP6S64L_rough;
-          break;
-        case 'Good':
-          return IP6S64L_good;
-          break;
-        case 'Mint':
-          return IP6S64L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP6S128') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP6S128U_broken;
-          break;
-        case 'Rough':
-          return IP6S128U_rough;
-          break;
-        case 'Good':
-          return IP6S128U_good;
-          break;
-        case 'Mint':
-          return IP6S128U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP6S128L_broken;
-          break;
-        case 'Rough':
-          return IP6S128L_rough;
-          break;
-        case 'Good':
-          return IP6S128L_good;
-          break;
-        case 'Mint':
-          return IP6S128L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP6SP16') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP6SP16U_broken;
-          break;
-        case 'Rough':
-          return IP6SP16U_rough;
-          break;
-        case 'Good':
-          return IP6SP16U_good;
-          break;
-        case 'Mint':
-          return IP6SP16U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP6SP16L_broken;
-          break;
-        case 'Rough':
-          return IP6SP16L_rough;
-          break;
-        case 'Good':
-          return IP6SP16L_good;
-          break;
-        case 'Mint':
-          return IP6SP16L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP6SP64') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP6SP64U_broken;
-          break;
-        case 'Rough':
-          return IP6SP64U_rough;
-          break;
-        case 'Good':
-          return IP6SP64U_good;
-          break;
-        case 'Mint':
-          return IP6SP64U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP6SP64L_broken;
-          break;
-        case 'Rough':
-          return IP6SP64L_rough;
-          break;
-        case 'Good':
-          return IP6SP64L_good;
-          break;
-        case 'Mint':
-          return IP6SP64L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP6SP128') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP6SP128U_broken;
-          break;
-        case 'Rough':
-          return IP6SP128U_rough;
-          break;
-        case 'Good':
-          return IP6SP128U_good;
-          break;
-        case 'Mint':
-          return IP6SP128U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP6SP128L_broken;
-          break;
-        case 'Rough':
-          return IP6SP128L_rough;
-          break;
-        case 'Good':
-          return IP6SP128L_good;
-          break;
-        case 'Mint':
-          return IP6SP128L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP732') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP732U_broken;
-          break;
-        case 'Rough':
-          return IP732U_rough;
-          break;
-        case 'Good':
-          return IP732U_good;
-          break;
-        case 'Mint':
-          return IP732U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP732L_broken;
-          break;
-        case 'Rough':
-          return IP732L_rough;
-          break;
-        case 'Good':
-          return IP732L_good;
-          break;
-        case 'Mint':
-          return IP732L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP7128') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP7128U_broken;
-          break;
-        case 'Rough':
-          return IP7128U_rough;
-          break;
-        case 'Good':
-          return IP7128U_good;
-          break;
-        case 'Mint':
-          return IP7128U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP7128L_broken;
-          break;
-        case 'Rough':
-          return IP7128L_rough;
-          break;
-        case 'Good':
-          return IP7128L_good;
-          break;
-        case 'Mint':
-          return IP7128L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP7256') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP7256U_broken;
-          break;
-        case 'Rough':
-          return IP7256U_rough;
-          break;
-        case 'Good':
-          return IP7256U_good;
-          break;
-        case 'Mint':
-          return IP7256U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP7256L_broken;
-          break;
-        case 'Rough':
-          return IP7256L_rough;
-          break;
-        case 'Good':
-          return IP7256L_good;
-          break;
-        case 'Mint':
-          return IP7256L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP7P32') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP7P32U_broken;
-          break;
-        case 'Rough':
-          return IP7P32U_rough;
-          break;
-        case 'Good':
-          return IP7P32U_good;
-          break;
-        case 'Mint':
-          return IP7P32U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP7P32L_broken;
-          break;
-        case 'Rough':
-          return IP7P32L_rough;
-          break;
-        case 'Good':
-          return IP7P32L_good;
-          break;
-        case 'Mint':
-          return IP7P32L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP7P128') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP7P128U_broken;
-          break;
-        case 'Rough':
-          return IP7P128U_rough;
-          break;
-        case 'Good':
-          return IP7P128U_good;
-          break;
-        case 'Mint':
-          return IP7P128U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP7P128L_broken;
-          break;
-        case 'Rough':
-          return IP7P128L_rough;
-          break;
-        case 'Good':
-          return IP7P128L_good;
-          break;
-        case 'Mint':
-          return IP7P128L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP7P256') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP7P256U_broken;
-          break;
-        case 'Rough':
-          return IP7P256U_rough;
-          break;
-        case 'Good':
-          return IP7P256U_good;
-          break;
-        case 'Mint':
-          return IP7P256U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP7P256L_broken;
-          break;
-        case 'Rough':
-          return IP7P256L_rough;
-          break;
-        case 'Good':
-          return IP7P256L_good;
-          break;
-        case 'Mint':
-          return IP7P256L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IPSE16') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IPSE16U_broken;
-          break;
-        case 'Rough':
-          return IPSE16U_rough;
-          break;
-        case 'Good':
-          return IPSE16U_good;
-          break;
-        case 'Mint':
-          return IPSE16U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IPSE16L_broken;
-          break;
-        case 'Rough':
-          return IPSE16L_rough;
-          break;
-        case 'Good':
-          return IPSE16L_good;
-          break;
-        case 'Mint':
-          return IPSE16L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IPSE64') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IPSE64U_broken;
-          break;
-        case 'Rough':
-          return IPSE64U_rough;
-          break;
-        case 'Good':
-          return IPSE64U_good;
-          break;
-        case 'Mint':
-          return IPSE64U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IPSE64L_broken;
-          break;
-        case 'Rough':
-          return IPSE64L_rough;
-          break;
-        case 'Good':
-          return IPSE64L_good;
-          break;
-        case 'Mint':
-          return IPSE64L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IPSE128') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IPSE128U_broken;
-          break;
-        case 'Rough':
-          return IPSE128U_rough;
-          break;
-        case 'Good':
-          return IPSE128U_good;
-          break;
-        case 'Mint':
-          return IPSE128U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IPSE128L_broken;
-          break;
-        case 'Rough':
-          return IPSE128L_rough;
-          break;
-        case 'Good':
-          return IPSE128L_good;
-          break;
-        case 'Mint':
-          return IPSE128L_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP864') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP864U_broken;
-          break;
-        case 'Rough':
-          return IP864U_rough;
-          break;
-        case 'Good':
-          return IP864U_good;
-          break;
-        case 'Mint':
-          return IP864U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP864U_broken;
-          break;
-        case 'Rough':
-          return IP864U_rough;
-          break;
-        case 'Good':
-          return IP864U_good;
-          break;
-        case 'Mint':
-          return IP864U_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP8256') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP8256U_broken;
-          break;
-        case 'Rough':
-          return IP8256U_rough;
-          break;
-        case 'Good':
-          return IP8256U_good;
-          break;
-        case 'Mint':
-          return IP8256U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP8256U_broken;
-          break;
-        case 'Rough':
-          return IP8256U_rough;
-          break;
-        case 'Good':
-          return IP8256U_good;
-          break;
-        case 'Mint':
-          return IP8256U_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP8P64') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP8P64U_broken;
-          break;
-        case 'Rough':
-          return IP8P64U_rough;
-          break;
-        case 'Good':
-          return IP8P64U_good;
-          break;
-        case 'Mint':
-          return IP8P64U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP8P64U_broken;
-          break;
-        case 'Rough':
-          return IP8P64U_rough;
-          break;
-        case 'Good':
-          return IP8P64U_good;
-          break;
-        case 'Mint':
-          return IP8P64U_mint;
-      }
-    }
-  }
-
-  if (phone === 'IP8P256') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IP8P256U_broken;
-          break;
-        case 'Rough':
-          return IP8P256U_rough;
-          break;
-        case 'Good':
-          return IP8P256U_good;
-          break;
-        case 'Mint':
-          return IP8P256U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IP8P256U_broken;
-          break;
-        case 'Rough':
-          return IP8P256U_rough;
-          break;
-        case 'Good':
-          return IP8P256U_good;
-          break;
-        case 'Mint':
-          return IP8P256U_mint;
-      }
-    }
-  }
-
-  if (phone === 'IPX64') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IPX64U_broken;
-          break;
-        case 'Rough':
-          return IPX64U_rough;
-          break;
-        case 'Good':
-          return IPX64U_good;
-          break;
-        case 'Mint':
-          return IPX64U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IPX64U_broken;
-          break;
-        case 'Rough':
-          return IPX64U_rough;
-          break;
-        case 'Good':
-          return IPX64U_good;
-          break;
-        case 'Mint':
-          return IPX64U_mint;
-      }
-    }
-  }
-
-  if (phone === 'IPX256') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return IPX256U_broken;
-          break;
-        case 'Rough':
-          return IPX256U_rough;
-          break;
-        case 'Good':
-          return IPX256U_good;
-          break;
-        case 'Mint':
-          return IPX256U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return IPX256U_broken;
-          break;
-        case 'Rough':
-          return IPX256U_rough;
-          break;
-        case 'Good':
-          return IPX256U_good;
-          break;
-        case 'Mint':
-          return IPX256U_mint;
-      }
-    }
-  }
-
-  // iPods ---------------------------------------------------------------------------------------------- //
-
-  if (phone === 'IPT48G') {
-    switch (condition) {
-      case 'Broken':
-        return IPT48G_broken;
-        break;
-      case 'Rough':
-        return IPT48G_rough;
-        break;
-      case 'Good':
-        return IPT48G_good;
-        break;
-      case 'Mint':
-        return IPT48G_mint;
-    }
-  }
-
-  if (phone === 'IPT416G') {
-    switch (condition) {
-      case 'Broken':
-        return IPT416G_broken;
-        break;
-      case 'Rough':
-        return IPT416G_rough;
-        break;
-      case 'Good':
-        return IPT416G_good;
-        break;
-      case 'Mint':
-        return IPT416G_mint;
-    }
-  }
-
-  if (phone === 'IPT432G') {
-    switch (condition) {
-      case 'Broken':
-        return IPT432G_broken;
-        break;
-      case 'Rough':
-        return IPT432G_rough;
-        break;
-      case 'Good':
-        return IPT432G_good;
-        break;
-      case 'Mint':
-        return IPT432G_mint;
-    }
-  }
-
-  if (phone === 'IPT464G') {
-    switch (condition) {
-      case 'Broken':
-        return IPT464G_broken;
-        break;
-      case 'Rough':
-        return IPT464G_rough;
-        break;
-      case 'Good':
-        return IPT464G_good;
-        break;
-      case 'Mint':
-        return IPT464G_mint;
-    }
-  }
-
-  if (phone === 'IPT532G') {
-    switch (condition) {
-      case 'Broken':
-        return IPT532G_broken;
-        break;
-      case 'Rough':
-        return IPT532G_rough;
-        break;
-      case 'Good':
-        return IPT532G_good;
-        break;
-      case 'Mint':
-        return IPT532G_mint;
-    }
-  }
-
-  if (phone === 'IPT564G') {
-    switch (condition) {
-      case 'Broken':
-        return IPT564G_broken;
-        break;
-      case 'Rough':
-        return IPT564G_rough;
-        break;
-      case 'Good':
-        return IPT564G_good;
-        break;
-      case 'Mint':
-        return IPT564G_mint;
-    }
-  }
-
-  if (phone === 'IPT616G') {
-    switch (condition) {
-      case 'Broken':
-        return IPT616G_broken;
-        break;
-      case 'Rough':
-        return IPT616G_rough;
-        break;
-      case 'Good':
-        return IPT616G_good;
-        break;
-      case 'Mint':
-        return IPT616G_mint;
-    }
-  }
-
-  if (phone === 'IPT632G') {
-    switch (condition) {
-      case 'Broken':
-        return IPT632G_broken;
-        break;
-      case 'Rough':
-        return IPT632G_rough;
-        break;
-      case 'Good':
-        return IPT632G_good;
-        break;
-      case 'Mint':
-        return IPT632G_mint;
-    }
-  }
-
-  if (phone === 'IPT664G') {
-    switch (condition) {
-      case 'Broken':
-        return IPT664G_broken;
-        break;
-      case 'Rough':
-        return IPT664G_rough;
-        break;
-      case 'Good':
-        return IPT664G_good;
-        break;
-      case 'Mint':
-        return IPT664G_mint;
-    }
-  }
-
-  if (phone === 'IPT6128G') {
-    switch (condition) {
-      case 'Broken':
-        return IPT6128G_broken;
-        break;
-      case 'Rough':
-        return IPT6128G_rough;
-        break;
-      case 'Good':
-        return IPT6128G_good;
-        break;
-      case 'Mint':
-        return IPT6128G_mint;
-    }
-  }
-
-  // iPads ---------------------------------------------------------------------------------------------- //
-
-  if (phone === 'IPD116G') {
-    switch (condition) {
-      case 'Broken':
-        return IPD116G_broken;
-        break;
-      case 'Rough':
-        return IPD116G_rough;
-        break;
-      case 'Good':
-        return IPD116G_good;
-        break;
-      case 'Mint':
-        return IPD116G_mint;
-    }
-  }
-
-  if (phone === 'IPD132G') {
-    switch (condition) {
-      case 'Broken':
-        return IPD132G_broken;
-        break;
-      case 'Rough':
-        return IPD132G_rough;
-        break;
-      case 'Good':
-        return IPD132G_good;
-        break;
-      case 'Mint':
-        return IPD132G_mint;
-    }
-  }
-
-  if (phone === 'IPD164G') {
-    switch (condition) {
-      case 'Broken':
-        return IPD164G_broken;
-        break;
-      case 'Rough':
-        return IPD164G_rough;
-        break;
-      case 'Good':
-        return IPD164G_good;
-        break;
-      case 'Mint':
-        return IPD164G_mint;
-    }
-  }
-
-  if (phone === 'IPD216G') {
-    switch (condition) {
-      case 'Broken':
-        return IPD216G_broken;
-        break;
-      case 'Rough':
-        return IPD216G_rough;
-        break;
-      case 'Good':
-        return IPD216G_good;
-        break;
-      case 'Mint':
-        return IPD216G_mint;
-    }
-  }
-
-  if (phone === 'IPD232G') {
-    switch (condition) {
-      case 'Broken':
-        return IPD232G_broken;
-        break;
-      case 'Rough':
-        return IPD232G_rough;
-        break;
-      case 'Good':
-        return IPD232G_good;
-        break;
-      case 'Mint':
-        return IPD232G_mint;
-    }
-  }
-
-  if (phone === 'IPD264G') {
-    switch (condition) {
-      case 'Broken':
-        return IPD264G_broken;
-        break;
-      case 'Rough':
-        return IPD264G_rough;
-        break;
-      case 'Good':
-        return IPD264G_good;
-        break;
-      case 'Mint':
-        return IPD264G_mint;
-    }
-  }
-
-  if (phone === 'IPD316G') {
-    switch (condition) {
-      case 'Broken':
-        return IPD316G_broken;
-        break;
-      case 'Rough':
-        return IPD316G_rough;
-        break;
-      case 'Good':
-        return IPD316G_good;
-        break;
-      case 'Mint':
-        return IPD316G_mint;
-    }
-  }
-
-  if (phone === 'IPD332G') {
-    switch (condition) {
-      case 'Broken':
-        return IPD332G_broken;
-        break;
-      case 'Rough':
-        return IPD332G_rough;
-        break;
-      case 'Good':
-        return IPD332G_good;
-        break;
-      case 'Mint':
-        return IPD332G_mint;
-    }
-  }
-
-  if (phone === 'IPD364G') {
-    switch (condition) {
-      case 'Broken':
-        return IPD364G_broken;
-        break;
-      case 'Rough':
-        return IPD364G_rough;
-        break;
-      case 'Good':
-        return IPD364G_good;
-        break;
-      case 'Mint':
-        return IPD364G_mint;
-    }
-  }
-
-  if (phone === 'IPD416G') {
-    switch (condition) {
-      case 'Broken':
-        return IPD416G_broken;
-        break;
-      case 'Rough':
-        return IPD416G_rough;
-        break;
-      case 'Good':
-        return IPD416G_good;
-        break;
-      case 'Mint':
-        return IPD416G_mint;
-    }
-  }
-
-  if (phone === 'IPD432G') {
-    switch (condition) {
-      case 'Broken':
-        return IPD432G_broken;
-        break;
-      case 'Rough':
-        return IPD432G_rough;
-        break;
-      case 'Good':
-        return IPD432G_good;
-        break;
-      case 'Mint':
-        return IPD432G_mint;
-    }
-  }
-
-  if (phone === 'IPD464G') {
-    switch (condition) {
-      case 'Broken':
-        return IPD464G_broken;
-        break;
-      case 'Rough':
-        return IPD464G_rough;
-        break;
-      case 'Good':
-        return IPD464G_good;
-        break;
-      case 'Mint':
-        return IPD464G_mint;
-    }
-  }
-
-  if (phone === 'IPD4128G') {
-    switch (condition) {
-      case 'Broken':
-        return IPD4128G_broken;
-        break;
-      case 'Rough':
-        return IPD4128G_rough;
-        break;
-      case 'Good':
-        return IPD4128G_good;
-        break;
-      case 'Mint':
-        return IPD4128G_mint;
-    }
-  }
-
-  if (phone === 'IPDM16G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDM16G_broken;
-        break;
-      case 'Rough':
-        return IPDM16G_rough;
-        break;
-      case 'Good':
-        return IPDM16G_good;
-        break;
-      case 'Mint':
-        return IPDM16G_mint;
-    }
-  }
-
-  if (phone === 'IPDM32G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDM32G_broken;
-        break;
-      case 'Rough':
-        return IPDM32G_rough;
-        break;
-      case 'Good':
-        return IPDM32G_good;
-        break;
-      case 'Mint':
-        return IPDM32G_mint;
-    }
-  }
-
-  if (phone === 'IPDM64G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDM64G_broken;
-        break;
-      case 'Rough':
-        return IPDM64G_rough;
-        break;
-      case 'Good':
-        return IPDM64G_good;
-        break;
-      case 'Mint':
-        return IPDM64G_mint;
-    }
-  }
-
-  if (phone === 'IPDAIR16G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDAIR16G_broken;
-        break;
-      case 'Rough':
-        return IPDAIR16G_rough;
-        break;
-      case 'Good':
-        return IPDAIR16G_good;
-        break;
-      case 'Mint':
-        return IPDAIR16G_mint;
-    }
-  }
-
-  if (phone === 'IPDAIR32G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDAIR32G_broken;
-        break;
-      case 'Rough':
-        return IPDAIR32G_rough;
-        break;
-      case 'Good':
-        return IPDAIR32G_good;
-        break;
-      case 'Mint':
-        return IPDAIR32G_mint;
-    }
-  }
-
-  if (phone === 'IPDAIR64G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDAIR64G_broken;
-        break;
-      case 'Rough':
-        return IPDAIR64G_rough;
-        break;
-      case 'Good':
-        return IPDAIR64G_good;
-        break;
-      case 'Mint':
-        return IPDAIR64G_mint;
-    }
-  }
-
-  if (phone === 'IPDAIR128G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDAIR128G_broken;
-        break;
-      case 'Rough':
-        return IPDAIR128G_rough;
-        break;
-      case 'Good':
-        return IPDAIR128G_good;
-        break;
-      case 'Mint':
-        return IPDAIR128G_mint;
-    }
-  }
-
-  if (phone === 'IPDAIR216G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDAIR216G_broken;
-        break;
-      case 'Rough':
-        return IPDAIR216G_rough;
-        break;
-      case 'Good':
-        return IPDAIR216G_good;
-        break;
-      case 'Mint':
-        return IPDAIR216G_mint;
-    }
-  }
-
-  if (phone === 'IPDAIR232G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDAIR232G_broken;
-        break;
-      case 'Rough':
-        return IPDAIR232G_rough;
-        break;
-      case 'Good':
-        return IPDAIR232G_good;
-        break;
-      case 'Mint':
-        return IPDAIR232G_mint;
-    }
-  }
-
-  if (phone === 'IPDAIR264G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDAIR264G_broken;
-        break;
-      case 'Rough':
-        return IPDAIR264G_rough;
-        break;
-      case 'Good':
-        return IPDAIR264G_good;
-        break;
-      case 'Mint':
-        return IPDAIR264G_mint;
-    }
-  }
-
-  if (phone === 'IPDAIR2128G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDAIR2128G_broken;
-        break;
-      case 'Rough':
-        return IPDAIR2128G_rough;
-        break;
-      case 'Good':
-        return IPDAIR2128G_good;
-        break;
-      case 'Mint':
-        return IPDAIR2128G_mint;
-    }
-  }
-
-  if (phone === 'IPDM216G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDM216G_broken;
-        break;
-      case 'Rough':
-        return IPDM216G_rough;
-        break;
-      case 'Good':
-        return IPDM216G_good;
-        break;
-      case 'Mint':
-        return IPDM216G_mint;
-    }
-  }
-
-  if (phone === 'IPDM264G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDM264G_broken;
-        break;
-      case 'Rough':
-        return IPDM264G_rough;
-        break;
-      case 'Good':
-        return IPDM264G_good;
-        break;
-      case 'Mint':
-        return IPDM264G_mint;
-    }
-  }
-
-  if (phone === 'IPDM232G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDM232G_broken;
-        break;
-      case 'Rough':
-        return IPDM232G_rough;
-        break;
-      case 'Good':
-        return IPDM232G_good;
-        break;
-      case 'Mint':
-        return IPDM232G_mint;
-    }
-  }
-
-  if (phone === 'IPDM316G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDM316G_broken;
-        break;
-      case 'Rough':
-        return IPDM316G_rough;
-        break;
-      case 'Good':
-        return IPDM316G_good;
-        break;
-      case 'Mint':
-        return IPDM316G_mint;
-    }
-  }
-
-  if (phone === 'IPDM332G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDM332G_broken;
-        break;
-      case 'Rough':
-        return IPDM332G_rough;
-        break;
-      case 'Good':
-        return IPDM332G_good;
-        break;
-      case 'Mint':
-        return IPDM332G_mint;
-    }
-  }
-
-  if (phone === 'IPDM364G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDM364G_broken;
-        break;
-      case 'Rough':
-        return IPDM364G_rough;
-        break;
-      case 'Good':
-        return IPDM364G_good;
-        break;
-      case 'Mint':
-        return IPDM364G_mint;
-    }
-  }
-
-  if (phone === 'IPDM3128G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDM3128G_broken;
-        break;
-      case 'Rough':
-        return IPDM3128G_rough;
-        break;
-      case 'Good':
-        return IPDM3128G_good;
-        break;
-      case 'Mint':
-        return IPDM3128G_mint;
-    }
-  }
-
-  if (phone === 'IPDM416G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDM416G_broken;
-        break;
-      case 'Rough':
-        return IPDM416G_rough;
-        break;
-      case 'Good':
-        return IPDM416G_good;
-        break;
-      case 'Mint':
-        return IPDM416G_mint;
-    }
-  }
-
-  if (phone === 'IPDM432G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDM432G_broken;
-        break;
-      case 'Rough':
-        return IPDM432G_rough;
-        break;
-      case 'Good':
-        return IPDM432G_good;
-        break;
-      case 'Mint':
-        return IPDM432G_mint;
-    }
-  }
-
-  if (phone === 'IPDM464G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDM464G_broken;
-        break;
-      case 'Rough':
-        return IPDM464G_rough;
-        break;
-      case 'Good':
-        return IPDM464G_good;
-        break;
-      case 'Mint':
-        return IPDM464G_mint;
-    }
-  }
-
-  if (phone === 'IPDM4128G') {
-    switch (condition) {
-      case 'Broken':
-        return IPDM4128G_broken;
-        break;
-      case 'Rough':
-        return IPDM4128G_rough;
-        break;
-      case 'Good':
-        return IPDM4128G_good;
-        break;
-      case 'Mint':
-        return IPDM4128G_mint;
-    }
-  }
-
-  if (phone === 'IPDP932') {
-    switch (condition) {
-      case 'Broken':
-        return IPDP932_broken;
-        break;
-      case 'Rough':
-        return IPDP932_rough;
-        break;
-      case 'Good':
-        return IPDP932_good;
-        break;
-      case 'Mint':
-        return IPDP932_mint;
-    }
-  }
-
-  if (phone === 'IPDP9128') {
-    switch (condition) {
-      case 'Broken':
-        return IPDP9128_broken;
-        break;
-      case 'Rough':
-        return IPDP9128_rough;
-        break;
-      case 'Good':
-        return IPDP9128_good;
-        break;
-      case 'Mint':
-        return IPDP9128_mint;
-    }
-  }
-
-  if (phone === 'IPDP9256') {
-    switch (condition) {
-      case 'Broken':
-        return IPDP9256_broken;
-        break;
-      case 'Rough':
-        return IPDP9256_rough;
-        break;
-      case 'Good':
-        return IPDP9256_good;
-        break;
-      case 'Mint':
-        return IPDP9256_mint;
-    }
-  }
-
-  if (phone === 'IPDP1232') {
-    switch (condition) {
-      case 'Broken':
-        return IPDP1232_broken;
-        break;
-      case 'Rough':
-        return IPDP1232_rough;
-        break;
-      case 'Good':
-        return IPDP1232_good;
-        break;
-      case 'Mint':
-        return IPDP1232_mint;
-    }
-  }
-
-  if (phone === 'IPDP12128') {
-    switch (condition) {
-      case 'Broken':
-        return IPDP12128_broken;
-        break;
-      case 'Rough':
-        return IPDP12128_rough;
-        break;
-      case 'Good':
-        return IPDP12128_good;
-        break;
-      case 'Mint':
-        return IPDP12128_mint;
-    }
-  }
-
-  if (phone === 'IPDP12256') {
-    switch (condition) {
-      case 'Broken':
-        return IPDP12256_broken;
-        break;
-      case 'Rough':
-        return IPDP12256_rough;
-        break;
-      case 'Good':
-        return IPDP12256_good;
-        break;
-      case 'Mint':
-        return IPDP12256_mint;
-    }
-  }
-
-  if (phone === 'IPDP21064') {
-    switch (condition) {
-      case 'Broken':
-        return IPDP21064_broken;
-        break;
-      case 'Rough':
-        return IPDP21064_rough;
-        break;
-      case 'Good':
-        return IPDP21064_good;
-        break;
-      case 'Mint':
-        return IPDP21064_mint;
-    }
-  }
-
-  if (phone === 'IPDP210256') {
-    switch (condition) {
-      case 'Broken':
-        return IPDP210256_broken;
-        break;
-      case 'Rough':
-        return IPDP210256_rough;
-        break;
-      case 'Good':
-        return IPDP210256_good;
-        break;
-      case 'Mint':
-        return IPDP210256_mint;
-    }
-  }
-
-  if (phone === 'IPDP210512') {
-    switch (condition) {
-      case 'Broken':
-        return IPDP210512_broken;
-        break;
-      case 'Rough':
-        return IPDP210512_rough;
-        break;
-      case 'Good':
-        return IPDP210512_good;
-        break;
-      case 'Mint':
-        return IPDP210512_mint;
-    }
-  }
-
-  if (phone === 'IPDP21264') {
-    switch (condition) {
-      case 'Broken':
-        return IPDP21264_broken;
-        break;
-      case 'Rough':
-        return IPDP21264_rough;
-        break;
-      case 'Good':
-        return IPDP21264_good;
-        break;
-      case 'Mint':
-        return IPDP21264_mint;
-    }
-  }
-
-  if (phone === 'IPDP212256') {
-    switch (condition) {
-      case 'Broken':
-        return IPDP212256_broken;
-        break;
-      case 'Rough':
-        return IPDP212256_rough;
-        break;
-      case 'Good':
-        return IPDP212256_good;
-        break;
-      case 'Mint':
-        return IPDP212256_mint;
-    }
-  }
-
-  if (phone === 'IPDP212512') {
-    switch (condition) {
-      case 'Broken':
-        return IPDP212512_broken;
-        break;
-      case 'Rough':
-        return IPDP212512_rough;
-        break;
-      case 'Good':
-        return IPDP212512_good;
-        break;
-      case 'Mint':
-        return IPDP212512_mint;
-    }
-  }
-  // BLACKBERRY ---------------------------------------------------------------------------------------------- //
-
-  if (phone === 'BB9900') {
-    switch (condition) {
-      case 'Broken':
-        return BB9900_broken;
-        break;
-      case 'Rough':
-        return BB9900_rough;
-        break;
-      case 'Good':
-        return BB9900_good;
-        break;
-      case 'Mint':
-        return BB9900_mint;
-    }
-  }
-
-  if (phone === 'BBCLASS') {
-    switch (condition) {
-      case 'Broken':
-        return BBCLASS_broken;
-        break;
-      case 'Rough':
-        return BBCLASS_rough;
-        break;
-      case 'Good':
-        return BBCLASS_good;
-        break;
-      case 'Mint':
-        return BBCLASS_mint;
-    }
-  }
-
-  if (phone === 'BBLEAP') {
-    switch (condition) {
-      case 'Broken':
-        return BBLEAP_broken;
-        break;
-      case 'Rough':
-        return BBLEAP_rough;
-        break;
-      case 'Good':
-        return BBLEAP_good;
-        break;
-      case 'Mint':
-        return BBLEAP_mint;
-    }
-  }
-
-  if (phone === 'BBPASS') {
-    switch (condition) {
-      case 'Broken':
-        return BBPASS_broken;
-        break;
-      case 'Rough':
-        return BBPASS_rough;
-        break;
-      case 'Good':
-        return BBPASS_good;
-        break;
-      case 'Mint':
-        return BBPASS_mint;
-    }
-  }
-
-  if (phone === 'BBPRIV') {
-    switch (condition) {
-      case 'Broken':
-        return BBPRIV_broken;
-        break;
-      case 'Rough':
-        return BBPRIV_rough;
-        break;
-      case 'Good':
-        return BBPRIV_good;
-        break;
-      case 'Mint':
-        return BBPRIV_mint;
-    }
-  }
-
-  if (phone === 'BBQ5') {
-    switch (condition) {
-      case 'Broken':
-        return BBQ5_broken;
-        break;
-      case 'Rough':
-        return BBQ5_rough;
-        break;
-      case 'Good':
-        return BBQ5_good;
-        break;
-      case 'Mint':
-        return BBQ5_mint;
-    }
-  }
-
-  if (phone === 'BBQ10') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return BBQ10U_broken;
-          break;
-        case 'Rough':
-          return BBQ10U_rough;
-          break;
-        case 'Good':
-          return BBQ10U_good;
-          break;
-        case 'Mint':
-          return BBQ10U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return BBQ10L_broken;
-          break;
-        case 'Rough':
-          return BBQ10L_rough;
-          break;
-        case 'Good':
-          return BBQ10L_good;
-          break;
-        case 'Mint':
-          return BBQ10L_mint;
-      }
-    }
-  }
-
-  if (phone === 'BBZ10') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return BBZ10U_broken;
-          break;
-        case 'Rough':
-          return BBZ10U_rough;
-          break;
-        case 'Good':
-          return BBZ10U_good;
-          break;
-        case 'Mint':
-          return BBZ10U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return BBZ10L_broken;
-          break;
-        case 'Rough':
-          return BBZ10L_rough;
-          break;
-        case 'Good':
-          return BBZ10L_good;
-          break;
-        case 'Mint':
-          return BBZ10L_mint;
-      }
-    }
-  }
-
-  if (phone === 'BBZ30') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return BBZ30U_broken;
-          break;
-        case 'Rough':
-          return BBZ30U_rough;
-          break;
-        case 'Good':
-          return BBZ30U_good;
-          break;
-        case 'Mint':
-          return BBZ30U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return BBZ30L_broken;
-          break;
-        case 'Rough':
-          return BBZ30L_rough;
-          break;
-        case 'Good':
-          return BBZ30L_good;
-          break;
-        case 'Mint':
-          return BBZ30L_mint;
-      }
-    }
-  }
-
-  if (phone === 'BBDTEK50') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return BBDTEK50U_broken;
-          break;
-        case 'Rough':
-          return BBDTEK50U_rough;
-          break;
-        case 'Good':
-          return BBDTEK50U_good;
-          break;
-        case 'Mint':
-          return BBDTEK50U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return BBDTEK50L_broken;
-          break;
-        case 'Rough':
-          return BBDTEK50L_rough;
-          break;
-        case 'Good':
-          return BBDTEK50L_good;
-          break;
-        case 'Mint':
-          return BBDTEK50L_mint;
-      }
-    }
-  }
-
-  if (phone === 'BBDTEK60') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return BBDTEK60U_broken;
-          break;
-        case 'Rough':
-          return BBDTEK60U_rough;
-          break;
-        case 'Good':
-          return BBDTEK60U_good;
-          break;
-        case 'Mint':
-          return BBDTEK60U_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return BBDTEK60L_broken;
-          break;
-        case 'Rough':
-          return BBDTEK60L_rough;
-          break;
-        case 'Good':
-          return BBDTEK60L_good;
-          break;
-        case 'Mint':
-          return BBDTEK60L_mint;
-      }
-    }
-  }
-
-  if (phone === 'BBKEYONE') {
-    if (carrier === 'Unlocked') {
-      switch (condition) {
-        case 'Broken':
-          return BBKEYONEU_broken;
-          break;
-        case 'Rough':
-          return BBKEYONEU_rough;
-          break;
-        case 'Good':
-          return BBKEYONEU_good;
-          break;
-        case 'Mint':
-          return BBKEYONEU_mint;
-      }
-    } else {
-      switch (condition) {
-        case 'Broken':
-          return BBKEYONEL_broken;
-          break;
-        case 'Rough':
-          return BBKEYONEL_rough;
-          break;
-        case 'Good':
-          return BBKEYONEL_good;
-          break;
-        case 'Mint':
-          return BBKEYONEL_mint;
-      }
-    }
-  }
-
-  // HTC ---------------------------------------------------------------------------------------------- //
-
-  if (phone === 'HTDES601') {
-    switch (condition) {
-      case 'Broken':
-        return HTDES601_broken;
-        break;
-      case 'Rough':
-        return HTDES601_rough;
-        break;
-      case 'Good':
-        return HTDES601_good;
-        break;
-      case 'Mint':
-        return HTDES601_mint;
-    }
-  }
-
-  if (phone === 'HTONE') {
-    switch (condition) {
-      case 'Broken':
-        return HTONE_broken;
-        break;
-      case 'Rough':
-        return HTONE_rough;
-        break;
-      case 'Good':
-        return HTONE_good;
-        break;
-      case 'Mint':
-        return HTONE_mint;
-    }
-  }
-
-  if (phone === 'HTONEM8') {
-    switch (condition) {
-      case 'Broken':
-        return HTONEM8_broken;
-        break;
-      case 'Rough':
-        return HTONEM8_rough;
-        break;
-      case 'Good':
-        return HTONEM8_good;
-        break;
-      case 'Mint':
-        return HTONEM8_mint;
-    }
-  }
-
-  if (phone === 'HTONEM9') {
-    switch (condition) {
-      case 'Broken':
-        return HTONEM9_broken;
-        break;
-      case 'Rough':
-        return HTONEM9_rough;
-        break;
-      case 'Good':
-        return HTONEM9_good;
-        break;
-      case 'Mint':
-        return HTONEM9_mint;
-    }
-  }
-
-  // LG ----------------------------------------------------------------------------------------------- //
-
-  if (phone === 'LGG2') {
-    switch (condition) {
-      case 'Broken':
-        return LGG2_broken;
-        break;
-      case 'Rough':
-        return LGG2_rough;
-        break;
-      case 'Good':
-        return LGG2_good;
-        break;
-      case 'Mint':
-        return LGG2_mint;
-    }
-  }
-
-  if (phone === 'LGG3') {
-    switch (condition) {
-      case 'Broken':
-        return LGG3_broken;
-        break;
-      case 'Rough':
-        return LGG3_rough;
-        break;
-      case 'Good':
-        return LGG3_good;
-        break;
-      case 'Mint':
-        return LGG3_mint;
-    }
-  }
-
-  if (phone === 'LGG4') {
-    switch (condition) {
-      case 'Broken':
-        return LGG4_broken;
-        break;
-      case 'Rough':
-        return LGG4_rough;
-        break;
-      case 'Good':
-        return LGG4_good;
-        break;
-      case 'Mint':
-        return LGG4_mint;
-    }
-  }
-
-  if (phone === 'LGG5') {
-    switch (condition) {
-      case 'Broken':
-        return LGG5_broken;
-        break;
-      case 'Rough':
-        return LGG5_rough;
-        break;
-      case 'Good':
-        return LGG5_good;
-        break;
-      case 'Mint':
-        return LGG5_mint;
-    }
-  }
-
-  if (phone === 'LGNXS4') {
-    switch (condition) {
-      case 'Broken':
-        return LGNXS4_broken;
-        break;
-      case 'Rough':
-        return LGNXS4_rough;
-        break;
-      case 'Good':
-        return LGNXS4_good;
-        break;
-      case 'Mint':
-        return LGNXS4_mint;
-    }
-  }
-
-  if (phone === 'LGNXS5') {
-    switch (condition) {
-      case 'Broken':
-        return LGNXS5_broken;
-        break;
-      case 'Rough':
-        return LGNXS5_rough;
-        break;
-      case 'Good':
-        return LGNXS5_good;
-        break;
-      case 'Mint':
-        return LGNXS5_mint;
-    }
-  }
-
-  if (phone === 'LGOPTL7') {
-    switch (condition) {
-      case 'Broken':
-        return LGOPTL7_broken;
-        break;
-      case 'Rough':
-        return LGOPTL7_rough;
-        break;
-      case 'Good':
-        return LGOPTL7_good;
-        break;
-      case 'Mint':
-        return LGOPTL7_mint;
-    }
-  }
-
-  // SAMSUNG ---------------------------------------------------------------------------------------- //
-
-  if (phone === 'SSG90016') {
-    switch (condition) {
-      case 'Broken':
-        return SSG90016_broken;
-        break;
-      case 'Rough':
-        return SSG90016_rough;
-        break;
-      case 'Good':
-        return SSG90016_good;
-        break;
-      case 'Mint':
-        return SSG90016_mint;
-    }
-  }
-
-  if (phone === 'SSG92032') {
-    switch (condition) {
-      case 'Broken':
-        return SSG92032_broken;
-        break;
-      case 'Rough':
-        return SSG92032_rough;
-        break;
-      case 'Good':
-        return SSG92032_good;
-        break;
-      case 'Mint':
-        return SSG92032_mint;
-    }
-  }
-
-  if (phone === 'SSG92064') {
-    switch (condition) {
-      case 'Broken':
-        return SSG92064_broken;
-        break;
-      case 'Rough':
-        return SSG92064_rough;
-        break;
-      case 'Good':
-        return SSG92064_good;
-        break;
-      case 'Mint':
-        return SSG92064_mint;
-    }
-  }
-
-  if (phone === 'SSG920128') {
-    switch (condition) {
-      case 'Broken':
-        return SSG920128_broken;
-        break;
-      case 'Rough':
-        return SSG920128_rough;
-        break;
-      case 'Good':
-        return SSG920128_good;
-        break;
-      case 'Mint':
-        return SSG920128_mint;
-    }
-  }
-
-  if (phone === 'SSG92532') {
-    switch (condition) {
-      case 'Broken':
-        return SSG92532_broken;
-        break;
-      case 'Rough':
-        return SSG92532_rough;
-        break;
-      case 'Good':
-        return SSG92532_good;
-        break;
-      case 'Mint':
-        return SSG92532_mint;
-    }
-  }
-
-  if (phone === 'SSG92564') {
-    switch (condition) {
-      case 'Broken':
-        return SSG92564_broken;
-        break;
-      case 'Rough':
-        return SSG92564_rough;
-        break;
-      case 'Good':
-        return SSG92564_good;
-        break;
-      case 'Mint':
-        return SSG92564_mint;
-    }
-  }
-
-  if (phone === 'SSG925128') {
-    switch (condition) {
-      case 'Broken':
-        return SSG925128_broken;
-        break;
-      case 'Rough':
-        return SSG925128_rough;
-        break;
-      case 'Good':
-        return SSG925128_good;
-        break;
-      case 'Mint':
-        return SSG925128_mint;
-    }
-  }
-
-  if (phone === 'SSG93032') {
-    switch (condition) {
-      case 'Broken':
-        return SSG93032_broken;
-        break;
-      case 'Rough':
-        return SSG93032_rough;
-        break;
-      case 'Good':
-        return SSG93032_good;
-        break;
-      case 'Mint':
-        return SSG93032_mint;
-    }
-  }
-
-  if (phone === 'SSG93532') {
-    switch (condition) {
-      case 'Broken':
-        return SSG93532_broken;
-        break;
-      case 'Rough':
-        return SSG93532_rough;
-        break;
-      case 'Good':
-        return SSG93532_good;
-        break;
-      case 'Mint':
-        return SSG93532_mint;
-    }
-  }
-
-  if (phone === 'SSG950') {
-    switch (condition) {
-      case 'Broken':
-        return SSG950_broken;
-        break;
-      case 'Rough':
-        return SSG950_rough;
-        break;
-      case 'Good':
-        return SSG950_good;
-        break;
-      case 'Mint':
-        return SSG950_mint;
-    }
-  }
-
-  if (phone === 'SSG955') {
-    switch (condition) {
-      case 'Broken':
-        return SSG955_broken;
-        break;
-      case 'Rough':
-        return SSG955_rough;
-        break;
-      case 'Good':
-        return SSG955_good;
-        break;
-      case 'Mint':
-        return SSG955_mint;
-    }
-  }
-
-  if (phone === 'SSG960') {
-    switch (condition) {
-      case 'Broken':
-        return SSG960_broken;
-        break;
-      case 'Rough':
-        return SSG960_rough;
-        break;
-      case 'Good':
-        return SSG960_good;
-        break;
-      case 'Mint':
-        return SSG960_mint;
-    }
-  }
-
-  if (phone === 'SSG965') {
-    switch (condition) {
-      case 'Broken':
-        return SSG965_broken;
-        break;
-      case 'Rough':
-        return SSG965_rough;
-        break;
-      case 'Good':
-        return SSG965_good;
-        break;
-      case 'Mint':
-        return SSG965_mint;
-    }
-  }
-
-  if (phone === 'SSI257M') {
-    switch (condition) {
-      case 'Broken':
-        return SSI257M_broken;
-        break;
-      case 'Rough':
-        return SSI257M_rough;
-        break;
-      case 'Good':
-        return SSI257M_good;
-        break;
-      case 'Mint':
-        return SSI257M_mint;
-    }
-  }
-
-  if (phone === 'SSI317') {
-    switch (condition) {
-      case 'Broken':
-        return SSI317_broken;
-        break;
-      case 'Rough':
-        return SSI317_rough;
-        break;
-      case 'Good':
-        return SSI317_good;
-        break;
-      case 'Mint':
-        return SSI317_mint;
-    }
-  }
-
-  if (phone === 'SSI33716') {
-    switch (condition) {
-      case 'Broken':
-        return SSI33716_broken;
-        break;
-      case 'Rough':
-        return SSI33716_rough;
-        break;
-      case 'Good':
-        return SSI33716_good;
-        break;
-      case 'Mint':
-        return SSI33716_mint;
-    }
-  }
-
-  if (phone === 'SSI717') {
-    switch (condition) {
-      case 'Broken':
-        return SSI717_broken;
-        break;
-      case 'Rough':
-        return SSI717_rough;
-        break;
-      case 'Good':
-        return SSI717_good;
-        break;
-      case 'Mint':
-        return SSI717_mint;
-    }
-  }
-
-  if (phone === 'SSI74716') {
-    switch (condition) {
-      case 'Broken':
-        return SSI74716_broken;
-        break;
-      case 'Rough':
-        return SSI74716_rough;
-        break;
-      case 'Good':
-        return SSI74716_good;
-        break;
-      case 'Mint':
-        return SSI74716_mint;
-    }
-  }
-
-  if (phone === 'SSN900') {
-    switch (condition) {
-      case 'Broken':
-        return SSN900_broken;
-        break;
-      case 'Rough':
-        return SSN900_rough;
-        break;
-      case 'Good':
-        return SSN900_good;
-        break;
-      case 'Mint':
-        return SSN900_mint;
-    }
-  }
-
-  if (phone === 'SSN910') {
-    switch (condition) {
-      case 'Broken':
-        return SSN910_broken;
-        break;
-      case 'Rough':
-        return SSN910_rough;
-        break;
-      case 'Good':
-        return SSN910_good;
-        break;
-      case 'Mint':
-        return SSN910_mint;
-    }
-  }
-
-  if (phone === 'SSN920') {
-    switch (condition) {
-      case 'Broken':
-        return SSN920_broken;
-        break;
-      case 'Rough':
-        return SSN920_rough;
-        break;
-      case 'Good':
-        return SSN920_good;
-        break;
-      case 'Mint':
-        return SSN920_mint;
-    }
-  }
-
-  if (phone === 'SSN950') {
-    switch (condition) {
-      case 'Broken':
-        return SSN950_broken;
-        break;
-      case 'Rough':
-        return SSN950_rough;
-        break;
-      case 'Good':
-        return SSN950_good;
-        break;
-      case 'Mint':
-        return SSN950_mint;
-    }
-  }
-
-  if (phone === 'SSS7560M') {
-    switch (condition) {
-      case 'Broken':
-        return SSS7560M_broken;
-        break;
-      case 'Rough':
-        return SSS7560M_rough;
-        break;
-      case 'Good':
-        return SSS7560M_good;
-        break;
-      case 'Mint':
-        return SSS7560M_mint;
-    }
-  }
-
-  // GOOGLE ------------------------------------------------------------------------------------- //
-
-  if (phone === 'PXL32') {
-    switch (condition) {
-      case 'Broken':
-        return PXL32_broken;
-        break;
-      case 'Rough':
-        return PXL32_rough;
-        break;
-      case 'Good':
-        return PXL32_good;
-        break;
-      case 'Mint':
-        return PXL32_mint;
-    }
-  }
-
-  if (phone === 'PXL128') {
-    switch (condition) {
-      case 'Broken':
-        return PXL128_broken;
-        break;
-      case 'Rough':
-        return PXL128_rough;
-        break;
-      case 'Good':
-        return PXL128_good;
-        break;
-      case 'Mint':
-        return PXL128_mint;
-    }
-  }
-
-  if (phone === 'PXLXL32') {
-    switch (condition) {
-      case 'Broken':
-        return PXLXL32_broken;
-        break;
-      case 'Rough':
-        return PXLXL32_rough;
-        break;
-      case 'Good':
-        return PXLXL32_good;
-        break;
-      case 'Mint':
-        return PXLXL32_mint;
-    }
-  }
-
-  if (phone === 'PXLXL128') {
-    switch (condition) {
-      case 'Broken':
-        return PXLXL128_broken;
-        break;
-      case 'Rough':
-        return PXLXL128_rough;
-        break;
-      case 'Good':
-        return PXLXL128_good;
-        break;
-      case 'Mint':
-        return PXLXL128_mint;
-    }
-  }
-
-  if (phone === 'PXL264') {
-    switch (condition) {
-      case 'Broken':
-        return PXL264_broken;
-        break;
-      case 'Rough':
-        return PXL264_rough;
-        break;
-      case 'Good':
-        return PXL264_good;
-        break;
-      case 'Mint':
-        return PXL264_mint;
-    }
-  }
-
-  if (phone === 'PXL2128') {
-    switch (condition) {
-      case 'Broken':
-        return PXL2128_broken;
-        break;
-      case 'Rough':
-        return PXL2128_rough;
-        break;
-      case 'Good':
-        return PXL2128_good;
-        break;
-      case 'Mint':
-        return PXL2128_mint;
-    }
-  }
-
-  if (phone === 'PXL2XL64') {
-    switch (condition) {
-      case 'Broken':
-        return PXL2XL64_broken;
-        break;
-      case 'Rough':
-        return PXL2XL64_rough;
-        break;
-      case 'Good':
-        return PXL2XL64_good;
-        break;
-      case 'Mint':
-        return PXL2XL64_mint;
-    }
-  }
-
-  if (phone === 'PXL2XL128') {
-    switch (condition) {
-      case 'Broken':
-        return PXL2XL128_broken;
-        break;
-      case 'Rough':
-        return PXL2XL128_rough;
-        break;
-      case 'Good':
-        return PXL2XL128_good;
-        break;
-      case 'Mint':
-        return PXL2XL128_mint;
-    }
-  }
+  const endpoint = phone + '_' + condition;
+  console.log(priceObj[endpoint]);
+  return priceObj[endpoint];
 }
