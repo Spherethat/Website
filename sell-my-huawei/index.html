@@ -72,7 +72,7 @@
       <div class="row">
         <div class="6u 12u$(medium)">
           <div class="box selection">
-            <a class="btn1-longer option" id="honor8" href="#">
+            <a class="btn1-longer option" id="honor8" href="huawei-honor8.php">
               <div>
                 <h4>Honor 8</h4>
                 <img
@@ -86,7 +86,11 @@
 
         <div class="6u 12u$(medium)">
           <section class="box selection">
-            <a class="btn1-longer option" href="#" id="nexus6p">
+            <a
+              class="btn1-longer option"
+              href="huawei-nexus6p.php"
+              id="nexus6p"
+            >
               <div>
                 <h4>Nexus 6P</h4>
                 <img
@@ -100,7 +104,7 @@
 
         <div class="6u 12u$(medium)">
           <section class="box selection">
-            <a class="btn1-longer option" href="#" id="Mate9">
+            <a class="btn1-longer option" href="huawei-mate9.php" id="Mate9">
               <div>
                 <h4>Mate 9</h4>
                 <img
@@ -114,7 +118,11 @@
 
         <div class="6u 12u$(medium)">
           <section class="box selection">
-            <a class="btn1-longer option" href="#" id="mate10pro">
+            <a
+              class="btn1-longer option"
+              href="huawei-mate10pro.php"
+              id="mate10pro"
+            >
               <div>
                 <h4>Mate 10 Pro</h4>
                 <img
@@ -127,62 +135,6 @@
         </div>
       </div>
 
-      <div class="gbpick 7u">
-        <a
-          id="8GB"
-          class="button fit big storage"
-          style="display:none;"
-          href="#"
-          >8 GB</a
-        >
-        <a
-          id="16GB"
-          class="button fit big storage"
-          style="display:none;"
-          href="#"
-          >16 GB</a
-        >
-        <a
-          id="32GB"
-          class="button fit big storage"
-          style="display:none;"
-          href="#"
-          >32 GB</a
-        >
-        <a
-          id="64GB"
-          class="button fit big storage"
-          style="display:none;"
-          href="#"
-          >64 GB</a
-        >
-        <a
-          id="128GB"
-          class="button fit big storageR"
-          style="display:none;"
-          href="#"
-          >128 GB</a
-        >
-        <a
-          id="256GB"
-          class="button fit big storage"
-          style="display:none;"
-          href="#"
-          >256 GB</a
-        >
-        <a
-          id="512GB"
-          class="button fit big storage"
-          style="display:none;"
-          href="#"
-          >512 GB</a
-        >
-
-        <div class="gbpick50">
-          <button class="button fit back" style="display:none">Back</button>
-        </div>
-      </div>
-
       <div id="hook">
         <h1>SELL HUAWEI CANADA</h1>
         <p
@@ -190,9 +142,8 @@
           style="font-family:'Helvetica Neue';color:#999;line-height:115%;text-transform:none;font-weight:normal"
         >
           We want to make it as simple as possible to be able to sell your
-          Huawei once you're done with it. We want to make it as simple as
-          possible to be able to sell your Samsung once you're done with it.
-          Your old Samsung may be worth more than you think!
+          Huawei once you're done with it. Your old Huawei device may be worth
+          more than you think!
         </p>
       </div>
       <div id="UnlistedPhone">
@@ -326,50 +277,4 @@
     })();
   </script>
   <!--End of Tawk.to Script-->
-
-  <script>
-    var baseModel;
-    $(document).ready(function() {
-      //on click, reveal secondary menu. GB options revealed based on phone selected
-      $(".option").click(function() {
-        $(".box.selection").fadeOut();
-        //store model as global variable so it can be called later
-        window.baseModel = this.id;
-
-        //Dynamically overwrite default option titles; better SEO or something
-        var cleanModelname = baseModel.replace("-", " ").toUpperCase();
-        $("#8GB").text("HUAWEI " + cleanModelname + " 8GB");
-        $("#16GB").text("HUAWEI " + cleanModelname + " 16GB");
-        $("#32GB").text("HUAWEI " + cleanModelname + " 32GB");
-        $("#64GB").text("HUAWEI " + cleanModelname + " 64GB");
-        $("#128GB").text("HUAWEI " + cleanModelname + " 128GB");
-        $("#256GB").text("HUAWEI " + cleanModelname + " 256GB");
-        $("#512GB").text("HUAWEI " + cleanModelname + " 512GB");
-
-        var selection = "." + baseModel;
-        $(selection).fadeIn();
-        $(".back").fadeIn();
-      });
-
-      //when GB option is selected, redirect to respective phone page
-      $(".storage").click(function() {
-        stoCap = this.id;
-        var target = "." + stoCap;
-        var endUrl =
-          "https://www.spherethat.ca/sell-my-huawei/huawei-" +
-          baseModel +
-          "-" +
-          stoCap +
-          ".php";
-        window.location.replace(endUrl);
-      });
-
-      //on click, back button hides secondary menu
-      $(".back").click(function() {
-        $(".box.selection").fadeIn();
-        $(".back").fadeOut();
-        $(".storage").fadeOut();
-      });
-    });
-  </script>
 </body>

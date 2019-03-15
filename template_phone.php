@@ -24,7 +24,7 @@ echo'
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Ubuntu:400,700" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="../js/scripts.js?v=14"></script>
+	<script type="text/javascript" src="../js/scripts.js?v=18"></script>
 	<script type="text/javascript" src="../js/formscripts.js?v=5"></script>
 
 	<script type="text/javascript">
@@ -410,7 +410,7 @@ echo'
 							<li><a href="/sell-my-blackberry">Sell my BlackBerry</a></li>
 							<li><a href="/sell-my-pixel">Sell my Pixel</a></li>
 							<li><a href="/sell-my-lg">Sell my LG</a></li>
-							<li><a href="/sell-my-htc">Sell my HTC</a></li>
+							<li><a href="/sell-my-huawei">Sell my Huawei</a></li>
 						</ul>
 					</section>
 					<section class="3u 6u(medium) 12u$(small)">

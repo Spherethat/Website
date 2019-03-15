@@ -1,6 +1,6 @@
 <!DOCTYPE html><head>
-	<title>Sell Your Used or Broken HTC | Sphere - Sell Your Phone Online Canada</title>
-  <meta name="description" content="Upgraded your phone and no longer using your old HTC smartphone? Sell it to Sphere and get cash for it!" /> 
+	<title>Sell Your Used or Broken huawei | Sphere - Sell Your Phone Online Canada</title>
+  <meta name="description" content="Upgraded your phone and no longer using your old huawei smartphone? Sell it to Sphere and get cash for it!" /> 
 	
 
 	<script src="../design/js/jquery.min.js"></script>
@@ -91,7 +91,7 @@ s0.parentNode.insertBefore(s1,s0);
 
 			<!--<div id="SellYourUsedElectronics"></div>-->
 
-				<h1>SELL YOUR HTC</h1>
+				<h1>SELL YOUR huawei</h1>
 
 				<p>Select a model below to continue to the next step!</p>
 
@@ -104,13 +104,13 @@ s0.parentNode.insertBefore(s1,s0);
             <div class="row4">		
 <div class="inpg-prod">
 							<section class="box inpg-box">
-				<a class="btn1-longer" href="htc-desire-601.php">
+				<a class="btn1-longer" href="huawei-desire-601.php">
 					
 					<div>
 
-						<h4>HTC Desire 601</h4>
+						<h4>huawei Desire 601</h4>
 						
-						<img src="../img/htc/HTC-desire-601.png">
+						<img src="../img/huawei/huawei-desire-601.png">
 
 					</div>
 
@@ -122,13 +122,13 @@ s0.parentNode.insertBefore(s1,s0);
 							
 <div class="inpg-prod">
 							<section class="box inpg-box">
-				<a class="btn1-longer" href="htc-one.php">
+				<a class="btn1-longer" href="huawei-one.php">
 					
 					<div>
 
-						<h4>HTC One (M7)</h4>
+						<h4>huawei One (M7)</h4>
 						
-						<img src="../img/htc/HTC-One.png">
+						<img src="../img/huawei/huawei-One.png">
 
 					</div>
 
@@ -138,13 +138,13 @@ s0.parentNode.insertBefore(s1,s0);
 						
 	<div class="inpg-prod">
 							<section class="box inpg-box">					
-				<a class="btn1-longer" href="htc-one-m8.php">
+				<a class="btn1-longer" href="huawei-one-m8.php">
 					
 					<div>
 
-						<h4>HTC One (M8)</h4>
+						<h4>huawei One (M8)</h4>
 						
-						<img src="../img/htc/HTC-One-M8.png">
+						<img src="../img/huawei/huawei-One-M8.png">
 
 					</div>
 
@@ -154,13 +154,13 @@ s0.parentNode.insertBefore(s1,s0);
 						
 						<div class="inpg-prod">
 							<section class="box inpg-box">	
-				<a class="btn1-longer" href="htc-one-m9.php">
+				<a class="btn1-longer" href="huawei-one-m9.php">
 					
 					<div>
 
-						<h4>HTC One (M9)</h4>
+						<h4>huawei One (M9)</h4>
 						
-						<img src="../img/htc/HTC-One-M9.png">
+						<img src="../img/huawei/huawei-One-M9.png">
 
 					</div>
 
@@ -174,7 +174,7 @@ s0.parentNode.insertBefore(s1,s0);
 
 		  <div id="hook">
 	        <h1>MAKING IT EASIER</h1>
-	        <p align="center" style="font-family:'Helvetica Neue';color:#999;line-height:115%;text-transform:none;font-weight:normal">We want to make it as simple as possible to be able to sell your HTC once you're done with it. Your old HTC may be worth more than you think!</p>
+	        <p align="center" style="font-family:'Helvetica Neue';color:#999;line-height:115%;text-transform:none;font-weight:normal">We want to make it as simple as possible to be able to sell your huawei once you're done with it. Your old huawei may be worth more than you think!</p>
           </div>	
 			<div id="UnlistedPhone">
 					
@@ -219,7 +219,7 @@ s0.parentNode.insertBefore(s1,s0);
 			<li><a href="/sell-my-blackberry">Sell my BlackBerry</a></li>
             <li><a href="/sell-my-pixel">Sell my Pixel</a></li>
             <li><a href="/sell-my-lg">Sell my LG</a></li>
-            <li><a href="/sell-my-htc">Sell my HTC</a></li>
+            <li><a href="/sell-my-huawei">Sell my Huawei</a></li>
 								</ul>
 							</section>
 							<section class="3u 6u(medium) 12u$(small)">

@@ -267,7 +267,7 @@ s0.parentNode.insertBefore(s1,s0);
 			<li><a href="https://www.spherethat.ca/sell-my-blackberry">Sell my BlackBerry</a></li>
             <li><a href="https://www.spherethat.ca/sell-my-pixel">Sell my Pixel</a></li>
             <li><a href="https://www.spherethat.ca/sell-my-lg">Sell my LG</a></li>
-            <li><a href="https://www.spherethat.ca/sell-my-htc">Sell my HTC</a></li>
+            <li><a href="https://www.spherethat.ca/sell-my-huawei">Sell my Huawei</a></li>
 								</ul>
 							</section>
 							<section class="3u 6u(medium) 12u$(small)">

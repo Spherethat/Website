@@ -1,7 +1,4 @@
 /* eslint-disable max-len */
-/* eslint-disable no-unreachable */
-/* eslint-disable camelcase */
-// eslint-disable-next-line no-undef
 actlock = {
   apple:
     '<h2>ICLOUD USERS:</h2><div><p style="margin-bottom: 0; clear: both">Please make sure that you have removed the iCloud account on your device before sending it in.</p><p>To learn how to do this, check out our <a href="https://www.spherethat.ca/icloud-support">iCloud support page</a>.<br/></p></div>',
@@ -13,7 +10,7 @@ actlock = {
 
 // So many bad practices in one file
 // prettier-ignore
-priceObj = {
+const priceObj = {
   'IP516_Broken': '3',
   'IP516_Rough': '14',
   'IP516_Good': '21',
@@ -80,7 +77,7 @@ priceObj = {
   'IP6S32_Mint': '115',
   'IP6S64_Broken': '34',
   'IP6S64_Rough': '91',
-  'IP6S64_Good': '115',
+  'IP6S64_Good': '110',
   'IP6S64_Mint': '125',
   'IP6S128_Broken': '34',
   'IP6S128_Rough': '104',
@@ -499,7 +496,7 @@ priceObj = {
   'HTONEM9_Rough': '15',
   'HTONEM9_Good': '33',
   'HTONEM9_Mint': '38',
-  // Huawei !Need prices for M9 and M10
+  // Huawei 
   'HWH8_Broken' : '11',
   'HWH8_Rough' : '42',
   'HWH8_Good' : '70',
@@ -508,14 +505,34 @@ priceObj = {
   'HWN6P_Rough' : '18',
   'HWN6P_Good' : '38',
   'HWN6P_Mint' : '41',
-  'HWM9_Broken' : '10',
-  'HWM9_Rough' : '15',
-  'HWM9_Good' : '40',
-  'HWM9_Mint' : '50',
-  'HWM10P_Broken' : '10',
-  'HWM10P_Rough' : '15',
-  'HWM10P_Good' : '40',
-  'HWM10P_Mint' : '50',
+  'HWM9_Broken' : '14',
+  'HWM9_Rough' : '54',
+  'HWM9_Good' : '90',
+  'HWM9_Mint' : '100',
+  'HWM10P_Broken' : '35',
+  'HWM10P_Rough' : '138',
+  'HWM10P_Good' : '230',
+  'HWM10P_Mint' : '240',
+  'HWP10_Broken': '9',
+  'HWP10_Rough': '45',
+  'HWP10_Good': '70',
+  'HWP10_Mint': '80',
+  'HWP10L_Broken': '8',
+  'HWP10L_Rough': '34',
+  'HWP10L_Good': '55',
+  'HWP10L_Mint': '60',
+  'HWP20_Broken': '17',
+  'HWP20_Rough': '86',
+  'HWP20_Good': '120',
+  'HWP20_Mint': '135',
+  'HWP20P_Broken': '45',
+  'HWP20P_Rough': '184',
+  'HWP20P_Good': '265',
+  'HWP20P_Mint': '280',
+  'HWM20P_Broken' : '52',
+  'HWM20P_Rough' : '208',
+  'HWM20P_Good' : '340',
+  'HWM20P_Mint' : '375',
   // LG
   'LGG2_Broken': '3',
   'LGG2_Rough': '5',
@@ -652,15 +669,15 @@ priceObj = {
   'SSN920_Good': '108',
   'SSN920_Mint': '124',
   // Note 8
-  'SSN950_Broken': '66',
-  'SSN950_Rough': '215',
-  'SSN950_Good': '340',
-  'SSN950_Mint': '360',
+  'SSN950_Broken': '59',
+  'SSN950_Rough': '232',
+  'SSN950_Good': '297',
+  'SSN950_Mint': '311',
   // Note 9
-  'SSN960_Broken': '73',
-  'SSN960_Rough': '340',
-  'SSN960_Good': '480',
-  'SSN960_Mint': '500',
+  'SSN960_Broken': '70',
+  'SSN960_Rough': '232',
+  'SSN960_Good': '385',
+  'SSN960_Mint': '400',
   // Google
   'PXL32_Broken': '20',
   'PXL32_Rough': '61',

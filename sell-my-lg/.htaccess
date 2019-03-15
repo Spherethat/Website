@@ -18,7 +18,7 @@ ExpiresDefault "access 1 month"
 Redirect 301 /ipad /sell-my-ipad
 Redirect 301 /iphone /sell-my-iphone
 Redirect 301 /blackberry /sell-my-blackberry
-Redirect 301 /htc /sell-my-htc
+Redirect 301 /huawei /sell-my-huawei
 Redirect 301 /ipod-touch /sell-my-ipod-touch
 Redirect 301 /lg /sell-my-lg
 Redirect 301 /nokia /sell-my-pixel
@@ -44,9 +44,9 @@ Redirect 301 /ipad/ipad-3-64GB.php /sell-my-ipad/ipad-3-64GB.php
 Redirect 301 /ipad/ipad-1st-generation-16GB.php /sell-my-ipad/ipad-1st-generation-16GB.php
 Redirect 301 /ipad/ipad-1st-generation-32GB.php /sell-my-ipad/ipad-1st-generation-32GB.php
 Redirect 301 /ipad/ipad-1st-generation-64GB.php /sell-my-ipad/ipad-1st-generation-64GB.php
-Redirect 301 /htc/htc-desire-601.php /sell-my-htc/htc-desire-601.php
-Redirect 301 /htc/htc-evo-3D.php /sell-my-htc/htc-evo-3D.php
-Redirect 301 /htc/htc-one.php /sell-my-htc/htc-one.php
+Redirect 301 /huawei/huawei-desire-601.php /sell-my-huawei/huawei-desire-601.php
+Redirect 301 /huawei/huawei-evo-3D.php /sell-my-huawei/huawei-evo-3D.php
+Redirect 301 /huawei/huawei-one.php /sell-my-huawei/huawei-one.php
 Redirect 301 /ipad/ipad-4-16GB.php /sell-my-ipad/ipad-4-16GB.php
 Redirect 301 /ipad/ipad-4-32GB.php /sell-my-ipad/ipad-4-32GB.php
 Redirect 301 /ipad/ipad-4-64GB.php /sell-my-ipad/ipad-4-64GB.php

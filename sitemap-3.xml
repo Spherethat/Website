@@ -72,7 +72,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.spherethat.ca/htc/</loc>
+  <loc>http://www.spherethat.ca/huawei/</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
@@ -494,17 +494,17 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.spherethat.ca/htc/htc-desire-601.php</loc>
+  <loc>http://www.spherethat.ca/huawei/huawei-desire-601.php</loc>
   <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.spherethat.ca/htc/htc-evo-3D.php</loc>
+  <loc>http://www.spherethat.ca/huawei/huawei-evo-3D.php</loc>
   <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.spherethat.ca/htc/htc-one.php</loc>
+  <loc>http://www.spherethat.ca/huawei/huawei-one.php</loc>
   <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>

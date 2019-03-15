@@ -1,7 +1,7 @@
 <?php
 
-$gadget = "HTONE";
-$gadgetdesc = "huawei One (M7)";
+$gadget = "HWM10P";
+$gadgetdesc = "Huawei Mate 10 Pro";
 $brand = "samsung";
 
 include ('../template_phone.php') ;
