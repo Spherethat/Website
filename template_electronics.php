@@ -133,8 +133,7 @@ echo'
 
 							<div>
 
-								<p>Your device is not functioning properly due to issues such as (but not limited to): cracked glass, touch screen issues, missing or malfunctioning buttons, LCD damage (eg. dots, flickering, or discolouration), LCD burn-in, screen bubbles, blurry
-									or not focusing camera, does not turn on, or water damage. Your device must still be intact.</p>
+								<p>Your device is not functioning properly due to issues such as (but not limited to): cracked glass, touch screen issues, missing or malfunctioning buttons, LCD damage (eg. dots, flickering, or discolouration), LCD burn-in, screen bubbles, blurry/not focusing camera or does not turn on. Your device must still be intact and not have any water damage.</p>
 
 							</div>
 
